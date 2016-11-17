@@ -539,3 +539,22 @@ footer .quicklinks, footer .copyright {
 	.silver .sponsor div {
 		line-height: 175px;
 	}
+
+
+
+/* ****************************************** */
+/*	  			Inclusion					  */
+/* ****************************************** */
+#inclusion {}
+	#inclusion .shadowBox {
+		padding: 40px;
+	}
+	#inclusion .shadowBox h2 {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	@media (max-width: 767px) {
+		#inclusion .shadowBox {
+			padding: 20px;
+		}
+	}
