@@ -2,10 +2,10 @@
  * 1140 - The lite 1140px resoponsive framework
  * URI: http://kodestudios.com/code/1140.css
  * 
- * Version: 2.4 | 2015-12-28
+ * Version: 2.5 | 2016-12-22
  * 
- * License: Kode Studios Educational License Version 1.0 
- * License URI: http://kodestudios.com/licenses/educational_v1-0.html
+ * License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+ * License URI: https://creativecommons.org/licenses/by-nc/4.0/
  * 
  * Author: Kode Studios
  * Author URI: http://kodestudios.com
@@ -65,11 +65,6 @@ figure img
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
-.prefix1, .prefix2, .prefix3, .prefix4, .prefix5, .prefix6, .prefix7, .prefix8, .prefix9, .prefix10, .prefix11 {
-	display: inline-block;
-	float: left;
-	height: 1px;
-}
 
 .alpha, .container12 .alpha, .container16 .alpha { margin-right: 0; margin-left: 0; }
 .beta,  .container12 .beta,  .container16 .beta  { margin-left: 0; }
@@ -111,17 +106,17 @@ figure img
 .column10.alpha, .container12 .column10.alpha { width:  83.33333%; }
 .column11.alpha, .container12 .column11.alpha { width:  91.66667%; }
 .column12.alpha, .container12 .column12.alpha { width:  100.0000%; }
-.prefix1,  .container12 .prefix1  { padding-left:   8.33333%; }
-.prefix2,  .container12 .prefix2  { padding-left:  16.66667%; }
-.prefix3,  .container12 .prefix3  { padding-left:  25.00000%; }
-.prefix4,  .container12 .prefix4  { padding-left:  33.33333%; }
-.prefix5,  .container12 .prefix5  { padding-left:  41.66667%; }
-.prefix6,  .container12 .prefix6  { padding-left:  50.00000%; }
-.prefix7,  .container12 .prefix7  { padding-left:  58.33333%; }
-.prefix8,  .container12 .prefix8  { padding-left:  66.66667%; }
-.prefix9,  .container12 .prefix9  { padding-left:  75.00000%; }
-.prefix10, .container12 .prefix10 { padding-left:  83.33333%; }
-.prefix11, .container12 .prefix11 { padding-left:  91.66667%; }
+.prefix1,  .container12 .prefix1  { margin-left:   8.33333%; }
+.prefix2,  .container12 .prefix2  { margin-left:  16.66667%; }
+.prefix3,  .container12 .prefix3  { margin-left:  25.00000%; }
+.prefix4,  .container12 .prefix4  { margin-left:  33.33333%; }
+.prefix5,  .container12 .prefix5  { margin-left:  41.66667%; }
+.prefix6,  .container12 .prefix6  { margin-left:  50.00000%; }
+.prefix7,  .container12 .prefix7  { margin-left:  58.33333%; }
+.prefix8,  .container12 .prefix8  { margin-left:  66.66667%; }
+.prefix9,  .container12 .prefix9  { margin-left:  75.00000%; }
+.prefix10, .container12 .prefix10 { margin-left:  83.33333%; }
+.prefix11, .container12 .prefix11 { margin-left:  91.66667%; }
 
 .container16 .column1  { width:  4.25%; }
 .container16 .column2  { width: 10.49%; }
@@ -171,21 +166,21 @@ figure img
 .container16 .column14.alpha { width:  87.49%; }
 .container16 .column15.alpha { width:  93.75%; }
 .container16 .column16.alpha { width:  100.0%; }
-.container16 .prefix1  { padding-left:   6.25%; }
-.container16 .prefix2  { padding-left:  12.49%; }
-.container16 .prefix3  { padding-left:  18.75%; }
-.container16 .prefix4  { padding-left:  25.00%; }
-.container16 .prefix5  { padding-left:  31.25%; }
-.container16 .prefix6  { padding-left:  37.49%; }
-.container16 .prefix7  { padding-left:  43.75%; }
-.container16 .prefix8  { padding-left:  50.00%; }
-.container16 .prefix9  { padding-left:  56.25%; }
-.container16 .prefix10 { padding-left:  62.49%; }
-.container16 .prefix11 { padding-left:  68.75%; }
-.container16 .prefix12 { padding-left:  75.00%; }
-.container16 .prefix13 { padding-left:  81.25%; }
-.container16 .prefix14 { padding-left:  87.49%; }
-.container16 .prefix15 { padding-left:  93.75%; }
+.container16 .prefix1  { margin-left:   6.25%; }
+.container16 .prefix2  { margin-left:  12.49%; }
+.container16 .prefix3  { margin-left:  18.75%; }
+.container16 .prefix4  { margin-left:  25.00%; }
+.container16 .prefix5  { margin-left:  31.25%; }
+.container16 .prefix6  { margin-left:  37.49%; }
+.container16 .prefix7  { margin-left:  43.75%; }
+.container16 .prefix8  { margin-left:  50.00%; }
+.container16 .prefix9  { margin-left:  56.25%; }
+.container16 .prefix10 { margin-left:  62.49%; }
+.container16 .prefix11 { margin-left:  68.75%; }
+.container16 .prefix12 { margin-left:  75.00%; }
+.container16 .prefix13 { margin-left:  81.25%; }
+.container16 .prefix14 { margin-left:  87.49%; }
+.container16 .prefix15 { margin-left:  93.75%; }
 
 @media only screen and (max-width: 1160px) and (min-width: 960px) {
     .container12, .container16 { width: 960px; }
@@ -246,7 +241,7 @@ figure img
     .prefix1, .prefix2, .prefix3, .prefix4, .prefix5, .prefix6, .prefix7, .prefix8, .prefix9, .prefix10, .prefix11, 
     .container12 .prefix1, .container12 .prefix2, .container12 .prefix3, .container12 .prefix4, .container12 .prefix5, .container12 .prefix6, .container12 .prefix7, .container12 .prefix8, .container12 .prefix9, .container12 .prefix10, .container12 .prefix11, 
     .container16 .prefix1, .container16 .prefix2, .container16 .prefix3, .container16 .prefix4, .container16 .prefix5, .container16 .prefix6, .container16 .prefix7, .container16 .prefix8, .container16 .prefix9, .container16 .prefix10, .container16 .prefix11, .container16 .prefix12, .container16 .prefix13, .container16 .prefix14, .container16 .prefix15 
-    	{ padding-left:0; }
+    	{ padding-left: 1%; }
     .row { margin: 0; }
 }
 

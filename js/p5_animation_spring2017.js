@@ -56,14 +56,14 @@ var speedMin = 0.1;
 var speedMax = 0.3;
 
 var redMin = 51, redMax = 71;
-	//redMin = 201; redMax = 221;
+	redMin = 51; redMax = 255;
 var greenMin = 17, greenMax = 37;
-	//greenMin = 167; greenMax = 187;
+	greenMin = 17; greenMax = 255;
 var blueMin = 85, blueMax = 105;
-	//blueMin = 235; blueMax = 255;
+	blueMin = 85; blueMax = 255;
 
 var numberBursts = 0;
-var burstsRatio = 80000;
+var burstsRatio = 40000;
 var burstsArray = [];
 
 var randomDiameters = [
@@ -89,12 +89,28 @@ var randomPositionSpeeds = [
 	[ 0.1,  0.1], [-0.1, -0.1], [-0.1, -0.1], [ 0.1,  0.1], [ 0.1, -0.1],
 	[ 0.1, -0.1], [-0.1, -0.1], [ 0.1, -0.1], [ 0.1, -0.1], [ 0.1, -0.1],
 ];
+var randomPositionSpeeds2 = [
+	[ 0.4,  0.4], [ 0.4,  0.4], [ 0.4,  0.4], [-0.4, -0.4], [-0.4, -0.4],
+	[-0.4,  0.4], [-0.4, -0.4], [ 0.4,  0.4], [ 0.4,  0.4], [-0.4,  0.4],
+
+	[ 0.4,  0.4], [ 0.4,  0.4], [ 0.4, -0.4], [-0.4, -0.4], [ 0.4, -0.4],
+	[ 0.4, -0.4], [ 0.4, -0.4], [ 0.4,  0.4], [ 0.4,  0.4], [-0.4,  0.4],
+
+	[ 0.4, -0.4], [-0.4, -0.4], [-0.4, -0.4], [ 0.4, -0.4], [ 0.4, -0.4],
+	[ 0.4,  0.4], [-0.4,  0.4], [-0.4,  0.4], [ 0.4, -0.4], [-0.4, -0.4],
+
+	[ 0.4,  0.4], [-0.4, -0.4], [-0.4,  0.4], [-0.4, -0.4], [-0.4, -0.4],
+	[ 0.4, -0.4], [-0.4,  0.4], [-0.4, -0.4], [-0.4, -0.4], [ 0.4, -0.4],
+
+	[ 0.4,  0.4], [-0.4, -0.4], [-0.4, -0.4], [ 0.4,  0.4], [ 0.4, -0.4],
+	[ 0.4, -0.4], [-0.4, -0.4], [ 0.4, -0.4], [ 0.4, -0.4], [ 0.4, -0.4],
+];
 var randomColors = [
-	[59, 30,  85], [52, 27,  92], [70, 17,  88], [69, 35, 101], [53, 28,  98],
+	[61, 32,  93], [52, 27,  92], [70, 17,  88], [69, 35, 101], [53, 28,  98],
 	[54, 18,  88], [55, 21, 101], [60, 25,  96], [59, 30,  93], [69, 26,  96],
 
-	[64, 32,  98], [60, 32, 101], [54, 26,  96], [67, 25,  90], [53, 35, 101],
-	[58, 26,  95], [51, 20, 103], [62, 26,  87], [65, 29,  98], [51, 19, 104],
+	[64, 32,  98], [60, 32, 101], [64, 26,  96], [65, 23,  95], [53, 35, 101],
+	[58, 26,  95], [54, 30,  96], [62, 26,  87], [51, 17,  92], [51, 19, 104],
 
 	[63, 19,  94], [64, 23,  95], [51, 19,  98], [61, 25,  94], [62, 27,  90],
 	[70, 30,  98], [55, 25,  94], [65, 36,  86], [56, 20,  99], [57, 36, 101],
@@ -121,6 +137,23 @@ var randomColorSpeeds = [
 	[-0.3, -0.3, -0.3], [-0.3,  0.3,  0.3], [-0.3, -0.3,  0.3], [-0.3, -0.3, -0.3], [ 0.3, -0.3, -0.3], [-0.3, -0.3, -0.3], [ 0.3, -0.3,  0.3], [ 0.3,  0.3, -0.3], [-0.3, -0.3, -0.3], [ 0.3,  0.3,  0.3]
 ];
 
+var randomColorSpeeds2 = [
+	[ 1,  1,  1], [ 1, -1,  1], [ 1, -1, -1], [ 1, -1, -1], [-1, -1,  1],
+	[ 1,  1, -1], [-1,  1,  1], [-1, -1, -1], [-1,  1,  1], [-1,  1, -1],
+
+	[ 1, -1,  1], [-1, -1,  1], [-1,  1, -1], [ 1,  1, -1], [-1, -1, -1],
+	[ 1, -1,  1], [ 1, -1, -1], [-1, -1, -1], [ 1, -1,  1], [ 1, -1,  1],
+
+	[ 1,  1,  1], [ 1,  1,  1], [-1,  1, -1], [-1,  1, -1], [-1, -1,  1],
+	[-1,  1,  1], [ 1, -1, -1], [ 1,  1,  1], [-1,  1, -1], [ 1, -1, -1],
+
+	[-1,  1, -1], [ 1,  1,  1], [-1, -1,  1], [-1, -1, -1], [ 1,  1, -1],
+	[-1,  1,  1], [ 1,  1, -1], [-1, -1,  1], [ 1, -1, -1], [-1, -1, -1],
+
+	[-1, -1, -1], [-1,  1,  1], [-1, -1,  1], [-1, -1, -1], [ 1, -1, -1],
+	[-1, -1, -1], [ 1, -1,  1], [ 1,  1, -1], [-1, -1, -1], [ 1,  1,  1]
+];
+
 
 
 function setup() {
@@ -137,7 +170,7 @@ function setup() {
 
 	// background
 	//background(backgroundRed, backgroundGreen, backgroundBlue);
-	background(255, 255, 255);
+	//background(255);
 
 
 	// attributes
@@ -146,18 +179,18 @@ function setup() {
 	fill(61, 27, 95, 175);
 
 	numberBursts = Math.floor( (canvasWidth*canvasHeight)/burstsRatio );
-	console.log(numberBursts);
+	//console.log(numberBursts);
 
 	for(var i=0; i<numberBursts; i++) {
 		newBurst = {
 			diameter : randomDiameters[i],
 			position : {
-				x: Math.floor(Math.random() * canvasWidth),
-				y: Math.floor(Math.random() * canvasHeight)
+				x: random() * canvasWidth,
+				y: random() * canvasHeight
 			},
 			positionSpeeds : {
-				x: randomPositionSpeeds[i][0],
-				y: randomPositionSpeeds[i][1]
+				x: randomPositionSpeeds2[i][0],
+				y: randomPositionSpeeds2[i][1]
 			},
 			color : {
 				r: randomColors[i][0],
@@ -168,9 +201,9 @@ function setup() {
 				//b: Math.floor(Math.random() * (blueMax-blueMin)) + blueMin,
 			},
 			colorSpeeds	: {
-				r: randomColorSpeeds[i][0],
-				g: randomColorSpeeds[i][1],
-				b: randomColorSpeeds[i][2]
+				r: randomColorSpeeds2[i][0],
+				g: randomColorSpeeds2[i][1],
+				b: randomColorSpeeds2[i][2]
 			}
 		}
 		burstsArray.push(newBurst);
@@ -179,17 +212,14 @@ function setup() {
 };
 
 function draw() {
-	//
-
-	background(35,39,44);
-	background(backgroundRed, backgroundGreen, backgroundBlue);
-	background(21, 7, 35);
-	background(255, 255, 255);
+	background(255);
 
 	for(var i=0; i<numberBursts; i++) {
 		drawBurst(burstsArray[i]);
 	}
+
 };
+
 
 //var dist = 0;
 function drawBurst(burst) {
