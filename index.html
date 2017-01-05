@@ -11,18 +11,15 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-	<!-- Bootstrap Core CSS -->
-	<link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 	<!-- Custom Fonts -->
 	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
 
 	<!-- Custom CSS -->
+	<link href="css/bootstrapmin.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/1140.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/hackathon.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/inputs.css" rel="stylesheet" type="text/css" media="all">
 
 	<!-- FB Meta Tags -->
 	<meta property="fb:app_id"			content="1734809350067997" />
@@ -37,13 +34,12 @@
 </head>
 <body>
 	<!-- Navigation -->
-	<nav id="navigation" class="navbar navbar-inverse">
+	<nav id="navigation">
 		<div class="container">
 
 			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation_links" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
+			<div class="navigation_mobile">
+				<button type="button" id="nav_icon">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -51,34 +47,36 @@
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="navigation_links">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a class="page-scroll" href="#home">Home</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#about">About</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#faq">FAQ</a>
-					</li>
+			<div class="navigation_large">
+				<ul>
+					<!--
 					<li class="brand">
 						<a class="page-scroll">
 							<img src="images/logos/t9hacks_logo_transparent.png">
 						</a>
 					</li>
-					<li>
-						<a class="page-scroll" href="#spring2016hackathon">Past Hackathons</a>
+					-->
+					<li class="active">
+						<a class="page-scroll" href="#home">Home</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#sponsors">Past Sponsors</a>
+						<a class="page-scroll" href="#faq">FAQ</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#registration">Registration</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#schedule">Schedule</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#sponsors">Sponsors</a>
 					</li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 
 			<!-- MLH Trust Badge -->
-			<a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank">
-				<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season">
+			<a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=black" target="_blank">
+				<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/black.svg" alt="Major League Hacking 2017 Hackathon Season">
 			</a>
 
 		</div><!-- /.container-fluid -->
@@ -99,21 +97,15 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="column3">&nbsp;</div>
-					<div class="column6">
-
-						<div class="header_info_wrapper">
-							<div class="header_info_inner">
-								<span class="date">February 2017</span>
-								<span class="logo_container">
-									<img class="logo" src="images/logos/t9hacks_logo_transparent_white_brackets.png">
-								</span>
-								<span class="location">Boulder, CO</span>
-							</div>
-						</div>
-
+					<div class="column12">
 						<h1 class="header_title">T9Hacks</h1>
+					</div>
+				</div>
 
+				<div class="row">
+					<div class="column12">
+						<p class="date">February 25-26, 2017</p>
+						<p class="location">ATLAS Institute</p>
 					</div>
 				</div>
 
@@ -127,97 +119,25 @@
 		<!-- About -->
 		<section id="about">
 			<div class="container">
-
-				<!--
-				<div class="row">
-					<div class="column12">
-						<h1>Events</h1>
-					</div>
-				</div>
-
-				<div class="row event shadowBox">
-					<div class="column1 calendar">Nov 10</div>
-					<div class="column7">
-						<h2>Hackathon Informational Workshop</h2>
-						<p>SendGrid and T9Hacks are hosting a Introduction to Hackathons Workshop</p>
-						<p>
-							Learn:
-							<ul>
-								<li>What hackathons are</li>
-								<li>How they can help your career How to prepare for a hackathon</li>
-								<li>What kinds of projects you can build</li>
-								<li>Tips for succeeding in these types of competitions</li>
-							</ul>
-						</p>
-						<p>Thursday, Nov 10 from 5-6pm in the ATLAS Hackery (208)</p>
-					</div>
-					<div class="column4">
-						<div class="column8 beta">
-							<img class="column12 alpha" src="images/16_hack-info-wksp/Hackathon_Workshop_Poster_1.png" alt="Hackathon Informational Workshop Poster.  Contains the same information above in print form." />
-						</div>
-						<div class="column4 omega">
-							<img class="" src="images/16_hack-info-wksp/Hackathon_Workshop_Poster_2.png" alt="Hackathon Informational Workshop Poster.  Contains the same information above in print form." />
-							<img class="" src="images/16_hack-info-wksp/Hackathon_Workshop_Poster_3.png" alt="Hackathon Informational Workshop Poster.  Contains the same information above in print form." />
-						</div>
-					</div>
-				</div>
-				-->
-
-
+				
+					
 				<div class="row">
 					<div class="column12">
 						<h1>About</h1>
 					</div>
 				</div>
-
-
+				
 				<div class="row">
-
-					<div class="column2">&nbsp;</div>
-					<div class="column8 about_text">
+					<div class="about_text column8 prefix2 shadowBox">
 						<p>
 							T9Hacks is a 24-hour gender equality hackathon at the University of Colorado Boulder's ATLAS Institute. Our goal is to create opportunity for newcomers to explore a hackathon environment while learning and solving compelling problems.
 						</p>
 						<p>
-							We are currently planning our second iteration of T9Hacks and looking for people to join our team!  Contact Brittany for more info: brittany [dot] kos [@] colorado [dot] edu
+							We are currently planning our second iteration of T9Hacks and looking for people to join our team!  Contact Brittany for more info: brittany [dot] kos [at] colorado [dot] edu
 						</p>
-
-						<!-- Begin MailChimp Signup Form -->
-						<!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-						<style type="text/css">
-							.mc_clear {
-								display: inline-block;
-							}
-							#mc_embed_signup .button { background-color: #5AB8E2; }
-							#mc_embed_signup .button:hover { background-color: #3A98C2; }
-						</style>
-						<div id="mc_embed_signup">
-							<form action="//t9hacks.us14.list-manage.com/subscribe/post?u=1d5c905dff32c05abcdc8b25e&amp;id=b13a70b816" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							    <div id="mc_embed_signup_scroll">
-									<label for="mce-EMAIL">Interested in getting involved?  Join our mailing list!</label>
-									<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-								    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1d5c905dff32c05abcdc8b25e_b13a70b816" tabindex="-1" value=""></div>
-								    <div class="mc_clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-							    </div>
-							</form>
-						</div> -->
-						<!--End MailChimp Signup Form-->
-
 					</div>
-
-
 				</div>
-
-			</div>
-		</section>
-
-
-		<hr/>
-
-
-		<!-- FAQ -->
-		<section id="faq">
-			<div class="container">
+					
 
 				<div class="row">
 					<div class="column12">
@@ -226,228 +146,216 @@
 				</div>
 
 				<div class="row">
-					<div class="faq_line_wrapper">
-						<div class="faq_line_inner">
-
-							<div class="column1">&nbsp;</div>
-
-							<div class="column5 faq_section faq_section_left alpha">
-
-								<div class="faq_question shadowBox">
-									<h2>What is "hacking"?</h2>
-									<p>
-										"Hacking" doesn't mean malicious programming or breaking into something. We want you to "hack" (design, build, create, MacGyver) technology, art, and media together to create something awesome.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>Do I have to be a programmer?</h2>
-									<p>
-										Absolutely not! We encourage women with all backgrounds to participate. It doesn't matter if you are an art, a journalism, or a marketing major, there is a place for you here.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>I've never been to a hackathon before, should I still register?</h2>
-									<p>
-										Absolutely! Register yourself, your best friend, your sister, and your roommate. T9Hacks is a beginner hackathon, so there is no expectation that our participants are familiar with these types of events. We will have fun events, plenty of mentors, and a super welcoming team to ease everyone into the experience.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>What kind of project should I make?</h2>
-									<p>
-										T9Hacks is an open hackathon, so if you have an idea, bring it! Our theme this year is "helping the community". We encourage students to build solutions, prototypes, or raise awareness for problems they see in their communities. If you are really stumped, we will have some ideas ready at start of the hackathon.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>What do I have to bring?</h2>
-									<p>
-										Bring your laptop, phone, chargers, change of clothes, a well-rested open mind, but most of all, your creativity.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>Do you cover travel expenses?</h2>
-									<p>
-										Since this is T9Hacks' first hackathon, we cannot cover or reimburse any travel costs.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-							</div>
-
-							<div class="column5 faq_section faq_section_right alpha">
-
-								<div class="faq_question shadowBox">
-									<h2>How much does it cost?</h2>
-									<p>
-										Participating is completely free! We will provide food, snacks, and drinks to energize you throughout the event. We only require that everyone register before the event to come.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>Do you really mean 24 hours?</h2>
-									<p>
-										We know, that sounds like a long time! But it goes quickly when you are collaborating, planning, and creating projects. We wanted to see what kinds of projects students would come up with if they were given a full 24 hours to devote themselves to their work.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>Do I have to stay the entire time?</h2>
-									<p>
-										Students are strongly encouraged to stay for the entire event. T9Hacks is a group effort and we want every team to have the same opportunities as each other; this can only happen when all members are 100% committed!
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>Do I have to have a team to register?</h2>
-									<p>
-										Nope! T9Hacks is a great place to meet new women with different skillsets. You can come with a pre-formed group and idea, an idea of your own and no team, or a desire to help someone else's idea along.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-								<div class="faq_question shadowBox">
-									<h2>How do I get to CU's campus?</h2>
-									<p>
-										CU has a great public transit system! There are local RTD busses that drop off directly in front of the ATLAS building and many more regional busses that drop off at CU. For more information about the bus system, you can visit
-										<a href="http://www.colorado.edu/pts/node/265" target="_blank">CU's Public Transit Page</a>
-										or the
-										<a href="http://www.rtd-denver.com/" target="_blank">RTD website</a>.
-										If you are unsure of what bus to take, Google Maps is a great way
-										to plan your trip!
-									</p>
-									<p>
-										If you plan on driving, you can park at the
-										<a href="https://www.google.com/maps/place/Euclid+Avenue+AutoPark/@40.0062224,-105.2725278,17z/data=!3m1!4b1!4m2!3m1!1s0x876bec346ecef901:0x42c56530fccd25dd" target="_blank">Euclid Avenue AutoPark</a>
-										parking garage for $4 a day on weekends. If you don't mind walking, it is free to park at the
-										<a href="https://www.google.com/maps/place/Regent+Drive+AutoPark,+Boulder,+CO+80305/@40.0068572,-105.2614824,18z/data=!3m1!4b1!4m2!3m1!1s0x876bedcbd93d7161:0x8d630ccb6bb5d575" target="_blank">Regent Drive AutoPark</a>
-										on weekends and in a few nearby neighborhoods.
-									</p>
-									<span class="faq_arrow"></span>
-								</div>
-
-							</div>
-
+					<div class="column12 faq_wrapper">
+						
+						<div class="faq_question shadowBox">
+							<h2>What is a "hackathon"?</h2>
+							<p>
+								A hackathon is a cross between "hacking" and "marathon".  Our hackathon will be a 24-hour event where students can come work on a project and learn something new. 
+							</p>
 						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>What is "hacking"?</h2>
+							<p>
+								"Hacking" doesn't mean malicious programming or breaking into something. We want you to "hack" (design, build, create, MacGyver) technology, art, and media together to create something awesome.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>Do I have to be a programmer?</h2>
+							<p>
+								Absolutely not! We encourage women with all backgrounds to participate. It doesn't matter if you are an art, a journalism, or a marketing major, there is a place for you here.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>I've never been to a hackathon before, should I still register?</h2>
+							<p>
+								Absolutely! Register yourself, your best friend, your sister, and your roommate. T9Hacks is a beginner hackathon, so there is no expectation that our participants are familiar with these types of events. We will have fun events, plenty of mentors, and a super welcoming team to ease everyone into the experience.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>What kind of project should I make?</h2>
+							<p>
+								T9Hacks is an open hackathon, so if you have an idea, bring it!
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>What do I have to bring?</h2>
+							<p>
+								Bring your laptop, phone, chargers, change of clothes, a well-rested open mind, but most of all, your creativity.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>Do you cover travel expenses?</h2>
+							<p>
+								We are unable to cover or reimburse any travel costs.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>How much does it cost?</h2>
+							<p>
+								Participating is completely free! We will provide food, snacks, and drinks to energize you throughout the event. We only require that everyone register before the event to come.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>Do you really mean 24 hours?</h2>
+							<p>
+								We know, that sounds like a long time! But it goes quickly when you are collaborating, planning, and creating projects. We wanted to see what kinds of projects students would come up with if they were given a full 24 hours to devote themselves to their work.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>Do I have to stay the entire time?</h2>
+							<p>
+								Students are strongly encouraged to stay for the entire event. T9Hacks is a group effort and we want every team to have the same opportunities as each other; this can only happen when all members are 100% committed!
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>Do I have to have a team to register?</h2>
+							<p>
+								Nope! T9Hacks is a great place to meet new women with different skillsets. You can come with a pre-formed group and idea, an idea of your own and no team, or a desire to help someone else's idea along.
+							</p>
+						</div>
+
+						<div class="faq_question shadowBox">
+							<h2>How do I get to CU's campus?</h2>
+							<p>
+								CU has a great public transit system! There are local RTD busses that drop off directly in front of the ATLAS building and many more regional busses that drop off at CU. For more information about the bus system, you can visit
+								<a href="http://www.colorado.edu/pts/node/265" target="_blank">CU's Public Transit Page</a>
+								or the
+								<a href="http://www.rtd-denver.com/" target="_blank">RTD website</a>.
+								If you are unsure of what bus to take, Google Maps is a great way
+								to plan your trip!
+							</p>
+							<p>
+								If you plan on driving, you can park at the
+								<a href="https://www.google.com/maps/place/Euclid+Avenue+AutoPark/@40.0062224,-105.2725278,17z/data=!3m1!4b1!4m2!3m1!1s0x876bec346ecef901:0x42c56530fccd25dd" target="_blank">Euclid Avenue AutoPark</a>
+								parking garage for $4 a day on weekends. If you don't mind walking, it is free to park at the
+								<a href="https://www.google.com/maps/place/Regent+Drive+AutoPark,+Boulder,+CO+80305/@40.0068572,-105.2614824,18z/data=!3m1!4b1!4m2!3m1!1s0x876bedcbd93d7161:0x8d630ccb6bb5d575" target="_blank">Regent Drive AutoPark</a>
+								on weekends and in a few nearby neighborhoods.
+							</p>
+						</div>
+						
 					</div>
 				</div>
 
 			</div>
 		</section>
-
-
+		
+		
+		
 		<hr/>
-
-
-		<!-- Past Hackathon -->
-		<section id="spring2016hackathon">
-			<div class="container">
-
-				<div class="row">
-					<div class="column12">
-						<h1>Spring 2016 Hackathon</h1>
-					</div>
-				</div>
-
-				<div class="row sp16_hackathon_info shadowBox">
-
-					<div class="column6">
-						<div class="row">
-							<p>
-								T9Hacks had our first iteration on Feb 20-21, 2016 at
-								the Black Box Experimental Studio at the ATLAS Institute.
-							</p>
-							<p>
-								Our goal was to increase participation of women in hackathons
-								and to create an opportunity for students to explore new
-								technologies, solve problems, and create something amazing
-								with a team.
-							</p>
-						</div>
-						<div class="row fact">
-							<h3 class="fact_title">Gender Breakdown*</h3>
-							<div class="fact_bar_graph">
-								<span class="fact_graph_piece fact_graph_60 main">Women - 60%</span>
-								<span class="fact_graph_piece fact_graph_40">Men - 40%</span>
-							</div>
-							<span class="note">* Gender is split by male-female binary due to self-reported data</span>
-						</div>
-						<div class="row fact">
-							<h3 class="fact_title">Schools</h3>
-							<div class="fact_bar_graph">
-								<span class="fact_graph_piece fact_graph_94 main">UCB - 94%</span>
-								<span class="fact_graph_piece fact_graph_6"></span>
-							</div>
-						</div>
-						<div class="row fact">
-							<h3 class="fact_title">Majors</h3>
-							<table class="fact_table">
-								<tr>
-									<td>Computer Science</td>
-									<td>50%</td>
-								</tr>
-								<tr>
-									<td>Engineering Fields</td>
-									<td>15%</td>
-								</tr>
-								<tr>
-									<td>Info-Sci Fields</td>
-									<td>10%</td>
-								</tr>
-								<tr>
-									<td>Design Fields</td>
-									<td>8%</td>
-								</tr>
-								<tr>
-									<td>TAM</td>
-									<td>5%</td>
-								</tr>
-								<tr>
-									<td>Other Fields</td>
-									<td>14%</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-
-					<div class="column6">
-						<div id="slideshow_start"></div>
-						<p>
-							For the full T9Hacks Spring 2016 photo album, visit the
-							<a href="https://www.facebook.com/MajorLeagueHacking/photos/?tab=album&album_id=1071433852907292" target="_blank">
-							MLH Facebook page</a>.
-						</p>
-
-					</div>
-
-
-				</div>
-
-			</div>
-		</section>
-
-
-		<hr/>
-
-
-		<!-- Past Sponsors -->
+		
+		
+		
+		<!-- Registration -->
 		<section id="sponsors">
 			<div class="container">
 
 				<div class="row">
 					<div class="column12">
-						<h1>Past Sponsors</h1>
+						<h1>Registration</h1>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="column12">
+						<a href="https://cuboulder.qualtrics.com/SE/?SID=SV_bk25Dp9Q4SALwgt" target="_blank" class="btn big-btn">Register</a>
+						<!--<p>Registration coming soon!</p>-->
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+
+		
+		<hr/>
+		
+		
+		
+		<!-- Schedule -->
+		<section id="schedule">
+			<div class="container">
+
+				<div class="row">
+					<div class="column12">
+						<h1>Schedule</h1>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="column6 prefix3 omega schedule shadowBox">
+						<p class="header">Saturday, February, 25, 2017</p>
+						<div>
+							<div class="column4">9:30am</div>
+							<div class="column8">Check-in Begins</div>
+						</div>
+						<div>
+							<div class="column4">11:00am</div>
+							<div class="column8">Opening Ceremonies</div>
+						</div>
+						<div>
+							<div class="column4">noon</div>
+							<div class="column8">Hacking Begins!<br/>Lunch</div>
+						</div>
+						<div>
+							<div class="column4">6:00pm</div>
+							<div class="column8">Dinner</div>
+						</div>
+					</div>
+				</div>
+						
+				<div class="row">
+					<div class="column6 prefix3 omega schedule shadowBox">
+						<p class="header">Sunday, February, 26, 2017</p>
+						<div>
+							<div class="column4">8:00am</div>
+							<div class="column8">Breakfast</div>
+						</div>
+						<div>
+							<div class="column4">noon</div>
+							<div class="column8">Hacking Ends!<br/>Lunch</div>
+						</div>
+						<div>
+							<div class="column4">1:00pm</div>
+							<div class="column8">Demoing Begins</div>
+						</div>
+						<div>
+							<div class="column4">3:00pm</div>
+							<div class="column8">Awards and Closing Ceremonies</div>
+						</div>
+						<div>
+							<div class="column4">3:30pm</div>
+							<div class="column8">Hackathon Ends</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		
+		
+		<hr/>
+
+
+
+		<!-- Current Sponsors -->
+		<section id="sponsors">
+			<div class="container">
+
+				<div class="row">
+					<div class="column12">
+						<h1>Sponsors</h1>
 					</div>
 				</div>
 
@@ -456,27 +364,11 @@
 					<div class="sponsorRowWrapper platinum">
 						<!-- ATLAS -->
 						<div class="sponsor shadowBox">
-							<a href="http://atlas.colorado.edu" target="_blank"><img src="images/sp16_sponsors/atlas_logo_white.png" alt="ATLAS Institute Logo" /></a>
-						</div>
-						<!-- Twitter -->
-						<div class="sponsor shadowBox">
-							<a href="https://twitter.com/twitter" target="_blank"><img src="images/sp16_sponsors/twitter_logo_white.png" alt="Twitter Logo" /></a>
-						</div>
-						<!-- Victor Ops -->
-						<div class="sponsor shadowBox">
-							<a href="https://victorops.com/" target="_blank"><img src="images/sp16_sponsors/victorops_logo_white.svg" alt="Victor Ops Logo" /></a>
-						</div>
-					</div>
-				</div>
-				<div class="row sponsorRow">
-					<div class="sponsorRowWrapper platinum">
-						<!-- Think Topic -->
-						<div class="sponsor shadowBox">
-							<a href="http://www.thinktopic.com/" target="_blank"><img src="images/sp16_sponsors/thinktopic_logo_white.png" alt="Think Topic Logo" /></a>
+							<a href="http://atlas.colorado.edu" target="_blank"><img src="images/sp17_sponsors/atlas_logo_black.png" alt="ATLAS Institute Logo" /></a>
 						</div>
 						<!-- Workday -->
 						<div class="sponsor shadowBox">
-							<a href="http://www.workday.com/" target="_blank"><img src="images/sp16_sponsors/workday_logo_white.png" alt="Workday Logo" /></a>
+							<a href="http://www.workday.com/" target="_blank"><img src="images/sp17_sponsors/workday_logo_black.png" alt="Workday Logo" /></a>
 						</div>
 					</div>
 				</div>
@@ -485,21 +377,9 @@
 				<!-- Gold -->
 				<div class="row sponsorRow">
 					<div class="sponsorRowWrapper gold">
-						<!-- Cardinal Peak -->
+						<!-- Zayo -->
 						<div class="sponsor shadowBox">
-							<a href="https://cardinalpeak.com/" target="_blank"><img src="images/sp16_sponsors/cardinalpeak_logo_white.png" alt="Cardinal Peak Logo" /></a>
-						</div>
-						<!-- Google -->
-						<div class="sponsor shadowBox">
-							<a href="https://www.google.com/about/careers/students/" target="_blank"><img src="images/sp16_sponsors/google_logo_white.png" alt="Google Logo" /></a>
-						</div>
-						<!-- Code Craft School -->
-						<div class="sponsor shadowBox">
-							<a href="http://www.codecraftschool.com/" target="_blank"><img src="images/sp16_sponsors/codecraft_logo_white.png" alt="CodeCraft School of Technology Logo" /></a>
-						</div>
-						<!-- Send Grid -->
-						<div class="sponsor shadowBox">
-							<a href="https://sendgrid.com/" target="_blank"><img src="images/sp16_sponsors/sendgrid_logo_white.png" alt="Sendgrid Logo" /></a>
+							<a href="http://www.zayo.com/" target="_blank"><img src="images/sp17_sponsors/zayo_logo_black.png" alt="Zayo Logo" /></a>
 						</div>
 					</div>
 				</div>
@@ -507,29 +387,13 @@
 				<!-- Silver -->
 				<div class="row sponsorRow">
 					<div class="sponsorRowWrapper silver">
-						<!-- Fitter Faster -->
+						<!-- Google -->
 						<div class="sponsor shadowBox">
-							<a href="http://fitterfaster.com/" target="_blank"><img src="images/sp16_sponsors/fitterfaster_logo_white.png" alt="Fitter Faster Logo" /></a>
+							<a href="https://www.google.com/about/careers/students/" target="_blank"><img src="images/sp17_sponsors/google_logo_black.png" alt="Google Logo" /></a>
 						</div>
-						<!-- Quick Left -->
+						<!-- DigiZen -->
 						<div class="sponsor shadowBox">
-							<a href="https://quickleft.com/" target="_blank"><img src="images/sp16_sponsors/quickleft_logo_white.png" alt="Quickleft Logo" /></a>
-						</div>
-						<!-- RefactorU -->
-						<div class="sponsor shadowBox">
-							<a href="http://www.refactoru.com/" target="_blank"><img src="images/sp16_sponsors/refactoru_logo_white.png" alt="RefactorU Logo" /></a>
-						</div>
-					</div>
-				</div>
-				<div class="row sponsorRow">
-					<div class="sponsorRowWrapper silver">
-						<!-- Sticker Giant -->
-						<div class="sponsor shadowBox">
-							<a href="http://www.stickergiant.com/" target="_blank"><img src="images/sp16_sponsors/stickergiant_logo_white.png" alt="Sticker Giant Logo" /></a>
-						</div>
-						<!-- Zayo -->
-						<div class="sponsor shadowBox">
-							<a href="http://www.zayo.com/" target="_blank"><img src="images/sp16_sponsors/zayo_logo_white.png" alt="Zayo Logo" /></a>
+							<a href="http://www.digizenmarketinggroup.com/" target="_blank"><img src="images/sp17_sponsors/digizen_logo_black.png" alt="DigiZen Marketing Group Logo" /></a>
 						</div>
 					</div>
 				</div>
@@ -552,15 +416,15 @@
 				</div>
 
 				<div class="row">
-					<div class="column12 shadowBox">
+					<div class="column8 shadowBox prefix2">
 						<h2>Mission</h2>
 						<p>
-							The mission of T9Hacks is to create a welcoming and safe place for women and marginalized students to explore hackathons.  Our goal is to create opportunity for newcomers to explore a hackathon environment while learning and solving compelling problems.  T9Hacks works towards this mission by creating women, gender-equality, creative technology, beginner, and other similar types of hackathons that support women and marginalized students.  T9hacks is open to all individuals and values all dimensions of gender identity.
+							The mission of T9Hacks is to create a welcoming and safe place for women and marginalized students to explore hackathons.  Our goal is to create opportunity for newcomers to explore a hackathon environment while learning and solving compelling problems.  T9Hacks works towards this mission by creating women, gender-equality, creative technology, beginner, and other similar types of hackathons that support women and marginalized students.  T9hacks is open to everyone and values all dimensions of gender identity.
 						</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="column12 shadowBox">
+					<div class="column8 shadowBox prefix2">
 						<h2>What does T9Hacks stand for?</h2>
 						<p>
 							T9 stands for Title IX, the ninth title of the United States Education Amendments of 1972 which states:
@@ -574,10 +438,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="column12 shadowBox">
+					<div class="column8 shadowBox prefix2">
 						<h2 class="white">Code of Conduct</h2>
 						<p>
-							At T9Hacks, we believe in creating a safe and welcoming environment for everyone.  Everyone onvolved at our events&mdash;from our organizers to the participants&mdash;follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
+							At T9Hacks, we believe in creating a safe and welcoming environment for everyone.  Everyone involved at our events&mdash;from the organizers to the participants&mdash;follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
 						</p>
 					</div>
 				</div>
@@ -598,15 +462,18 @@
 			<div class="container">
 
 				<div class="row">
-					<div class="column4 location">
-		                <p>
-		                	<span class="fa fa-map-marker"></span>
-		                	<span class="text">
-		                		<a href="http://www.colorado.edu/" target="_blank">University of Colorado Boulder</a>
-		                		<br/>
-		                		<a href="http://atlas.colorado.edu/" target="_blank">ATLAS Institute</a>
-		                	</span>
-		                </p>
+					<div class="column4">
+						<div class="location text-left">
+			                <p>
+			                	<span class="text">
+									Feb 25-26, 2017
+									<br/>
+			                		<a href="http://www.colorado.edu/" target="_blank">University of Colorado Boulder</a>
+			                		<br/>
+			                		<a href="http://atlas.colorado.edu/" target="_blank">ATLAS Institute</a>
+			                	</span>
+			                </p>
+						</div>
 					</div>
 					<div class="column4">
 						<ul class="socialButtons">
@@ -626,23 +493,26 @@
 								<a href="https://t9hacks.slack.com" target="_blank"><i class="fa fa-slack"></i></a>
 							</li>
 						</ul>
-						<div class="socialSharing">
-							<ul class="shareBtns">
-								<li class="fb">
-									<div class="fb-share-button" data-href="http://t9hacks.org/" data-layout="button_count"></div>
-								</li>
-								<li>
-									<a href="https://twitter.com/intent/tweet?button_hashtag=T9Hacks&text=Design.%20Build.%20Create.%20%40T9Hacks%2C%20a%20women's%20hackathon%20promoting%20gender%20diversity%20in%20tech%20%40cuatlas%20Feb%2020-21" class="twitter-hashtag-button" data-related="Koscida" data-url="http://www.t9hacks.org">Tweet #T9Hacks</a>
-									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<!--
+						<ul class="socialLinks">
+							<li class="fb">
+								<div class="fb-share-button" data-href="http://t9hacks.org/" data-layout="button_count"></div>
+							</li>
+							<li>
+								<a href="https://twitter.com/intent/tweet?button_hashtag=T9Hacks&text=Design.%20Build.%20Create.%20%40T9Hacks%2C%20a%20women's%20hackathon%20promoting%20gender%20diversity%20in%20tech%20%40cuatlas%20Feb%2020-21" class="twitter-hashtag-button" data-related="Koscida" data-url="http://www.t9hacks.org">Tweet #T9Hacks</a>
+								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-								</li>
-							</ul>
-						</div>
+							</li>
+						</ul>
+						-->
 					</div>
 					<div class="column4">
-						<div class="copyright">
-							<p>T9Hacks &nbsp;<i class="fa fa-copyright"></i>&nbsp; 2016</p>
-							<p>Made by T9 Hackers</p>
+						<div class="copyright text-right">
+							<p>
+								T9Hacks &nbsp;<i class="fa fa-copyright"></i>&nbsp; 2016
+								<br/>
+								Made by T9 Hackers
+							</p>
 						</div>
 					</div>
 				</div>
@@ -667,15 +537,6 @@
 	<script src="plugins/agency/js/agency.js"></script>
 
 
-
-	<!-- Slideshow -->
-	<script src="js/slideshow_json.js"></script>
-	<script src="js/slideshow_process.js"></script>
-
-	<!-- Common JS -->
-	<script src="js/common.js"></script>
-
-
 	<!-- Google Analytics -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -698,9 +559,11 @@
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 
+
+<script src="js/common.js"></script>
 	<!-- Processing -->
 	<script src="js/p5.min.js"></script>
-	<script src="js/p5_animation.js"></script>
+	<script src="js/p5_animation_spring2017.js"></script>
 
 </body>
 </html>
