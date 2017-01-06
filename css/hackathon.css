@@ -65,7 +65,7 @@ ul {
 	ul li {
 		list-style-type: circle;
 	}
-	
+
 blockquote {
 	font-style: italic;
     font-size: 0.9em;
@@ -204,7 +204,7 @@ span.icon-bar {
 		margin-bottom: 0;
 	}
 
-	
+
 /* MLH Trust Badge */
 #mlh-trust-badge {
 	/* our styles */
@@ -223,7 +223,7 @@ span.icon-bar {
 #mlh-trust-badge img {
 	width: 80%;
 }
-	
+
 @media (max-width: 767px) {
 	.navigation_mobile {
 		display: block;
@@ -245,7 +245,7 @@ span.icon-bar {
 			float: none;
 		}
 		nav li a {}
-			
+
 	#mlh-trust-badge {
 		display: none;
 	}
@@ -310,6 +310,9 @@ footer a {
 .socialLinks li {
 	margin: 0 5px;
 }
+	.fb_iframe_widget span {
+		vertical-align: top !important;
+	}
 
 
 @media (max-width: 767px) {
@@ -371,7 +374,7 @@ footer a {
 .faq_question {
 	padding: 15px;
 	margin-bottom: 20px;
-	
+
 	-webkit-column-break-inside: avoid;
 	page-break-inside: avoid;
     break-inside: avoid;
