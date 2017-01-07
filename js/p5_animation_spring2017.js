@@ -1,15 +1,3 @@
-/*
- * TODO:
- * - change color of circles, so they aren't all the same shade
- * - add a decleration speed, so when the mouse is hovering over
- * 		circle and moves out, the circle keeps moving in that
- * 		direction, and slowly slows down
- * - change speeds of circles so they aren't as slow
- * 		- change speeds of circles based on location of page?
- * - change size of canvas when window resizes
- *
- */
-
 // canvas info
 var canvasID = "backgroundAnimationCanvas";
 var canvasParentID = "backgroundAnimationParent";
@@ -110,7 +98,7 @@ var randomColors = [
 	[54, 18,  88], [55, 21, 101], [60, 25,  96], [59, 30,  93], [69, 26,  96],
 
 	[64, 32,  98], [60, 32, 101], [64, 26,  96], [65, 23,  95], [53, 35, 101],
-	[58, 26,  95], [54, 30,  96], [62, 26,  87], [51, 17,  92], [51, 19, 104],
+	[58, 26,  95], [54, 30,  96], [62, 26,  87], [55, 20,  92], [55, 33, 104],
 
 	[63, 19,  94], [64, 23,  95], [51, 19,  98], [61, 25,  94], [62, 27,  90],
 	[70, 30,  98], [55, 25,  94], [65, 36,  86], [56, 20,  99], [57, 36, 101],
@@ -119,7 +107,7 @@ var randomColors = [
 	[68, 25, 103], [57, 18,  91], [66, 21, 100], [54, 22,  92], [53, 34, 101],
 
 	[61, 32,  93], [63, 24,  91], [54, 30,  96], [65, 23,  95], [68, 32,  87],
-	[66, 21, 102], [51, 17,  92], [65, 22, 103], [53, 20,  89], [55, 34,  86]
+	[66, 21, 102], [61, 20,  92], [65, 22, 103], [53, 20,  89], [55, 34,  86]
 ];
 var randomColorSpeeds = [
 	[ 0.3,  0.3,  0.3], [ 0.3, -0.3,  0.3], [ 0.3, -0.3, -0.3], [ 0.3, -0.3, -0.3], [-0.3, -0.3,  0.3],
@@ -134,7 +122,8 @@ var randomColorSpeeds = [
 	[-0.3,  0.3, -0.3], [ 0.3,  0.3,  0.3], [-0.3, -0.3,  0.3], [-0.3, -0.3, -0.3], [ 0.3,  0.3, -0.3],
 	[-0.3,  0.3,  0.3], [ 0.3,  0.3, -0.3], [-0.3, -0.3,  0.3], [ 0.3, -0.3, -0.3], [-0.3, -0.3, -0.3],
 
-	[-0.3, -0.3, -0.3], [-0.3,  0.3,  0.3], [-0.3, -0.3,  0.3], [-0.3, -0.3, -0.3], [ 0.3, -0.3, -0.3], [-0.3, -0.3, -0.3], [ 0.3, -0.3,  0.3], [ 0.3,  0.3, -0.3], [-0.3, -0.3, -0.3], [ 0.3,  0.3,  0.3]
+	[-0.3, -0.3, -0.3], [-0.3,  0.3,  0.3], [-0.3, -0.3,  0.3], [-0.3, -0.3, -0.3], [ 0.3, -0.3, -0.3], 
+	[-0.3, -0.3, -0.3], [ 0.3, -0.3,  0.3], [ 0.3,  0.3, -0.3], [-0.3, -0.3, -0.3], [ 0.3,  0.3,  0.3]
 ];
 
 var randomColorSpeeds2 = [
@@ -168,11 +157,6 @@ function setup() {
 	canvas.parent(canvasParentID);
 
 
-	// background
-	//background(backgroundRed, backgroundGreen, backgroundBlue);
-	//background(255);
-
-
 	// attributes
 	noStroke();
 	frameRate(60);
@@ -196,9 +180,6 @@ function setup() {
 				r: randomColors[i][0],
 				g: randomColors[i][1],
 				b: randomColors[i][2]
-				//r: Math.floor(Math.random() * (redMax-redMin)) + redMin,
-				//g: Math.floor(Math.random() * (greenMax-greenMin)) + greenMin,
-				//b: Math.floor(Math.random() * (blueMax-blueMin)) + blueMin,
 			},
 			colorSpeeds	: {
 				r: randomColorSpeeds2[i][0],
