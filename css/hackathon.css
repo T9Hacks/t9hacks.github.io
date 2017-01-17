@@ -38,11 +38,14 @@ h1 {
 	text-align: center;
 	margin-bottom: 30px;
 	}
-h2 { font-size: 1.5em; line-height: 1.5em; }
+h2 { font-size: 2.25em; line-height: 1.5em; margin-bottom: 20px;}
 
 p {
 	margin-bottom: 10px;
     line-height: 1.75;
+}
+p.large {
+	font-size: 1.8em;
 }
 
 a {
@@ -57,6 +60,11 @@ a:hover, a:focus, a:active {
 	color: #777;
 	border-color: #777;
 	outline: 0;
+}
+b {
+	font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-style: italic;
 }
 
 ul {
@@ -77,6 +85,7 @@ blockquote {
     color: white;
     padding: 20px 30px;
     border: 0;
+	display: inline-block;
 }
 .btn:hover, .btn:active, .btn:focus {
 	background: #331155;
@@ -87,13 +96,26 @@ blockquote {
 .shadowBox {
 	background: rgba(255, 255, 255, 0.35);
 }
-.container.shadowBox {
-	padding: 40px;
-}
+	.shadowBox.text {
+		padding: 40px;
+	}
+		.shadowBox.text p {
+			margin-bottom: 20px;
+		}
+	.container.shadowBox {
+		padding: 40px;
+	}
 @media (max-width: 767px) {
+	.shadowBox.text {
+		padding: 20px;
+	}
 	.container.shadowBox {
 		padding: 20px;
 	}
+}
+
+.gap {
+	padding-top: 80px;
 }
 
 
@@ -383,6 +405,45 @@ footer a {
 
 
 
+/* ******************************************** */
+/*					Registration				*/
+/* ******************************************** */
+.callToAction {
+	-webkit-animation:	color-change 4s infinite;
+    -moz-animation:		color-change 4s infinite;
+    -o-animation:		color-change 4s infinite;
+    -ms-animation:		color-change 4s infinite;
+    animation:			color-change 4s infinite;
+}
+
+/*@-webkit-keyframes color-change {
+    0% { color: #5AB8E2; }
+    50% { color: #331155; }
+    100% { color: #5AB8E2; }
+}
+@-moz-keyframes color-change {
+    0% { color: #5AB8E2; }
+    50% { color: #331155; }
+    100% { color: #5AB8E2; }
+}
+@-ms-keyframes color-change {
+    0% { color: #5AB8E2; }
+    50% { color: #331155; }
+    100% { color: #5AB8E2; }
+}
+@-o-keyframes color-change {
+    0% { color: #5AB8E2; }
+    50% { color: #331155; }
+    100% { color: #5AB8E2; }
+}*/
+@keyframes color-change {
+    0% { color: #315; }
+    50% { color: #3A98C2; }
+    100% { color: #315; }
+}
+
+
+
 
 /* ******************************************** */
 /*					Schedule					*/
@@ -469,3 +530,7 @@ footer a {
 			padding: 20px;
 		}
 	}
+
+
+
+
