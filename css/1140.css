@@ -2,7 +2,7 @@
  * 1140 - The lite 1140px resoponsive framework
  * URI: http://kodestudios.com/code/1140.css
  * 
- * Version: 2.5 | 2016-12-22
+ * Version: 2.6 | 2017-01-19
  * 
  * License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
  * License URI: https://creativecommons.org/licenses/by-nc/4.0/
@@ -235,13 +235,13 @@ figure img
     .container16 .column15, .container16 .column15.alpha, .container16 .column15.beta, .container16 .column15.omega,
     .container16 .column16, .container16 .column16.alpha, .container16 .column16.beta, .container16 .column16.omega
 	{
-        margin: 0 1% 20px;
-        width: 98%;
+        margin: 0 0 20px;
+        width: 100%;
     }
     .prefix1, .prefix2, .prefix3, .prefix4, .prefix5, .prefix6, .prefix7, .prefix8, .prefix9, .prefix10, .prefix11, 
     .container12 .prefix1, .container12 .prefix2, .container12 .prefix3, .container12 .prefix4, .container12 .prefix5, .container12 .prefix6, .container12 .prefix7, .container12 .prefix8, .container12 .prefix9, .container12 .prefix10, .container12 .prefix11, 
     .container16 .prefix1, .container16 .prefix2, .container16 .prefix3, .container16 .prefix4, .container16 .prefix5, .container16 .prefix6, .container16 .prefix7, .container16 .prefix8, .container16 .prefix9, .container16 .prefix10, .container16 .prefix11, .container16 .prefix12, .container16 .prefix13, .container16 .prefix14, .container16 .prefix15 
-    	{ padding-left: 1%; }
+    	{ padding-left: 0; }
     .row { margin: 0; }
 }
 

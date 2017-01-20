@@ -152,53 +152,56 @@ function setup() {
 	canvasHeight = window.innerHeight;
 	//console.log(canvasWidth + " - " + canvasHeight);
 
-	canvas = createCanvas(canvasWidth, canvasHeight);
-	canvas.id(canvasID);
-	canvas.parent(canvasParentID);
+	if(canvasWidth >= 767) {
+		canvas = createCanvas(canvasWidth, canvasHeight);
+		canvas.id(canvasID);
+		canvas.parent(canvasParentID);
 
 
-	// attributes
-	noStroke();
-	frameRate(60);
-	fill(61, 27, 95, 175);
+		// attributes
+		noStroke();
+		frameRate(60);
+		fill(61, 27, 95, 175);
 
-	numberBursts = Math.floor( (canvasWidth*canvasHeight)/burstsRatio );
-	//console.log(numberBursts);
+		numberBursts = Math.floor( (canvasWidth*canvasHeight)/burstsRatio );
+		//console.log(numberBursts);
 
-	for(var i=0; i<numberBursts; i++) {
-		newBurst = {
-			diameter : randomDiameters[i],
-			position : {
-				x: random() * canvasWidth,
-				y: random() * canvasHeight
-			},
-			positionSpeeds : {
-				x: randomPositionSpeeds2[i][0],
-				y: randomPositionSpeeds2[i][1]
-			},
-			color : {
-				r: randomColors[i][0],
-				g: randomColors[i][1],
-				b: randomColors[i][2]
-			},
-			colorSpeeds	: {
-				r: randomColorSpeeds2[i][0],
-				g: randomColorSpeeds2[i][1],
-				b: randomColorSpeeds2[i][2]
+		for(var i=0; i<numberBursts; i++) {
+			newBurst = {
+				diameter : randomDiameters[i],
+				position : {
+					x: random() * canvasWidth,
+					y: random() * canvasHeight
+				},
+				positionSpeeds : {
+					x: randomPositionSpeeds2[i][0],
+					y: randomPositionSpeeds2[i][1]
+				},
+				color : {
+					r: randomColors[i][0],
+					g: randomColors[i][1],
+					b: randomColors[i][2]
+				},
+				colorSpeeds	: {
+					r: randomColorSpeeds2[i][0],
+					g: randomColorSpeeds2[i][1],
+					b: randomColorSpeeds2[i][2]
+				}
 			}
+			burstsArray.push(newBurst);
 		}
-		burstsArray.push(newBurst);
-	}
 
+	}
 };
 
 function draw() {
-	background(255);
+	if(canvasWidth >= 767) {
+		background(255);
 
-	for(var i=0; i<numberBursts; i++) {
-		drawBurst(burstsArray[i]);
+		for(var i=0; i<numberBursts; i++) {
+			drawBurst(burstsArray[i]);
+		}
 	}
-
 };
 
 

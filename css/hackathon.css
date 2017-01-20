@@ -23,7 +23,7 @@ Pink:			#FFEAF0
 }
 body, html {
 	font-family: "Raleway", Helvetica, sans-serif;
-	font-size: 18px;
+	font-size: 22px;
 	line-height: 1.5em;
 	background: #fff;
 	color: #331155;
@@ -33,19 +33,20 @@ h1, h2, h3, h4 {
 	font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
 }
 h1 {
-	font-size: 5em;
+	font-size: 4.5em;
 	line-height: 1.5em;
 	text-align: center;
 	margin-bottom: 30px;
 	}
-h2 { font-size: 2.25em; line-height: 1.5em; margin-bottom: 20px;}
+h2 { font-size: 2em; line-height: 1.5em; margin-bottom: 20px;}
+h3 { font-size: 1.7em; line-height: 1.5em; margin-bottom: 20px;}
 
 p {
 	margin-bottom: 10px;
-    line-height: 1.75;
+    line-height: 1.5;
 }
 p.large {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 a {
@@ -86,6 +87,7 @@ blockquote {
     padding: 20px 30px;
     border: 0;
 	display: inline-block;
+	text-align: center;
 }
 .btn:hover, .btn:active, .btn:focus {
 	background: #331155;
@@ -94,10 +96,11 @@ blockquote {
 
 
 .shadowBox {
-	background: rgba(255, 255, 255, 0.35);
+	background: rgba(255, 255, 255, 0.7);
 }
 	.shadowBox.text {
 		padding: 40px;
+		text-align: left;
 	}
 		.shadowBox.text p {
 			margin-bottom: 20px;
@@ -105,17 +108,25 @@ blockquote {
 	.container.shadowBox {
 		padding: 40px;
 	}
+
+.gap {
+	padding-top: 80px;
+}
+
+
 @media (max-width: 767px) {
+	body, html {
+		font-size: 18px;
+	}
+	h1 {
+		font-size: 3em;
+	}
 	.shadowBox.text {
 		padding: 20px;
 	}
 	.container.shadowBox {
 		padding: 20px;
 	}
-}
-
-.gap {
-	padding-top: 80px;
 }
 
 
@@ -182,7 +193,7 @@ hr {
 		color: #fff;
 	    padding: 15px 30px;
 		line-height: 20px;
-		font-size: .8em;
+		font-size: .7em;
 		border-bottom: 0;
 	}
 		nav li a:hover, nav li a:active, nav li a:focus {
@@ -290,7 +301,14 @@ footer {
 footer a {
 	border-bottom: white;
 }
-
+@media (min-width: 767px) { /* big screens */
+	footer .location {
+		text-align: left;
+	}
+	footer .copyright {
+		text-align: right;
+	}
+}
 
 
 
@@ -336,7 +354,6 @@ footer a {
 		vertical-align: top !important;
 	}
 
-
 @media (max-width: 767px) {
 	.socialButtons, .socialLinks {
 		float: left;
@@ -344,6 +361,20 @@ footer a {
 }
 
 
+
+
+/* ******************************************** */
+/*					Animation					*/
+/* ******************************************** */
+@media (max-width: 767px) {
+	.backgroundAnimationParent {
+		display: none;
+		margin-left: -90000px;
+	}
+	#page {
+		background: #5AB8E2;
+	}
+}
 
 
 
@@ -354,7 +385,7 @@ footer a {
 	text-align: center;
 }
 .header_title {
-	font-size: 18em;
+	font-size: 15em;
 	line-height: 1em;
 }
 #home p {
@@ -362,7 +393,7 @@ footer a {
 }
 @media (max-width: 767px) {
 	.header_title {
-		font-size: 10em;
+		font-size: 5em;
 	}
 }
 
@@ -371,16 +402,41 @@ footer a {
 /* **************************************** */
 /*					About					*/
 /* **************************************** */
-#about {
-}
-.about_text {
+.introText {
+	font-size: 1.5em;
+	font-family: "Rajdhani";
 	text-align: center;
 	padding: 40px;
 }
-@media (max-width: 767px) {
-	.about_text {
-		padding: 20px;
+
+
+#about h2 { margin-top: 40px; }
+	h2 .fa {
+		font-size: 1.8em;
+		margin-right: 20px
 	}
+	h2 .fa + span {
+		line-height: 1.8em;
+		vertical-align: top;
+	}
+#about h3 { margin-bottom: 0; }
+.def {
+	border: 3px solid #AA88AA;
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto 20px;
+    text-align: center;
+    border-top: 0;
+    border-bottom: 0;
+}
+.cols .fa {
+	text-align: center;
+	display: block;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+	
 }
 
 
@@ -460,7 +516,11 @@ footer a {
 .schedule div {
 	padding: 5px;
 }
-
+@media (max-width: 767px) {
+	.schedule .column4 {
+		margin-bottom: 0;
+	}
+}
 
 
 
@@ -512,6 +572,11 @@ footer a {
 	height: 175px;
 }
 
+@media (max-width: 767px) {
+	.sponsor {
+		float: none;
+	}
+}
 
 
 /* ****************************************** */
