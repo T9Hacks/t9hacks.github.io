@@ -163,8 +163,10 @@ function setup() {
 		frameRate(60);
 		fill(61, 27, 95, 175);
 
-		numberBursts = Math.floor( (canvasWidth*canvasHeight)/burstsRatio );
+		var totalPixels = canvasWidth*canvasHeight;
+		numberBursts = Math.floor( (totalPixels)/burstsRatio );
 		//console.log(numberBursts);
+		
 
 		for(var i=0; i<numberBursts; i++) {
 			newBurst = {
@@ -189,6 +191,7 @@ function setup() {
 				}
 			}
 			burstsArray.push(newBurst);
+			
 		}
 
 	}
