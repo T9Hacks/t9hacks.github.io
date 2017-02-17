@@ -149,6 +149,9 @@ blockquote {
 	z-index: 1;
 	width: 100%;
 }
+	#page.schedule {
+		background-color: #AA88AA;
+	}
 section {
 	padding: 100px 0;
 }
@@ -318,6 +321,7 @@ footer a {
 .socialButtons, .socialLinks {
 	list-style-type: none;
 	margin-left: 0;
+	text-align: center;
 }
 .socialButtons li, .socialLinks li {
 	display: inline-block;
