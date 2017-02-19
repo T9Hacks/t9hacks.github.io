@@ -525,6 +525,10 @@ footer a {
 		margin-bottom: 0;
 	}
 }
+#detailedSchedule div {
+    /* display: block; */
+    overflow: hidden;
+}
 
 
 
