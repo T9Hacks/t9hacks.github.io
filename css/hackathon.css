@@ -11,6 +11,11 @@ html, body {
 	background: rgba(255, 255, 255, 0.7);
 	padding: 40px;
 }
+@media (max-width: 1024px) {
+	.shadowBox {
+		padding: 10px;
+	}
+}
 
 h1 {
 	font-size: 8em;
@@ -19,6 +24,14 @@ h1 {
 	color: #fff;
 	font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
 }
+@media (max-width: 1024px) {
+	h1 {
+		color: #331155;
+		font-size: 3em;
+		margin: 20px 0 0 0;
+	}
+}
+
 
 p {
 	margin-bottom: 10px;
