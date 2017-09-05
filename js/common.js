@@ -17,9 +17,9 @@ if( window.innerWidth > 1024 ) {
 		"http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",	/// easing - for nagivation
 		"plugins/agency/js/agency.js",
 		
-		"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js",				/// p5
-		"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js",		/// p5 DOM
-		"js/p5_fall_2017.js",															/// T9Hacks p5 js
+		//"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.min.js",				/// p5
+		//"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js",		/// p5 DOM
+		//"js/p5_fall_2017.js",															/// T9Hacks p5 js
 	);
 }
 

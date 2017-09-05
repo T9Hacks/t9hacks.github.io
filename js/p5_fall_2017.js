@@ -1,4 +1,5 @@
 var canvas;
+var background_r, background_g, background_b;
 var i, r, g, b;
 
 function preload() {
@@ -9,7 +10,10 @@ function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.id('p5Container');
 	
-	background(32, 19, 65);
+	background_r = 169;
+	background_g = 145;
+	background_b = 232;
+	background(background_r, background_g, background_b);
 	strokeWeight(20);
 	frameRate(1);
 	
@@ -18,9 +22,9 @@ function setup() {
 
 function draw() {
 	for (i = 0; i < width; i++) {
-		r = random(32, 42);
-		g = random(19, 29);
-		b = random(65, 75);
+		r = random(background_r, background_r+10);
+		g = random(background_g, background_g+10);
+		b = random(background_b, background_b+10);
 		
 		stroke(r, g, b);
 		line(i, 0, i, height);
