@@ -105,12 +105,21 @@ blockquote {
 }
 #registration { /* green */
 	background: #A2E891;
+	background-image: url("../images/green.png");
+	background-repeat: repeat;
+	background-position: center;
 }
 #faq { /* yellow */
 	background: #FFEDAE;
+	background-image: url("../images/yellow.png");
+	background-repeat: repeat;
+	background-position: center;
 }
 #schedule { /* pink */
 	background: #FFB4BB;
+	background-image: url("../images/pink.png");
+	background-repeat: repeat;
+	background-position: center;
 }
 @media (max-width: 1024px) {
 	#home {
