@@ -1,3 +1,11 @@
+/*
+	purple	#A991E8
+	blue 	#ACF7FF
+	green 	#A2E891
+	yellow 	#FFEDAE
+	pink 	#FFB4BB
+*/
+
 html, body {
 	
 	font-family: "Raleway", Helvetica, sans-serif;
@@ -21,6 +29,10 @@ html, body {
 	.shadowBox {
 		padding: 10px;
 	}
+	.sectionShadowBox {
+		padding: 10px;
+		margin: 20px 0;
+	}
 }
 
 h1 {
@@ -30,10 +42,6 @@ h1 {
 	color: #fff;
 	font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
 }
-	#home h1 {
-		line-height: 1em;
-		margin: 0;
-	}
 h2 {
 	font-size: 6em;
 	line-height: 1.5em;
@@ -48,8 +56,10 @@ h2 {
 		color: #fff; 
 	}
 h3 {
+	font-size: 1.3em;
 	line-height: 1.5em;
-	margin: 20px 0 10px;
+	margin: 30px 0 10px;
+	text-align: center;
 }
 	#home h3 {
 		font-size: 1.2em;
@@ -58,9 +68,12 @@ h3 {
 	}
 @media (max-width: 1024px) {
 	h1 {
-		color: #331155;
-		font-size: 3em;
+		font-size: 4em;
 		margin: 20px 0 0 0;
+	}
+	h2 {
+		font-size: 3em;
+		margin: 0;
 	}
 }
 
@@ -89,6 +102,23 @@ blockquote {
     font-size: 0.9em;
     margin-bottom: 10px;
 }
+
+.btn {
+	width: 150px;
+	padding: 20px 30px;
+	margin: 20px auto;
+	background: #A991E8;
+	color: white;
+	border: 0;
+	display: block;
+	text-align: center;
+}
+.btn:hover, .btn:active, .btn:focus {
+	background: #8971C8;
+	color: white;
+}
+
+
 
 #home, #sponsors { /* purple */
 	background: #A991E8;
@@ -180,6 +210,7 @@ blockquote {
 @media (max-width: 767px) {
 	.sponsor {
 		float: none;
+		margin: 5px;
 	}
 }
 
