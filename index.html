@@ -35,8 +35,34 @@
 <body>
 	
 	<!--This is the stuff you are going to add-->
-        <div class=nncontainer style=color:#2b2b2b;background-color:#ff0;padding:10px;font-size:16px;line-height:26px;font-family:arial,sans-serif;position:fixed;z-index:9999;bottom:0;left:0;right:0><div class=nnsubcontainer style="padding:10px;border:4px solid #555"><p>On Dec 14th, the FCC is going to kill the open internet, and end net neutrality. There will be nothing to stop Internet Service Providers like Comcast and Verizon from charging us extra fees to access the online content we want -- or throttling, blocking, and censoring websites and apps.<p>This affects every every Internet user, and we only have a 48 hours left to stop it. Contact lawmakers now and tell them not to destroy net neutrality!<p>Please, take a moment of your time to <a href=https://www.battleforthenet.com/breaktheinternet/ style=text-decoration:none;color:#fff;background-color:#2b2b2b;padding:5px;font-weight:700;text-transform:uppercase>join the protest</a> and <a href=https://www.battleforthenet.com style=text-decoration:none;color:#fff;background-color:#2b2b2b;padding:5px;font-weight:700;text-transform:uppercase>contact Congress</a> to save net neutrality.</div></div>
-
+        <div id="nncontainer">
+			<div id="nnsubcontainer">
+				<p>
+					On Dec 14th, the FCC just voted to gut net neutrality rules, letting Internet providers like Verizon and Comcast control what we can see and do online. There is nothing to stop Internet Service Providers from charging us extra fees to access the online content we want -- or throttling, blocking, and censoring websites and apps.
+				</p>
+				<p>
+					This affects every every Internet user and we can still get Congress to stop this—by passing a "Resolution of Disapproval" to overturn the FCC vote. We can win. Write and call Congress now!
+				</p>
+				<p>
+					Please, take a moment of your time to <a href=https://www.battleforthenet.com/breaktheinternet/ class="nnbtn" target="_blank">join the protest</a> and <a href=https://www.battleforthenet.com class="nnbtn" target="_blank">contact Congress</a> to save net neutrality.
+				</p>
+				<a id="nnbtnclose" class="mobileOnly">(X) Close</a>
+			</div>
+		</div>
+		<script>
+			window.onload = function(){
+				document.getElementById('nnbtnclose').onclick = function(e) {
+				    /*e = e || event
+					var target = e.target || e.srcElement
+					// variable target has your clicked element
+				    innerId = target.id;
+				    //  do your stuff here. */
+					document.getElementById("nncontainer").style.display = "none";
+					return false;
+				}
+			}
+		</script>
+		<!--This is the end of the stuff you are going to add-->
 	
 	<header></header>
 	

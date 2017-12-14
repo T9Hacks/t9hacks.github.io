@@ -118,6 +118,15 @@ blockquote {
 	color: white;
 }
 
+.mobileOnly {
+	display: none !important;
+}
+@media (max-width: 1024px) {
+	.mobileOnly {
+		display: block !important;
+	}
+}
+
 
 
 #home, #sponsors { /* purple */
@@ -285,4 +294,48 @@ footer a {
 	.socialButtons, .socialLinks {
 		float: left;
 	}
+}
+
+
+#nncontainer {
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    font-size: 16px;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#nnsubcontainer {
+    padding: 10px;
+    border: 4px solid #555;
+    overflow: hidden;
+}
+#nnsubcontainer p {
+    width: 50%;
+    display: inline-block;
+    float: left;
+	text-align: left;
+}
+.nnbtn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FB4F58;
+    padding: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+}
+	.nnbtn:hover, .nnbtn:focus, .nnbtn:active {
+	    color: white;
+		background-color: #DB2F38;
+	}
+#nnbtnclose {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+    display: inline;
 }
