@@ -340,3 +340,12 @@ footer a {
     text-align: right;
     display: inline;
 }
+@media (max-width: 767px) {
+	#nncontainer {
+		font-size: 16px;
+	}
+	#nnsubcontainer p {
+	    width: 100%;
+	    margin: 0 0 10px;
+	}
+}
