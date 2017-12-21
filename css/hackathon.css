@@ -166,6 +166,10 @@ blockquote {
 	}
 }
 
+.hide {
+	display: none;
+}
+
 
 
 
