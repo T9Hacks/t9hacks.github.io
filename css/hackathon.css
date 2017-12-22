@@ -1,5 +1,5 @@
 /*
-	purple	#A991E8
+	purple	#A991E8		#594198
 	blue 	#ACF7FF
 	green 	#A2E891
 	yellow 	#FFEDAE
@@ -22,7 +22,7 @@ html, body {
 	.sectionShadowBox {
 		background: rgba(255, 255, 255, 0.7);
 		padding: 40px;
-		margin: 40px 0;
+		margin: 0;
 		text-align: left;
 	}
 @media (max-width: 1024px) {
@@ -121,11 +121,18 @@ blockquote {
 .mobileOnly {
 	display: none !important;
 }
+.largeOnly {
+	display: block;
+}
 @media (max-width: 1024px) {
 	.mobileOnly {
 		display: block !important;
 	}
+	.largeOnly {
+		display: none !important;
+	}
 }
+
 
 
 
@@ -136,7 +143,7 @@ blockquote {
 	background-position: center;
 }
 	#home { padding: 50px; }
-#about, #inclusion { /* blue */
+#about, #mission { /* blue */
 	background: #ACF7FF;
 	background-image: url("../images/blue.png");
 	background-repeat: repeat;
@@ -160,15 +167,165 @@ blockquote {
 	background-repeat: repeat;
 	background-position: center;
 }
+footer {
+	background: #594198;
+}
 @media (max-width: 1024px) {
 	#home {
-		padding: 0px;
+		padding: 50px;
 	}
 }
 
 .hide {
 	display: none;
 }
+
+
+
+
+/* ********************************************** */
+/*	  				Navigation					  */
+/* ********************************************** */
+section {
+	padding-top: 50px; /* added on to leave room for nav at all times */
+}
+#navigation {
+	z-index: 2;
+	background: #594198;
+	position: fixed;
+	width: 100%;
+}
+
+#navigation_large {
+	height: 50px;
+	-webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+	nav ul {
+		padding: 0;
+		display: inline-block;
+	}
+	nav li {
+		list-style-type: none;
+		display: inline-block;
+		float: left;
+	}
+	nav li a {
+    	display: block;
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #fff;
+	    padding: 15px 30px;
+		line-height: 20px;
+		font-size: .7em;
+		border-bottom: 0;
+	}
+		nav li a:hover, nav li a:active, nav li a:focus {
+			color: #5AB8E2;
+		}
+	nav .brand a {
+		padding: 10px 20px;
+		margin: 0;
+	}
+		nav .brand img {
+			height: 30px;
+			width: 37px;
+		}
+
+.navigation_mobile {
+	display: none;
+}
+.navigation_mobile button {
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border: 0;
+	padding: 0;
+	margin: 5px 0;
+	float: right;
+}
+	.brandMobile {
+		display: inline-block;
+		text-align: left;
+		float: left;
+		height: 50px;
+	}
+	.brandMobile a {
+	    height: 30px;
+	    padding: 10px 20px 10px 0;
+	    display: inline-block;
+	    float: left;
+	    line-height: 30px;
+	}
+span.icon-bar {
+    background: white;
+    width: 100%;
+    height: 6px;
+    display: block;
+    margin-bottom: 6px;
+}
+	span.icon-bar:last-child {
+		margin-bottom: 0;
+	}
+
+
+/* MLH Trust Badge */
+#mlh-trust-badge {
+	/* our styles */
+	position: fixed;
+	top: 0;
+	right: 15px;
+	max-width:100px;
+	min-width:60px;
+	width:10%;
+	display: block;
+	z-index: 10000;
+	border: 0;
+
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+	transition: all .3s;
+}
+#mlh-trust-badge img {
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	nav li a {
+    	padding: 15px 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.navigation_mobile {
+		display: block;
+	}
+	#navigation_large {
+		display: none;
+		position: absolute;
+		top: 50px;
+		background: #7961B8;
+		height: auto;
+		left: 0;
+		width: 100%;
+	}
+		#navigation_large ul {
+			display: block;
+		}
+		#navigation_large li {
+			display: block;
+			float: none;
+			border-bottom: 1px solid #594198;
+		}
+		#navigation_large li a {}
+
+	#mlh-trust-badge {
+		display: none;
+	}
+}
+
+
+
 
 
 
@@ -234,8 +391,8 @@ blockquote {
 /*					Footer					*/
 /* **************************************** */
 footer {
-	background-color: #A991E8;
 	padding: 30px 0;
+	color: white;
 }
 footer a {
 	border-bottom: white;

@@ -99,3 +99,33 @@ ga('send', 'pageview');
 /* 
  * END GOOGLE ANALYTICS
  */
+ 
+ 
+ 
+/* 
+*  MOBILE NAVIGATION
+*/
+var navOpen = false;
+document.getElementById('nav_icon').addEventListener("click", navToggle, false);
+var scrolls = document.getElementsByClassName("page-scroll");
+for (var i = 0; i < scrolls.length; i++) {
+    scrolls[i].addEventListener('click', navClose, false);
+}
+function navToggle() {
+	var nav = document.getElementById('navigation_large');
+	if(navOpen) {
+		navClose();
+    }
+    else {
+        navOpen = true;
+        nav.style.display = 'block';
+    }
+}
+function navClose() {
+	var nav = document.getElementById('navigation_large');
+	navOpen = false;
+	nav.style.display = 'none';
+}
+/* 
+*  END MOBILE NAVIGATION
+*/

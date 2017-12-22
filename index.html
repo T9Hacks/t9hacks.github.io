@@ -34,44 +34,100 @@
 </head>
 <body>
 	
-	<!--This is the stuff you are going to add-->
-        <div id="nncontainer" class="hide">
-			<div id="nnsubcontainer">
-				<p>
-					On Dec 14th, the FCC voted to obliterate net neutrality rules, letting Internet providers like Verizon and Comcast control what we can see and do online.
-				</p>
-				<p>
-					There is nothing to stop Internet Service Providers from charging us extra fees to access the online content we want -- or throttling, blocking, and censoring websites and apps.
-				</p>
-				<p>
-					This affects every every Internet user and we can still get Congress to stop this—by passing a "Resolution of Disapproval" to overturn the FCC vote. We can win. Write and call Congress now!
-				</p>
-				<p>
-					Please, take a moment of your time to <a href=https://www.battleforthenet.com/breaktheinternet/ class="nnbtn" target="_blank">join the protest</a> and <a href=https://www.battleforthenet.com class="nnbtn" target="_blank">contact Congress</a> to fight for net neutrality.
-				</p>
-				<a id="nnbtnclose" class="mobileOnly">(X) Close</a>
-			</div>
+	<!-- Net Neutrality message -->
+    <div id="nncontainer" class="hide">
+		<div id="nnsubcontainer">
+			<p>
+				On Dec 14th, the FCC voted to obliterate net neutrality rules, letting Internet providers like Verizon and Comcast control what we can see and do online.
+			</p>
+			<p>
+				There is nothing to stop Internet Service Providers from charging us extra fees to access the online content we want -- or throttling, blocking, and censoring websites and apps.
+			</p>
+			<p>
+				This affects every every Internet user and we can still get Congress to stop this—by passing a "Resolution of Disapproval" to overturn the FCC vote. We can win. Write and call Congress now!
+			</p>
+			<p>
+				Please, take a moment of your time to <a href=https://www.battleforthenet.com/breaktheinternet/ class="nnbtn" target="_blank">join the protest</a> and <a href=https://www.battleforthenet.com class="nnbtn" target="_blank">contact Congress</a> to fight for net neutrality.
+			</p>
+			<a id="nnbtnclose" class="mobileOnly">(X) Close</a>
 		</div>
-		<script>
-			window.onload = function(){
-				document.getElementById('nnbtnclose').onclick = function(e) {
-				    /*e = e || event
-					var target = e.target || e.srcElement
-					// variable target has your clicked element
-				    innerId = target.id;
-				    //  do your stuff here. */
-					document.getElementById("nncontainer").style.display = "none";
-					return false;
-				}
+	</div>
+	<script>
+		window.onload = function(){
+			document.getElementById('nnbtnclose').onclick = function(e) {
+			    /*e = e || event
+				var target = e.target || e.srcElement
+				// variable target has your clicked element
+			    innerId = target.id;
+			    //  do your stuff here. */
+				document.getElementById("nncontainer").style.display = "none";
+				return false;
 			}
-		</script>
-	<!--This is the end of the stuff you are going to add-->
+		}
+	</script>
+	<!-- end Net Neutrality message -->
 	
 	<!-- Start MLH Badge -->
-	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;underline:none;border:0;" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=yellow" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/yellow.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+	<a id="mlh-trust-badge" target="_blank" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=blue">
+		<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg" alt="Major League Hacking 2017 Hackathon Season">
+	</a>
 	<!-- End MLH Badge -->
 	
 	<header></header>
+	
+	<!-- Navigation -->
+	<nav id="navigation">
+		<div class="container">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navigation_mobile">
+				<div class="brandMobile">
+					<ul>
+						<li>
+							<a class="page-scroll brand" href="#home">
+								<img src="images/logos/t9hacks_logo_white_100x82.png">
+							</a>
+							<a class="page-scroll brand" href="#home">
+								<span>T9Hacks</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button type="button" id="nav_icon">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navigation_large">
+				<ul>
+					<li class="active">
+						<a class="page-scroll" href="#about">About</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#registration">Participation</a>
+					</li>
+					<li class="brand largeOnly">
+						<a class="page-scroll" href="#home">
+							<img src="images/logos/t9hacks_logo_white_100x82.png">
+						</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#faq">FAQ</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#sponsors">Sponsors</a>
+					</li>
+					<li>
+						<a class="page-scroll" href="#mission">Mission</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+
+		</div><!-- /.container-fluid -->
+	</nav>
 	
 	<section id="home">
 		<div class="container12">
@@ -336,7 +392,7 @@
 	</section>
 	
 	
-	<section id="inclusion">
+	<section id="mission">
 		<div class="container12">
 			
 			<div class="row">
