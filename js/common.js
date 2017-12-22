@@ -109,7 +109,7 @@ var navOpen = false;
 document.getElementById('nav_icon').addEventListener("click", navToggle, false);
 var scrolls = document.getElementsByClassName("page-scroll");
 for (var i = 0; i < scrolls.length; i++) {
-    scrolls[i].addEventListener('click', navClose, false);
+    scrolls[i].addEventListener('click', navToggle, false);
 }
 function navToggle() {
 	var nav = document.getElementById('navigation_large');
