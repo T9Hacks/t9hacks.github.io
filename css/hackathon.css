@@ -5,6 +5,9 @@
 	yellow 	#FFEDAE		255, 237, 174
 	pink 	#FFB4BB		255, 180, 187
 */
+/* set btn colors */
+/* set normal (purple) btn */
+/* set white btn */
 html, body {
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 22px;
@@ -102,10 +105,9 @@ blockquote {
   margin-bottom: 10px; }
 
 .btn {
-  width: 150px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   margin: 20px auto;
-  display: block;
+  display: inline-block;
   cursor: pointer;
   background: linear-gradient(#A991E8 5%, #9981D8 100%) #A991E8;
   border: 1px solid #A991E8;
@@ -115,11 +117,26 @@ blockquote {
   text-decoration: none;
   text-shadow: #7961B8 0px 1px 0px; }
 
+.btnBig {
+  width: 150px;
+  padding: 20px 30px; }
+
+.btnWhite {
+  background: linear-gradient(white 5%, #F9E1FF 100%) white;
+  border-color: #F9E1FF;
+  color: #493188; }
+
 .btn:hover, .btn:active, .btn:focus {
   background: linear-gradient(#9981D8 5%, #8971C8 100%) #9981D8;
   border-color: #9981D8;
   color: white;
   text-shadow: #6951A8 0px 1px 0px; }
+
+.btnWhite:hover, .btnWhite:active, .btnWhite:focus {
+  background: linear-gradient(white 5%, #E9D1FF 100%) white;
+  border-color: #E9D1FF;
+  color: #291168;
+  text-shadow: #291168 0px 1px 0px; }
 
 .smallOnly {
   display: none !important; }

@@ -15,13 +15,25 @@ $colorPink: 		#FFB4BB;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 
-$btnColorLight2: 	white;
+/* set btn colors */
+$btnColorLight3: 	white;
+$btnColorLight2-4: 	#FFF1FF;
+$btnColorLight2-3: 	#F9E1FF;
+$btnColorLight2-2: 	#E9D1FF;
+$btnColorLight2-1: 	#D9C1FF;
+$btnColorLight2: 	#C9B1FF;
 $btnColorLight1: 	#B9A1F8;
 $btnColorMain: 		#A991E8;
 $btnColorDark1: 	#9981D8;
 $btnColorDark2: 	#8971C8;
 $btnColorDark3: 	#7961B8;
 $btnColorDark4: 	#6951A8;
+$btnColorDark5: 	#594198;
+$btnColorDark6: 	#493188;
+$btnColorDark7: 	#392178;
+$btnColorDark8: 	#291168;
+$btnColorDark9: 	#190158;
+/* set normal (purple) btn */
 $btnBackgroundColor: 			$btnColorMain;
 $btnBackgroundColor1: 			$btnColorMain;
 $btnBackgroundColor2: 			$btnColorDark1;
@@ -30,10 +42,23 @@ $btnBackgroundColor2: 			$btnColorDark1;
 	$btnHoverBackgroundColor2: 	$btnColorDark2;
 $btnBorderColor: 				$btnBackgroundColor;
 	$btnHoverBorderColor: 		$btnHoverBackgroundColor;
-$btnTextColor: 					$btnColorLight2;
+$btnTextColor: 					$btnColorLight3;
 	$btnHoverTextColor: 		$btnTextColor;
 $btnTextShadowColor: 			$btnColorDark3;
 	$btnHoverTextShadowColor: 	$btnColorDark4;
+/* set white btn */
+$btnWhiteBackgroundColor: 			$btnColorLight3;
+$btnWhiteBackgroundColor1: 			$btnColorLight3;
+$btnWhiteBackgroundColor2: 			$btnColorLight2-3;
+	$btnWhiteHoverBackgroundColor:	$btnColorLight3;
+	$btnWhiteHoverBackgroundColor1: $btnColorLight3;
+	$btnWhiteHoverBackgroundColor2: $btnColorLight2-2;
+$btnWhiteBorderColor: 				$btnWhiteBackgroundColor2;
+	$btnWhiteHoverBorderColor: 		$btnWhiteHoverBackgroundColor2;
+$btnWhiteTextColor: 				$btnColorDark6;
+	$btnWhiteHoverTextColor: 		$btnColorDark8;
+$btnWhiteTextShadowColor: 			$btnColorDark6;
+	$btnWhiteHoverTextShadowColor: 	$btnColorDark8;
 
 
 $btnShadowColor: 	#aaa;
@@ -149,28 +174,39 @@ blockquote {
 }
 
 .btn {
-	width: 150px;
-	padding: 20px 30px;
+	padding: 10px 20px;
 	margin: 20px auto;
-	
-	display: block;
+	display: inline-block;
 	cursor: pointer;
-	
 	background: linear-gradient($btnBackgroundColor1 5%, $btnBackgroundColor2 100%) $btnBackgroundColor;
 	border: 1px solid $btnBorderColor;
 	border-radius: 7px;
-	
 	color: $btnTextColor;
 	text-align: center;
 	text-decoration: none;
     text-shadow: $btnTextShadowColor 0px 1px 0px;
 }
+	.btnBig {
+		width: 150px;
+		padding: 20px 30px;
+	}
+	.btnWhite {
+		background: linear-gradient($btnWhiteBackgroundColor1 5%, $btnWhiteBackgroundColor2 100%) $btnWhiteBackgroundColor;
+		border-color: $btnWhiteBorderColor;
+		color: $btnWhiteTextColor;
+	}
 .btn:hover, .btn:active, .btn:focus {
 	background: linear-gradient($btnHoverBackgroundColor1 5%, $btnHoverBackgroundColor2 100%) $btnHoverBackgroundColor;
 	border-color: $btnHoverBorderColor;
 	color: $btnHoverTextColor;
 	text-shadow: $btnHoverTextShadowColor 0px 1px 0px;
 }
+	.btnWhite:hover, .btnWhite:active, .btnWhite:focus {
+		background: linear-gradient($btnWhiteHoverBackgroundColor1 5%, $btnWhiteHoverBackgroundColor2 100%) $btnWhiteHoverBackgroundColor;
+		border-color: $btnWhiteHoverBorderColor;
+		color: $btnWhiteHoverTextColor;
+		text-shadow: $btnWhiteHoverTextShadowColor 0px 1px 0px;
+	}
 
 .smallOnly			{ display: none !important; }
 .mediumSmallOnly	{ display: none !important; }
