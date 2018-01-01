@@ -36,10 +36,10 @@ $btnColorDark9: 	#190158;
 /* set normal (purple) btn */
 $btnBackgroundColor: 			$btnColorMain;
 $btnBackgroundColor1: 			$btnColorMain;
-$btnBackgroundColor2: 			$btnColorDark1;
+$btnBackgroundColor2: 			$btnColorDark2;
 	$btnHoverBackgroundColor:	$btnColorDark1;
 	$btnHoverBackgroundColor1: 	$btnColorDark1;
-	$btnHoverBackgroundColor2: 	$btnColorDark2;
+	$btnHoverBackgroundColor2: 	$btnColorDark3;
 $btnBorderColor: 				$btnBackgroundColor;
 	$btnHoverBorderColor: 		$btnHoverBackgroundColor;
 $btnTextColor: 					$btnColorLight3;
@@ -56,9 +56,9 @@ $btnWhiteBackgroundColor2: 			$btnColorLight2-3;
 $btnWhiteBorderColor: 				$btnWhiteBackgroundColor2;
 	$btnWhiteHoverBorderColor: 		$btnWhiteHoverBackgroundColor2;
 $btnWhiteTextColor: 				$btnColorDark6;
-	$btnWhiteHoverTextColor: 		$btnColorDark8;
-$btnWhiteTextShadowColor: 			$btnColorDark6;
-	$btnWhiteHoverTextShadowColor: 	$btnColorDark8;
+	$btnWhiteHoverTextColor: 		$btnWhiteTextColor;
+$btnWhiteTextShadowColor: 			$btnColorDark4;
+	$btnWhiteHoverTextShadowColor: 	$btnWhiteTextShadowColor;
 
 
 $btnShadowColor: 	#aaa;
@@ -180,7 +180,7 @@ blockquote {
 	cursor: pointer;
 	background: linear-gradient($btnBackgroundColor1 5%, $btnBackgroundColor2 100%) $btnBackgroundColor;
 	border: 1px solid $btnBorderColor;
-	border-radius: 7px;
+	border-radius: 4px;
 	color: $btnTextColor;
 	text-align: center;
 	text-decoration: none;
@@ -189,6 +189,7 @@ blockquote {
 	.btnBig {
 		width: 150px;
 		padding: 20px 30px;
+		border-radius: 7px;
 	}
 	.btnWhite {
 		background: linear-gradient($btnWhiteBackgroundColor1 5%, $btnWhiteBackgroundColor2 100%) $btnWhiteBackgroundColor;
