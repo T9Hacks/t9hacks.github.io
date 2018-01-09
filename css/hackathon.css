@@ -11,36 +11,11 @@
 /* set white btn */
 html, body {
   font-family: "Raleway", Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5em;
   color: #331155;
   text-align: center; }
 
-.shadowBox {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 40px; }
-
-.sectionShadowBox {
-  background: rgba(255, 255, 255, 0.7);
-  padding: 40px;
-  margin: 0;
-  text-align: left; }
-
-.sectionShadowBox .sectionShadowBox {
-  padding: 20px;
-  text-align: justify;
-  margin-bottom: 20px; }
-
-@media (max-width: 1024px) {
-  .shadowBox {
-    padding: 10px; }
-
-  .sectionShadowBox {
-    padding: 20px;
-    margin: 20px 0; }
-
-  html, body {
-    font-size: 18px; } }
 h1 {
   font-size: 8em;
   line-height: 1.5em;
@@ -94,6 +69,9 @@ a:hover, a:focus, a:active {
   border-color: #777;
   outline: 0; }
 
+ol, ul, li {
+  list-style-type: none; }
+
 blockquote {
   font-style: italic;
   font-size: 0.9em;
@@ -125,6 +103,9 @@ blockquote {
   }*/ }
 
 @media (max-width: 1024px) {
+  html, body {
+    font-size: 18px; }
+
   h1 {
     font-size: 4em;
     margin: 20px 0 0 0; }
@@ -144,7 +125,7 @@ blockquote {
   display: inline-block;
   cursor: pointer;
   background: linear-gradient(#A991E8 5%, #8971C8 100%) #A991E8;
-  border: 1px solid #A991E8;
+  border: 0;
   border-radius: 4px;
   color: white;
   text-align: center;
@@ -157,19 +138,16 @@ blockquote {
   border-radius: 7px; }
 
 .btnWhite {
-  background: linear-gradient(white 5%, #F9E1FF 100%) white;
-  border-color: #F9E1FF;
+  background: linear-gradient(white 5%, #FFF1FF 100%) white;
   color: #493188; }
 
 .btn:hover, .btn:active, .btn:focus {
   background: linear-gradient(#9981D8 5%, #7961B8 100%) #9981D8;
-  border-color: #9981D8;
   color: white;
   text-shadow: #6951A8 0px 1px 0px; }
 
 .btnWhite:hover, .btnWhite:active, .btnWhite:focus {
-  background: linear-gradient(white 5%, #E9D1FF 100%) white;
-  border-color: #E9D1FF;
+  background: linear-gradient(#F9E1FF 5%, #E9D1FF 100%) #F9E1FF;
   color: #493188;
   text-shadow: #6951A8 0px 1px 0px; }
 
@@ -218,12 +196,43 @@ blockquote {
 
   .largeOnly {
     display: none !important; } }
+.shadowBox, .containerShadowBox {
+  background: rgba(255, 255, 255, 0.7); }
+
+.sectionShadowBox {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  margin: 0 0 10px;
+  text-align: left;
+  overflow: hidden; }
+
+.sectionShadowBox .sectionShadowBox {
+  padding: 20px;
+  text-align: justify;
+  margin-bottom: 20px; }
+
+.containerShadowBox {
+  background: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  width: 33%; }
+  .containerShadowBox > h3 {
+    background: #A991E8;
+    color: white;
+    padding: 10px;
+    margin: 0; }
+  .containerShadowBox > div {
+    padding: 20px;
+    margin: 0 0 10px;
+    text-align: left;
+    overflow: hidden; }
+  .containerShadowBox span {
+    display: inline-block; }
+  .containerShadowBox span:first-child {
+    width: 70px; }
+
 .triSection {
   font-size: 0.9em;
-  /*h3 {
-  	background: $colorPurple;
-  	color: white;
-  }*/ }
+  overflow: hidden; }
   .triSection .fa {
     font-size: 3em;
     text-align: center;
@@ -231,6 +240,19 @@ blockquote {
     margin: 10px 0 20px;
     color: #A991E8; }
 
+@media (max-width: 1024px) {
+  .shadowBox {
+    padding: 10px; }
+
+  .sectionShadowBox {
+    padding: 20px;
+    margin: 20px 0; }
+
+  .containerShadowBox {
+    width: 45%; } }
+@media (max-width: 767px) {
+  .containerShadowBox {
+    width: 100%; } }
 #home, #sponsors {
   /* purple */
   background: #A991E8;
@@ -408,6 +430,37 @@ nav .brand img {
     display: block;
     float: none;
     border-bottom: 1px solid #594198; } }
+.signupHeader {
+  background: #A991E8;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 10px; }
+
+.signupHeader h3 {
+  float: left;
+  text-align: left;
+  color: white;
+  margin: 0;
+  line-height: 70px; }
+
+.signupHeader .btnBlock {
+  float: right; }
+
+.signupHeader .btn {
+  margin: 0; }
+
+@media (max-width: 1024px) {
+  .signupBlock {
+    padding: 0; } }
+@media (max-width: 767px) {
+  .signupHeader h3 {
+    float: none;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10px; }
+
+  .signupHeader .btnBlock {
+    float: none; } }
 /* ******************************************** */
 /*					Sponsors					*/
 /* ******************************************** */

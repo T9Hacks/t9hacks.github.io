@@ -15,6 +15,10 @@ $colorPink: 		#FFB4BB;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 
+$mediaBreakLargeMax: 1140px;
+$mediaBreakMediumMax: 1024px;
+$mediaBreakSmallMax: 767px;
+
 /* set btn colors */
 $btnColorLight3: 	white;
 $btnColorLight2-4: 	#FFF1FF;
@@ -49,9 +53,9 @@ $btnTextShadowColor: 			$btnColorDark3;
 /* set white btn */
 $btnWhiteBackgroundColor: 			$btnColorLight3;
 $btnWhiteBackgroundColor1: 			$btnColorLight3;
-$btnWhiteBackgroundColor2: 			$btnColorLight2-3;
-	$btnWhiteHoverBackgroundColor:	$btnColorLight3;
-	$btnWhiteHoverBackgroundColor1: $btnColorLight3;
+$btnWhiteBackgroundColor2: 			$btnColorLight2-4;
+	$btnWhiteHoverBackgroundColor:	$btnColorLight2-3;
+	$btnWhiteHoverBackgroundColor1: $btnColorLight2-3;
 	$btnWhiteHoverBackgroundColor2: $btnColorLight2-2;
 $btnWhiteBorderColor: 				$btnWhiteBackgroundColor2;
 	$btnWhiteHoverBorderColor: 		$btnWhiteHoverBackgroundColor2;
@@ -68,38 +72,10 @@ $fontText: 		"Raleway", Helvetica, sans-serif;
 
 html, body {
 	font-family: $fontText;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.5em;
 	color: $colorPurpleDark;
 	text-align: center;
-}
-
-.shadowBox {
-	background: $colorWhiteOpaque;
-	padding: 40px;
-}
-	.sectionShadowBox {
-		background: $colorWhiteOpaque;
-		padding: 40px;
-		margin: 0;
-		text-align: left;
-	}
-	.sectionShadowBox .sectionShadowBox {
-	    padding: 20px;
-	    text-align: justify;
-		margin-bottom: 20px;
-	}
-@media (max-width: 1024px) {
-	.shadowBox {
-		padding: 10px;
-	}
-	.sectionShadowBox {
-		padding: 20px;
-		margin: 20px 0;
-	}
-	html, body {
-		font-size: 18px;
-	}
 }
 
 h1 {
@@ -157,6 +133,10 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
+ol, ul, li {
+	list-style-type: none;
+}
+
 blockquote {
 	font-style: italic;
     font-size: 0.9em;
@@ -189,7 +169,10 @@ blockquote {
 	}*/
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mediaBreakMediumMax) {
+	html, body {
+		font-size: 18px;
+	}
 	h1 {
 		font-size: 4em;
 		margin: 20px 0 0 0;
@@ -212,7 +195,7 @@ blockquote {
 	display: inline-block;
 	cursor: pointer;
 	background: linear-gradient($btnBackgroundColor1 5%, $btnBackgroundColor2 100%) $btnBackgroundColor;
-	border: 1px solid $btnBorderColor;
+	border: 0;
 	border-radius: 4px;
 	color: $btnTextColor;
 	text-align: center;
@@ -226,18 +209,15 @@ blockquote {
 	}
 	.btnWhite {
 		background: linear-gradient($btnWhiteBackgroundColor1 5%, $btnWhiteBackgroundColor2 100%) $btnWhiteBackgroundColor;
-		border-color: $btnWhiteBorderColor;
 		color: $btnWhiteTextColor;
 	}
 .btn:hover, .btn:active, .btn:focus {
 	background: linear-gradient($btnHoverBackgroundColor1 5%, $btnHoverBackgroundColor2 100%) $btnHoverBackgroundColor;
-	border-color: $btnHoverBorderColor;
 	color: $btnHoverTextColor;
 	text-shadow: $btnHoverTextShadowColor 0px 1px 0px;
 }
 	.btnWhite:hover, .btnWhite:active, .btnWhite:focus {
 		background: linear-gradient($btnWhiteHoverBackgroundColor1 5%, $btnWhiteHoverBackgroundColor2 100%) $btnWhiteHoverBackgroundColor;
-		border-color: $btnWhiteHoverBorderColor;
 		color: $btnWhiteHoverTextColor;
 		text-shadow: $btnWhiteHoverTextShadowColor 0px 1px 0px;
 	}
@@ -248,14 +228,14 @@ blockquote {
 .mediumLargeOnly	{ display: block !important; }
 .largeOnly			{ display: block !important; }
 
-@media (max-width: 1024px) {
+@media (max-width: $mediaBreakMediumMax) {
 	.smallOnly			{ display: none !important; }
 	.mediumSmallOnly	{ display: block !important; }
 	.mediumOnly			{ display: block !important; }
 	.mediumLargeOnly	{ display: block !important; }
 	.largeOnly			{ display: none !important; }
 }
-@media (max-width: 767px) {
+@media (max-width: $mediaBreakSmallMax) {
 	.smallOnly			{ display: block !important; }
 	.mediumSmallOnly	{ display: block !important; }
 	.mediumOnly			{ display: none !important; }
@@ -264,19 +244,75 @@ blockquote {
 }
 
 
-.triSection {
-	font-size: 0.9em;
+.shadowBox, .containerShadowBox {
+	background: $colorWhiteOpaque;
+}
+	.sectionShadowBox {
+		background: $colorWhiteOpaque;
+		padding: 40px;
+		margin: 0 0 10px;
+		text-align: left;
+		overflow: hidden;
+	}
+	.sectionShadowBox .sectionShadowBox {
+	    padding: 20px;
+	    text-align: justify;
+		margin-bottom: 20px;
+	}
+.containerShadowBox {
+	background: $colorWhiteOpaque;
+	display: inline-block;
+	width: 33%;
 	
-	/*h3 {
+	> h3 {
 		background: $colorPurple;
 		color: white;
-	}*/
+		padding: 10px;
+		margin: 0;
+	}
+	> div {
+		padding: 20px;
+		margin: 0 0 10px;
+		text-align: left;
+		overflow: hidden;
+	}
+	span {
+		display: inline-block;
+	}
+	span:first-child {
+		width: 70px;
+	}
+	span:nth-child(2n) {
+		
+	}
+}
+.triSection {
+	font-size: 0.9em;
+	overflow: hidden;
+	
 	.fa {
 		font-size: 3em;
 	    text-align: center;
 	    display: block;
 	    margin: 10px 0 20px;
 		color: $colorPurple;
+	}
+}
+@media (max-width: $mediaBreakMediumMax) {
+	.shadowBox {
+		padding: 10px;
+	}
+	.sectionShadowBox {
+		padding: 20px;
+		margin: 20px 0;
+	}
+	.containerShadowBox {
+		width: 45%;
+	}
+}
+@media (max-width: $mediaBreakSmallMax) {
+	.containerShadowBox {
+		width: 100%;
 	}
 }
 
@@ -317,7 +353,7 @@ blockquote {
 footer {
 	background: $colorPurpleDeep;
 }
-@media (max-width: 1024px) {
+@media (max-width: $mediaBreakMediumMax) {
 	#home {
 		padding: 50px;
 	}
@@ -432,7 +468,7 @@ section {
 	width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $mediaBreakMediumMax) {
 	nav li a {
     	padding: 15px 20px;
 	}
@@ -442,8 +478,7 @@ section {
 		width:10%;
 	}
 }
-
-@media (max-width: 767px) {
+@media (max-width: $mediaBreakSmallMax) {
 	.navigationMobile {
 		display: block;
 	}
@@ -472,6 +507,46 @@ section {
 }
 
 
+
+
+.signupBlock {
+	
+}
+.signupHeader {
+    background: $colorPurple;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.signupHeader h3 {
+    float: left;
+    text-align: left;
+    color: white;
+    margin: 0;
+    line-height: 70px;
+}
+.signupHeader .btnBlock {
+    float: right;
+}
+.signupHeader .btn {
+    margin: 0;
+}
+@media (max-width: $mediaBreakMediumMax) {
+	.signupBlock {
+		padding: 0;
+	}
+}
+@media (max-width: $mediaBreakSmallMax) {
+	.signupHeader h3 {
+	    float: none;
+	    text-align: center;
+		line-height: 1.5em;
+		margin-bottom: 10px;
+	}
+	.signupHeader .btnBlock {
+	    float: none;
+	}
+}
 
 
 
@@ -524,7 +599,7 @@ section {
 	height: 175px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $mediaBreakSmallMax) {
 	.sponsor {
 		float: none;
 		margin: 5px;
@@ -563,7 +638,7 @@ footer a {
 	border-top: 1px dotted $colorPurpleDeep;
 	
 }
-@media (min-width: 767px) { /* big screens */
+@media (min-width: $mediaBreakSmallMax) { /* big screens */
 	footer .location {
 		text-align: left;
 	}
@@ -662,7 +737,7 @@ footer a {
     text-align: right;
     display: inline;
 }
-@media (max-width: 767px) {
+@media (max-width: $mediaBreakSmallMax) {
 	#nncontainer {
 		font-size: 16px;
 	}
