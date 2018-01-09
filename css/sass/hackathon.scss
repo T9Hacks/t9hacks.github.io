@@ -125,7 +125,7 @@ h2 {
 h3 {
 	font-size: 1.3em;
 	line-height: 1.5em;
-	margin: 30px 0 10px;
+	margin: 10px 0;
 	text-align: center;
 }
 	#home h3 {
@@ -133,21 +133,11 @@ h3 {
 		margin: 10px 0;
 		line-height: 1em;
 	}
-@media (max-width: 1024px) {
-	h1 {
-		font-size: 4em;
-		margin: 20px 0 0 0;
-	}
-	h2 {
-		font-size: 3em;
-		margin: 0;
-	}
-	h3 {
-		margin-top: 10px;
-	}
+h4 {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 10px;
 }
-
-
 p {
 	margin-bottom: 10px;
     line-height: 1.5;
@@ -170,7 +160,50 @@ a:hover, a:focus, a:active {
 blockquote {
 	font-style: italic;
     font-size: 0.9em;
-    margin-bottom: 10px;
+	line-height: 2em;
+	width: 80%;
+	margin: 20px auto;
+	padding: 0.5em 10px;
+	border-left: 10px solid $colorPurple;
+	background: $colorWhiteOpaque;
+	quotes: "\201C""\201D""\2018""\2019";
+	
+	/*&:before {
+		color: #ccc;
+		/*content: open-quote;*/
+		/*content: "\201C";
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+	}
+	&:after {
+		color: #ccc;
+		content:"\201D";
+		font-size: 4em;
+	    line-height: 0.1em;
+	    margin-right: 0.25em;
+	    float: right;
+	    margin-left: 0.25em;
+		vertical-align: -0.4em;
+	}*/
+}
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 4em;
+		margin: 20px 0 0 0;
+	}
+	h2 {
+		font-size: 3em;
+		margin: 0;
+	}
+	h3 {
+		margin-top: 10px;
+	}
+	blockquote {
+		width: 95%;
+	}
 }
 
 .btn {
@@ -228,6 +261,23 @@ blockquote {
 	.mediumOnly			{ display: none !important; }
 	.mediumLargeOnly	{ display: none !important; }
 	.largeOnly			{ display: none !important; }
+}
+
+
+.triSection {
+	font-size: 0.9em;
+	
+	/*h3 {
+		background: $colorPurple;
+		color: white;
+	}*/
+	.fa {
+		font-size: 3em;
+	    text-align: center;
+	    display: block;
+	    margin: 10px 0 20px;
+		color: $colorPurple;
+	}
 }
 
 
@@ -506,6 +556,12 @@ footer {
 }
 footer a {
 	border-bottom: white;
+}
+.footer2 {
+	background: $colorPurpleDark;
+	color: white;
+	border-top: 1px dotted $colorPurpleDeep;
+	
 }
 @media (min-width: 767px) { /* big screens */
 	footer .location {

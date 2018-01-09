@@ -1,0 +1,11 @@
+# eclipse project file
+.project
+.buildpath
+.settings/
+/.settings/
+
+# netbeans project files
+/nbproject/
+
+# database files
+/hidden/
