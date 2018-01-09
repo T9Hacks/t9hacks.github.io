@@ -1,4 +1,5 @@
 /*!
+ * Modified from: 
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -6,18 +7,19 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
+	var navHeight = $("#navigation").innerHeight();
+	
+    $('a.pageScroll').bind('click', function(event) {
     	event.preventDefault();
     	
     	// offset by height 
         var $anchor = $(this);
-        var navHeight = $("#navigation").innerHeight();
-        var offset = $($anchor.attr('href')).offset().top;
-        //if(! $anchor.hasClass("navigation-brand")) { offset-=navHeight; }
-        
-        	
+		var pageOffset = $($anchor.attr('href')).offset().top;
+        if(! $anchor.hasClass("navigationBrand")) { pageOffset -= navHeight; }
+		
+        // scroll to that point in the page
         $('html, body').stop().animate({
-            scrollTop: offset
+            scrollTop: pageOffset
         }, 1500, 'easeInOutExpo');
         
     });
