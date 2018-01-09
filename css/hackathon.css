@@ -69,7 +69,7 @@ a:hover, a:focus, a:active {
   border-color: #777;
   outline: 0; }
 
-ol, ul, li {
+ul, li {
   list-style-type: none; }
 
 blockquote {
@@ -151,6 +151,15 @@ blockquote {
   color: #493188;
   text-shadow: #6951A8 0px 1px 0px; }
 
+.list li {
+  margin-bottom: 10px;
+  margin-left: 30px; }
+  .list li::before {
+    content: "\25C7";
+    margin-left: -30px;
+    width: 30px;
+    display: inline-block; }
+
 .smallOnly {
   display: none !important; }
 
@@ -215,6 +224,9 @@ blockquote {
   background: rgba(255, 255, 255, 0.7);
   display: inline-block;
   width: 33%; }
+  .containerShadowBox li {
+    margin-bottom: 10px;
+    overflow: hidden; }
   .containerShadowBox > h3 {
     background: #A991E8;
     color: white;
@@ -229,6 +241,11 @@ blockquote {
     display: inline-block; }
   .containerShadowBox span:first-child {
     width: 70px; }
+
+.scheduleContainer {
+  width: 100%; }
+  .scheduleContainer span:nth-child(2n) {
+    width: 100px; }
 
 .triSection {
   font-size: 0.9em;
@@ -270,7 +287,7 @@ blockquote {
   background-repeat: repeat;
   background-position: center; }
 
-#registration {
+#registration, #livePage {
   /* green */
   background: #A2E891;
   background-image: url("../images/green.png");
@@ -523,6 +540,17 @@ nav .brand img {
   .silver .sponsor {
     width: 85px;
     height: 85px; } }
+/* **************************************** */
+/*					Live					*/
+/* **************************************** */
+#livePage {
+  font-size: 18px; }
+  #livePage h2 {
+    font-size: 3em;
+    margin: 0; }
+  #livePage .sectionShadowBox .sectionShadowBox {
+    text-align: left; }
+
 /* **************************************** */
 /*					Footer					*/
 /* **************************************** */
