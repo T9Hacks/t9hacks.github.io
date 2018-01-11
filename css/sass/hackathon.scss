@@ -54,9 +54,9 @@ $btnTextShadowColor: 			$btnColorDark3;
 $btnWhiteBackgroundColor: 			$btnColorLight3;
 $btnWhiteBackgroundColor1: 			$btnColorLight3;
 $btnWhiteBackgroundColor2: 			$btnColorLight2-4;
-	$btnWhiteHoverBackgroundColor:	$btnColorLight2-3;
-	$btnWhiteHoverBackgroundColor1: $btnColorLight2-3;
-	$btnWhiteHoverBackgroundColor2: $btnColorLight2-2;
+	$btnWhiteHoverBackgroundColor:	$btnColorLight2-4;
+	$btnWhiteHoverBackgroundColor1: $btnColorLight2-4;
+	$btnWhiteHoverBackgroundColor2: $btnColorLight2-3;
 $btnWhiteBorderColor: 				$btnWhiteBackgroundColor2;
 	$btnWhiteHoverBorderColor: 		$btnWhiteHoverBackgroundColor2;
 $btnWhiteTextColor: 				$btnColorDark6;
@@ -103,6 +103,7 @@ h3 {
 	line-height: 1.5em;
 	margin: 10px 0;
 	text-align: center;
+	font-weight: 600;
 }
 	#home h3 {
 		font-size: 1.2em;
@@ -111,7 +112,6 @@ h3 {
 	}
 h4 {
 	font-style: italic;
-	text-align: center;
 	margin-bottom: 10px;
 }
 p {
@@ -145,8 +145,8 @@ blockquote {
 	margin: 20px auto;
 	padding: 0.5em 10px;
 	border-left: 10px solid $colorPurple;
+	border-right: 10px solid $colorPurple;
 	background: $colorWhiteOpaque;
-	quotes: "\201C""\201D""\2018""\2019";
 	
 	/*&:before {
 		color: #ccc;
@@ -185,7 +185,7 @@ blockquote {
 		margin-top: 10px;
 	}
 	blockquote {
-		width: 95%;
+		width: 90%;
 	}
 }
 
@@ -257,29 +257,37 @@ blockquote {
 }
 
 
+
+
 .shadowBox, .containerShadowBox {
 	background: $colorWhiteOpaque;
 }
 	.sectionShadowBox {
-		background: $colorWhiteOpaque;
+		/*background: $colorWhiteOpaque;
 		padding: 40px;
-		margin: 0 0 10px;
+		margin: 0 0 10px;*/
 		text-align: left;
 		overflow: hidden;
 	}
 	.sectionShadowBox .sectionShadowBox {
-	    padding: 20px;
+	    padding: 10px;
 	    text-align: justify;
-		margin-bottom: 20px;
+		margin-bottom: 0;
 	}
-.containerShadowBox {
-	background: $colorWhiteOpaque;
+.infoBlock1 {
+	/*background: $colorWhiteOpaque;
 	display: inline-block;
-	width: 33%;
+	width: 33%;*/
 	
 	li {
 		margin-bottom: 10px;
 		overflow: hidden;
+		span {
+			display: inline-block;
+		}
+		span:first-child {
+			width: 70px;
+		}
 	}
 	> h3 {
 		background: $colorPurple;
@@ -293,35 +301,87 @@ blockquote {
 		text-align: left;
 		overflow: hidden;
 	}
-	span {
-		display: inline-block;
-	}
-	span:first-child {
-		width: 70px;
-	}
 }
-	.scheduleContainer {
-		width: 100%;
+.infoBlock {
+	border-radius: 10px;
+    overflow: hidden;
+	margin-bottom: 20px;
+	
+	.infoBlockHeader {
+	    background: $colorPurple;
+	    padding: 20px;
+	    overflow: hidden;
+	    margin-bottom: 10px;
+		color: white;
 		
-		span:nth-child(2n) {
-			width: 100px;
+		.fa {
+			font-size: 1em;
+		    display: inline-block;
+		    margin: 0 20px 0 0;
+		}
+		h3 {
+		    float: left;
+		    text-align: left;
+		    color: white;
+		    margin: 0;
+		}
+		
+		.btnBlock {
+		    float: right;
+		}
+		.btn {
+	    	margin: 0;
 		}
 	}
-.triSection {
-	font-size: 0.9em;
-	overflow: hidden;
 	
-	.fa {
-		font-size: 3em;
-	    text-align: center;
-	    display: block;
-	    margin: 10px 0 20px;
-		color: $colorPurple;
+	.sectionShadowBox {
+		padding: 10px;
+	    text-align: left;
+	    margin-bottom: 0;
+	}
+	
+	li {
+		margin-bottom: 10px;
+		overflow: hidden;
+		span {
+			display: inline-block;
+		}
+		span:first-child {
+			width: 70px;
+		}
+	}
+}
+@media (max-width: $mediaBreakMediumMax) {
+	.infoBlock {
+		padding: 0;
+	}
+}
+@media (max-width: $mediaBreakSmallMax) {
+	.infoBlockHeader {
+		h3 {
+		    float: none;
+		    text-align: center;
+			line-height: 1.5em;
+			margin-bottom: 10px;
+		}
+		.btnBlock {
+		    float: none;
+		}
+	}
+}
+
+
+
+.scheduleContainer {
+	width: 100%;
+	
+	span:nth-child(2n) {
+		width: 100px;
 	}
 }
 @media (max-width: $mediaBreakMediumMax) {
 	.shadowBox {
-		padding: 10px;
+		/*padding: 10px;*/
 	}
 	.sectionShadowBox {
 		padding: 20px;
@@ -393,66 +453,77 @@ footer {
 section {
 	padding-top: 50px; /* added on to leave room for nav at all times */
 }
-#navigation {
+nav {
 	z-index: 2;
 	background: $colorPurpleDeep;
 	position: fixed;
 	width: 100%;
-}
-
-#navigationLarge {
-	height: 50px;
-	-webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-	nav ul {
+	
+	ul {
 		padding: 0;
-		display: inline-block;
+		display: block;
 	}
-	nav li {
+	li {
 		list-style-type: none;
 		display: inline-block;
 		float: left;
-	}
-	nav li a {
-    	display: block;
-		text-transform: uppercase;
-		font-weight: 700;
-		color: #fff;
-	    padding: 15px 30px;
-		line-height: 20px;
-		font-size: .7em;
-		border-bottom: 0;
-	}
-		nav li a:hover, nav li a:active, nav li a:focus {
+		
+		a {
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #fff;
+		    padding: 15px 20px;
+			line-height: 20px;
+			font-size: .7em;
+			border-bottom: 0;
+		}
+		a:hover, a:active, a:focus {
 			color: #5AB8E2;
 		}
-	nav .brand a {
-		padding: 10px 20px;
-		margin: 0;
 	}
-		nav .brand img {
+	li.left {
+		float: left;
+	}
+	li.right {
+		float: right;
+	}
+	.brand {
+		a {
+			padding: 10px 20px;
+			margin: 0;
+		}
+		img {
 			height: 30px;
 			width: 37px;
 		}
-
+	}
+}
+#navigationLarge {
+	height: 50px;
+	margin: 0 110px 0 50px;
+	-webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 .navigationMobile {
 	display: none;
-}
+
 	.brandMobile {
 		display: inline-block;
 		text-align: left;
 		float: left;
 		height: 50px;
+		
+		a {
+		    height: 30px;
+		    padding: 10px 20px 10px 0;
+		    display: inline-block;
+		    float: left;
+		    line-height: 30px;
+			font-size: 1em;
+		}
 	}
-	.brandMobile a {
-	    height: 30px;
-	    padding: 10px 20px 10px 0;
-	    display: inline-block;
-	    float: left;
-	    line-height: 30px;
-		font-size: 1em;
-	}
+}
 #navButton {
     background: transparent;
     height: 40px;
@@ -461,12 +532,13 @@ section {
 	padding: 0;
 	margin: 5px 0;
 	float: right;
-}
+
 	#navIcon {
 	    line-height: 40px;
 	    font-size: 35px;
 	    color: white;
 	}
+}
 
 /* MLH Trust Badge */
 #mlh-trust-badge {
@@ -484,12 +556,16 @@ section {
 	-webkit-transition: all .3s;
     -moz-transition: all .3s;
 	transition: all .3s;
-}
-#mlh-trust-badge img {
-	width: 100%;
+	
+	img {
+		width: 100%;
+	}
 }
 
 @media (max-width: $mediaBreakMediumMax) {
+	#navigationLarge {
+		margin-left: 0;
+	}
 	nav li a {
     	padding: 15px 20px;
 	}
@@ -515,59 +591,22 @@ section {
 		height: auto;
 		left: 0;
 		width: 100%;
-	}
-		#navigationLarge ul {
+		
+		ul {
 			display: block;
 		}
-		#navigationLarge li {
+		li {
 			display: block;
 			float: none;
 			border-bottom: 1px solid #594198;
 		}
-		#navigationLarge li a {}
-}
-
-
-
-
-.signupBlock {
-	
-}
-.signupHeader {
-    background: $colorPurple;
-    padding: 20px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-.signupHeader h3 {
-    float: left;
-    text-align: left;
-    color: white;
-    margin: 0;
-    line-height: 70px;
-}
-.signupHeader .btnBlock {
-    float: right;
-}
-.signupHeader .btn {
-    margin: 0;
-}
-@media (max-width: $mediaBreakMediumMax) {
-	.signupBlock {
-		padding: 0;
 	}
 }
-@media (max-width: $mediaBreakSmallMax) {
-	.signupHeader h3 {
-	    float: none;
-	    text-align: center;
-		line-height: 1.5em;
-		margin-bottom: 10px;
-	}
-	.signupHeader .btnBlock {
-	    float: none;
-	}
-}
+
+
+
+
+
 
 
 

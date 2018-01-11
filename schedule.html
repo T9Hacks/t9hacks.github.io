@@ -48,43 +48,47 @@
 	
 		<!-- Navigation -->
 		<nav id="navigation">
-			<div class="container">
 
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navigationMobile">
-					<div class="brandMobile">
-						<ul>
-							<li>
-								<a class="pageScroll brand" href="#home">
-									<img src="images/logos/t9hacks_logo_white_100x82.png">
-								</a>
-								<a class="pageScroll brand" href="#home">
-									<span>T9Hacks</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<button type="button" id="navButton">
-						<span id="navIcon" class="fa fa-bars"></span>
-					</button>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div id="navigationLarge">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navigationMobile">
+				<div class="brandMobile">
 					<ul>
-						<li class="brand mediumLargeOnly">
-							<a href="index.html">
+						<li>
+							<a class="pageScroll brand" href="#home">
 								<img src="images/logos/t9hacks_logo_white_100x82.png">
 							</a>
-						</li>
-						<li class="active">
-							<a class="pageScroll" href="index.html">Back to home</a>
+							<a class="pageScroll brand" href="#home">
+								<span>T9Hacks</span>
+							</a>
 						</li>
 					</ul>
 				</div>
-
+				<button type="button" id="navButton">
+					<span id="navIcon" class="fa fa-bars"></span>
+				</button>
 			</div>
-		</nav>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navigationLarge">
+				<ul>
+					<li class="brand mediumLargeOnly left">
+						<a href="index.html">
+							<img src="images/logos/t9hacks_logo_white_100x82.png">
+						</a>
+					</li>
+					<li class="left">
+						<a href="index.html">Back to Home</a>
+					</li>
+					<li class="right">
+						<a href="schedule.html">Detailed Schedule</a>
+					</li>
+					<li class="right">
+						<a href="live.html">Info</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
 		
 	</header>
 	
@@ -93,16 +97,20 @@
 		<div class="container12">
 			
 			<div class="row">
-				<div class="sectionShadowBox">
-					
-					<div class="column12">
-						<h2>Detailed Schedule</h2>
-						<blockquote>Note: This schedule is tentative and subject to change, times are approximate.  Descriptions and workshops will be added in the future!</blockquote>
-					</div>
-					
-					<div class="containerShadowBox scheduleContainer">
+				<div class="column12">
+					<h2>Detailed Schedule</h2>
+					<blockquote>Note: This schedule is tentative and subject to change, times are approximate.  Descriptions and workshops will be added in the future!</blockquote>
+				</div>
+			</div>
+			
+			<div class="row">
+				
+				<div class="infoBlock shadowBox scheduleContainer">
+					<div class="infoBlockHeader">
 						<h3>Sat, Feb 10</h3>
-						<div><ul>
+					</div>
+					<div class="sectionShadowBox">
+						<ul>
 							<li>
 								<div class="column2">10:00a</div>
 								<div class="column2">1st Floor Lobby</div>
@@ -112,7 +120,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">11:00a</div>
+								<div class="column2">10:30a</div>
 								<div class="column2">ATLAS 100</div>
 								<div class="column8">
 									<b>Opening Ceremonies</b><br/>
@@ -120,15 +128,15 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">11:30a</div>
+								<div class="column2">11:00a</div>
 								<div class="column2">1st Floor Lobby</div>
 								<div class="column8">
-									<b>Lunch, Ice Breaker</b><br/>
+									<b>Lunch, Ice Breaker, Team Formation</b><br/>
 									Meet with other T9Hackers. Meet team members, get feedback on project ideas. Come meet our sponsors!
 								</div>
 							</li>
 							<li>
-								<div class="column2">1:00p</div>
+								<div class="column2">12:00p</div>
 								<div class="column2">1st, 2nd, and 1B Floor Rooms</div>
 								<div class="column8">
 									<b>Hacking Begins</b><br/>
@@ -136,7 +144,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">1:00p</div>
+								<div class="column2">12:00p</div>
 								<div class="column2">1st Floor Rooms</div>
 								<div class="column8">
 									<b>Workshops Begin</b><br/>
@@ -149,16 +157,29 @@
 									<b>Dinner</b><br/>
 								</div>
 							</li>
-						</ul></div>
+						</ul>
 					</div>
-					<div class="containerShadowBox scheduleContainer">
+				</div>
+				
+				<div class="infoBlock shadowBox scheduleContainer">
+					<div class="infoBlockHeader">
 						<h3>Sun, Feb 11</h3>
-						<div><ul>
+					</div>
+					<div class="sectionShadowBox">
+						<ul>
 							<li>
 								<div class="column2">8:00a</div>
 								<div class="column2">1st Floor Lobby</div>
 								<div class="column8">
 									<b>Breakfast</b><br/>
+								</div>
+							</li>
+							<li>
+								<div class="column2">12:00p</div>
+								<div class="column2">All Teams</div>
+								<div class="column8">
+									<b>Hacking Ends</b><br/>
+									You can stop making now! Please submit all projects to <a href="https://t9hacks-spring2018.devpost.com/" target="_blank">Devpost</a> and prepare for demos. If you've never used Devpost before, you can find information about submitting projects through the website here: <a href="live.html" target="_blank">T9Hacks Live Page</a>
 								</div>
 							</li>
 							<li>
@@ -169,15 +190,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">1:00p</div>
-								<div class="column2">All Teams</div>
-								<div class="column8">
-									<b>Hacking Ends</b><br/>
-									You can stop making now! Please submit all projects to <a href="https://t9hacks-spring2018.devpost.com/" target="_blank">Devpost</a> and prepare for demos. If you've never used Devpost before, you can find information about submitting projects through the website here: <a href="live.html" target="_blank">T9Hacks Live Page</a>
-								</div>
-							</li>
-							<li>
-								<div class="column2">2:00p</div>
+								<div class="column2">12:30p</div>
 								<div class="column2">ATLAS 100</div>
 								<div class="column8">
 									<b>Project Demos</b><br/>
@@ -185,7 +198,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">4:00p</div>
+								<div class="column2">3:00p</div>
 								<div class="column2">ATLAS 100</div>
 								<div class="column8">
 									<b>Closing Ceremonies</b><br/>
@@ -193,22 +206,28 @@
 								</div>
 							</li>
 							<li>
-								<div class="column2">4:30p</div>
+								<div class="column2">3:30p</div>
 								<div class="column2">All Teams</div>
 								<div class="column8">
 									<b>Hackathon Ends!</b><br/>
 									Sleepy time!
 								</div>
 							</li>
-						</ul></div>
+						</ul>
 					</div>
-					
 				</div>
+				
 			</div>
 			
 		</div>
 	</section>
 	<!-- End #schedule -->
+	
+	
+	
+	
+	
+	
 	
 	
 	<!-- Footer -->
@@ -269,9 +288,6 @@
 		</div>
 	</footer>
 	
-
-
-
 	<!---------------------------->
 	<!--		Javascript		-->
 	<!---------------------------->

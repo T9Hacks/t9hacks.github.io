@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 	purple	#A991E8		169, 145, 232		#594198
 	blue 	#ACF7FF		172, 247, 255
@@ -40,7 +39,8 @@ h3 {
   font-size: 1.3em;
   line-height: 1.5em;
   margin: 10px 0;
-  text-align: center; }
+  text-align: center;
+  font-weight: 600; }
 
 #home h3 {
   font-size: 1.2em;
@@ -49,7 +49,6 @@ h3 {
 
 h4 {
   font-style: italic;
-  text-align: center;
   margin-bottom: 10px; }
 
 p {
@@ -80,8 +79,8 @@ blockquote {
   margin: 20px auto;
   padding: 0.5em 10px;
   border-left: 10px solid #A991E8;
+  border-right: 10px solid #A991E8;
   background: rgba(255, 255, 255, 0.7);
-  quotes: "“" "”" "‘" "’";
   /*&:before {
   	color: #ccc;
   	/*content: open-quote;*/
@@ -118,7 +117,7 @@ blockquote {
     margin-top: 10px; }
 
   blockquote {
-    width: 95%; } }
+    width: 90%; } }
 .btn {
   padding: 10px 20px;
   margin: 20px auto;
@@ -147,7 +146,7 @@ blockquote {
   text-shadow: #6951A8 0px 1px 0px; }
 
 .btnWhite:hover, .btnWhite:active, .btnWhite:focus {
-  background: linear-gradient(#F9E1FF 5%, #E9D1FF 100%) #F9E1FF;
+  background: linear-gradient(#FFF1FF 5%, #F9E1FF 100%) #FFF1FF;
   color: #493188;
   text-shadow: #6951A8 0px 1px 0px; }
 
@@ -209,57 +208,93 @@ blockquote {
   background: rgba(255, 255, 255, 0.7); }
 
 .sectionShadowBox {
-  background: rgba(255, 255, 255, 0.7);
+  /*background: $colorWhiteOpaque;
   padding: 40px;
-  margin: 0 0 10px;
+  margin: 0 0 10px;*/
   text-align: left;
   overflow: hidden; }
 
 .sectionShadowBox .sectionShadowBox {
-  padding: 20px;
+  padding: 10px;
   text-align: justify;
-  margin-bottom: 20px; }
+  margin-bottom: 0; }
 
-.containerShadowBox {
-  background: rgba(255, 255, 255, 0.7);
+.infoBlock1 {
+  /*background: $colorWhiteOpaque;
   display: inline-block;
-  width: 33%; }
-  .containerShadowBox li {
+  width: 33%;*/ }
+  .infoBlock1 li {
     margin-bottom: 10px;
     overflow: hidden; }
-  .containerShadowBox > h3 {
+    .infoBlock1 li span {
+      display: inline-block; }
+    .infoBlock1 li span:first-child {
+      width: 70px; }
+  .infoBlock1 > h3 {
     background: #A991E8;
     color: white;
     padding: 10px;
     margin: 0; }
-  .containerShadowBox > div {
+  .infoBlock1 > div {
     padding: 20px;
     margin: 0 0 10px;
     text-align: left;
     overflow: hidden; }
-  .containerShadowBox span {
-    display: inline-block; }
-  .containerShadowBox span:first-child {
-    width: 70px; }
 
+.infoBlock {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  .infoBlock .infoBlockHeader {
+    background: #A991E8;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: white; }
+    .infoBlock .infoBlockHeader .fa {
+      font-size: 1em;
+      display: inline-block;
+      margin: 0 20px 0 0; }
+    .infoBlock .infoBlockHeader h3 {
+      float: left;
+      text-align: left;
+      color: white;
+      margin: 0; }
+    .infoBlock .infoBlockHeader .btnBlock {
+      float: right; }
+    .infoBlock .infoBlockHeader .btn {
+      margin: 0; }
+  .infoBlock .sectionShadowBox {
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 0; }
+  .infoBlock li {
+    margin-bottom: 10px;
+    overflow: hidden; }
+    .infoBlock li span {
+      display: inline-block; }
+    .infoBlock li span:first-child {
+      width: 70px; }
+
+@media (max-width: 1024px) {
+  .infoBlock {
+    padding: 0; } }
+@media (max-width: 767px) {
+  .infoBlockHeader h3 {
+    float: none;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 10px; }
+  .infoBlockHeader .btnBlock {
+    float: none; } }
 .scheduleContainer {
   width: 100%; }
   .scheduleContainer span:nth-child(2n) {
     width: 100px; }
 
-.triSection {
-  font-size: 0.9em;
-  overflow: hidden; }
-  .triSection .fa {
-    font-size: 3em;
-    text-align: center;
-    display: block;
-    margin: 10px 0 20px;
-    color: #A991E8; }
-
 @media (max-width: 1024px) {
   .shadowBox {
-    padding: 10px; }
+    /*padding: 10px;*/ }
 
   .sectionShadowBox {
     padding: 20px;
@@ -324,63 +359,60 @@ section {
   padding-top: 50px;
   /* added on to leave room for nav at all times */ }
 
-#navigation {
+nav {
   z-index: 2;
   background: #594198;
   position: fixed;
   width: 100%; }
+  nav ul {
+    padding: 0;
+    display: block; }
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+    float: left; }
+    nav li a {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      padding: 15px 20px;
+      line-height: 20px;
+      font-size: .7em;
+      border-bottom: 0; }
+    nav li a:hover, nav li a:active, nav li a:focus {
+      color: #5AB8E2; }
+  nav li.left {
+    float: left; }
+  nav li.right {
+    float: right; }
+  nav .brand a {
+    padding: 10px 20px;
+    margin: 0; }
+  nav .brand img {
+    height: 30px;
+    width: 37px; }
 
 #navigationLarge {
   height: 50px;
+  margin: 0 110px 0 50px;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
 
-nav ul {
-  padding: 0;
-  display: inline-block; }
-
-nav li {
-  list-style-type: none;
-  display: inline-block;
-  float: left; }
-
-nav li a {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-  padding: 15px 30px;
-  line-height: 20px;
-  font-size: .7em;
-  border-bottom: 0; }
-
-nav li a:hover, nav li a:active, nav li a:focus {
-  color: #5AB8E2; }
-
-nav .brand a {
-  padding: 10px 20px;
-  margin: 0; }
-
-nav .brand img {
-  height: 30px;
-  width: 37px; }
-
 .navigationMobile {
   display: none; }
-
-.brandMobile {
-  display: inline-block;
-  text-align: left;
-  float: left;
-  height: 50px; }
-
-.brandMobile a {
-  height: 30px;
-  padding: 10px 20px 10px 0;
-  display: inline-block;
-  float: left;
-  line-height: 30px;
-  font-size: 1em; }
+  .navigationMobile .brandMobile {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    height: 50px; }
+    .navigationMobile .brandMobile a {
+      height: 30px;
+      padding: 10px 20px 10px 0;
+      display: inline-block;
+      float: left;
+      line-height: 30px;
+      font-size: 1em; }
 
 #navButton {
   background: transparent;
@@ -390,11 +422,10 @@ nav .brand img {
   padding: 0;
   margin: 5px 0;
   float: right; }
-
-#navIcon {
-  line-height: 40px;
-  font-size: 35px;
-  color: white; }
+  #navButton #navIcon {
+    line-height: 40px;
+    font-size: 35px;
+    color: white; }
 
 /* MLH Trust Badge */
 #mlh-trust-badge {
@@ -411,11 +442,13 @@ nav .brand img {
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s; }
-
-#mlh-trust-badge img {
-  width: 100%; }
+  #mlh-trust-badge img {
+    width: 100%; }
 
 @media (max-width: 1024px) {
+  #navigationLarge {
+    margin-left: 0; }
+
   nav li a {
     padding: 15px 20px; }
 
@@ -439,45 +472,12 @@ nav .brand img {
     height: auto;
     left: 0;
     width: 100%; }
-
-  #navigationLarge ul {
-    display: block; }
-
-  #navigationLarge li {
-    display: block;
-    float: none;
-    border-bottom: 1px solid #594198; } }
-.signupHeader {
-  background: #A991E8;
-  padding: 20px;
-  overflow: hidden;
-  margin-bottom: 10px; }
-
-.signupHeader h3 {
-  float: left;
-  text-align: left;
-  color: white;
-  margin: 0;
-  line-height: 70px; }
-
-.signupHeader .btnBlock {
-  float: right; }
-
-.signupHeader .btn {
-  margin: 0; }
-
-@media (max-width: 1024px) {
-  .signupBlock {
-    padding: 0; } }
-@media (max-width: 767px) {
-  .signupHeader h3 {
-    float: none;
-    text-align: center;
-    line-height: 1.5em;
-    margin-bottom: 10px; }
-
-  .signupHeader .btnBlock {
-    float: none; } }
+    #navigationLarge ul {
+      display: block; }
+    #navigationLarge li {
+      display: block;
+      float: none;
+      border-bottom: 1px solid #594198; } }
 /* ******************************************** */
 /*					Sponsors					*/
 /* ******************************************** */
