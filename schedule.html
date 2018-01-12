@@ -13,11 +13,10 @@
 
 	<!-- Custom Fonts -->
 	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
 
 	<!-- Custom CSS -->
-	<link href="css/bootstrapmin.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/1140.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/hackathon.css" rel="stylesheet" type="text/css" media="all">
 	<!--<link href="css/animations.css" rel="stylesheet" type="text/css" media="all">-->
@@ -36,59 +35,54 @@
 <body>
 	
 	
-	<!-- Start MLH Badge -->
-	<a id="mlh-trust-badge" target="_blank" class="mediumLargeOnly" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=blue">
-		<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg" alt="Major League Hacking 2017 Hackathon Season">
-	</a>
-	<!-- End MLH Badge -->
-	
-	
 	<!-- Header -->
 	<header>
 	
 		<!-- Navigation -->
 		<nav id="navigation">
+			<div class="containerWide">
+				
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navigationMobile">
+					<div class="brandMobile">
+						<ul>
+							<li class="brand">
+								<a class="pageScroll" href="#home">
+									<img src="images/logos/t9hacks_logo_white_100x82.png">
+								</a>
+								<a class="pageScroll brand" href="#home">
+									<span>T9Hacks</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<button type="button" id="navButton">
+						<span id="navIcon" class="fa fa-bars"></span>
+					</button>
+				</div>
 
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navigationMobile">
-				<div class="brandMobile">
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div id="navigationLarge">
 					<ul>
-						<li>
-							<a class="pageScroll brand" href="#home">
+						<li class="brand mediumLargeOnly left">
+							<a class="pageScroll" href="#home">
 								<img src="images/logos/t9hacks_logo_white_100x82.png">
 							</a>
-							<a class="pageScroll brand" href="#home">
-								<span>T9Hacks</span>
-							</a>
+						</li>
+						<li class="left">
+							<a class="pageScroll" href="index.html">Back to Home</a>
+						</li>
+						<li class="right">
+							<a href="schedule.html">Detailed Schedule</a>
+						</li>
+						<li class="right">
+							<a href="live.html">Info</a>
 						</li>
 					</ul>
 				</div>
-				<button type="button" id="navButton">
-					<span id="navIcon" class="fa fa-bars"></span>
-				</button>
+				
 			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div id="navigationLarge">
-				<ul>
-					<li class="brand mediumLargeOnly left">
-						<a href="index.html">
-							<img src="images/logos/t9hacks_logo_white_100x82.png">
-						</a>
-					</li>
-					<li class="left">
-						<a href="index.html">Back to Home</a>
-					</li>
-					<li class="right">
-						<a href="schedule.html">Detailed Schedule</a>
-					</li>
-					<li class="right">
-						<a href="live.html">Info</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
+		</nav>
 		
 	</header>
 	
@@ -105,11 +99,11 @@
 			
 			<div class="row">
 				
-				<div class="infoBlock shadowBox scheduleContainer">
+				<div class="infoBlock scheduleContainer">
 					<div class="infoBlockHeader">
 						<h3>Sat, Feb 10</h3>
 					</div>
-					<div class="sectionShadowBox">
+					<div class="infoBlockBody">
 						<ul>
 							<li>
 								<div class="column2">10:00a</div>
@@ -161,11 +155,11 @@
 					</div>
 				</div>
 				
-				<div class="infoBlock shadowBox scheduleContainer">
+				<div class="infoBlock scheduleContainer">
 					<div class="infoBlockHeader">
 						<h3>Sun, Feb 11</h3>
 					</div>
-					<div class="sectionShadowBox">
+					<div class="infoBlockBody">
 						<ul>
 							<li>
 								<div class="column2">8:00a</div>
@@ -287,6 +281,11 @@
 			</div>
 		</div>
 	</footer>
+	
+	
+	
+	
+	
 	
 	<!---------------------------->
 	<!--		Javascript		-->

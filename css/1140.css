@@ -48,7 +48,7 @@ figure img
 	
 
 /* columns */	
-.container12, .container16 {
+.container, .container12, .container16 {
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -235,8 +235,8 @@ figure img
     .container16 .column15, .container16 .column15.alpha, .container16 .column15.beta, .container16 .column15.omega,
     .container16 .column16, .container16 .column16.alpha, .container16 .column16.beta, .container16 .column16.omega
 	{
-        margin: 0 0 20px;
-        width: 100%;
+        margin: 0 3% 20px;
+        width: 94%;
     }
     .prefix1, .prefix2, .prefix3, .prefix4, .prefix5, .prefix6, .prefix7, .prefix8, .prefix9, .prefix10, .prefix11, 
     .container12 .prefix1, .container12 .prefix2, .container12 .prefix3, .container12 .prefix4, .container12 .prefix5, .container12 .prefix6, .container12 .prefix7, .container12 .prefix8, .container12 .prefix9, .container12 .prefix10, .container12 .prefix11, 
