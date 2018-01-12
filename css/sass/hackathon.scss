@@ -352,6 +352,15 @@ blockquote {
 		}
 		.infoBlockBody {
 			padding: 10px;
+			
+			li {
+				padding-bottom: 10px;
+				border-bottom: 1px solid $colorPurpleDark;
+			}
+			li > div {
+				margin-bottom: 0;
+				float: right;
+			}
 		}
 	}
 	.infoBlockClear {
@@ -402,7 +411,7 @@ blockquote {
 	background-repeat: repeat;
 	background-position: center;
 }
-#registration, #livePage { /* green */
+#registration, #infoPage { /* green */
 	background: $colorGreen;
 	background-image: url("../images/green.png");
 	background-repeat: repeat;
@@ -677,9 +686,9 @@ nav {
 
 
 /* **************************************** */
-/*					Live					*/
+/*					Info					*/
 /* **************************************** */
-#livePage {
+#infoPage {
 	font-size: 18px;
 	h2 {
 		font-size: 3em;

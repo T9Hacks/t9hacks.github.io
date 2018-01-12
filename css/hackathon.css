@@ -268,6 +268,12 @@ blockquote {
       float: none; }
   .infoBlock .infoBlockBody {
     padding: 10px; }
+    .infoBlock .infoBlockBody li {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #331155; }
+    .infoBlock .infoBlockBody li > div {
+      margin-bottom: 0;
+      float: right; }
 
   .infoBlockClear {
     padding: 0; } }
@@ -306,7 +312,7 @@ blockquote {
   background-repeat: repeat;
   background-position: center; }
 
-#registration, #livePage {
+#registration, #infoPage {
   /* green */
   background: #A2E891;
   background-image: url("../images/green.png");
@@ -527,14 +533,14 @@ nav {
     width: 85px;
     height: 85px; } }
 /* **************************************** */
-/*					Live					*/
+/*					Info					*/
 /* **************************************** */
-#livePage {
+#infoPage {
   font-size: 18px; }
-  #livePage h2 {
+  #infoPage h2 {
     font-size: 3em;
     margin: 0; }
-  #livePage .sectionShadowBox .sectionShadowBox {
+  #infoPage .sectionShadowBox .sectionShadowBox {
     text-align: left; }
 
 /* **************************************** */
