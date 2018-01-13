@@ -404,7 +404,6 @@ blockquote {
 	background-repeat: repeat;
 	background-position: center;
 }
-	#home { padding: 50px; }
 #about, #mission { /* blue */
 	background: $colorBlue;
 	background-image: url("../images/blue.png");
@@ -431,11 +430,6 @@ blockquote {
 }
 footer {
 	background: $colorPurpleDeep;
-}
-@media (max-width: $mediaBreakMediumMax) {
-	#home {
-		padding: 50px 0;
-	}
 }
 
 .hide {
@@ -502,7 +496,7 @@ nav {
 }
 #navigationLarge {
 	height: 50px;
-	margin-right: 90px;
+	margin-right: 50px;
 	-webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
@@ -707,22 +701,23 @@ nav {
 footer {
 	padding: 30px 0;
 	color: white;
-}
-footer a {
-	border-bottom: white;
-}
-.footer2 {
-	background: $colorPurpleDark;
-	color: white;
-	border-top: 1px dotted $colorPurpleDeep;
 	
+	a {
+		border-bottom: white;
+	}
+	&.footer2 {
+		background: $colorPurpleDark;
+		padding: 10px 0 0;
+	}
 }
 @media (min-width: $mediaBreakSmallMax) { /* big screens */
-	footer .location {
-		text-align: left;
-	}
-	footer .copyright {
-		text-align: right;
+	footer {
+		.location {
+			text-align: left;
+		}
+		.copyright {
+			text-align: right;
+		}
 	}
 }
 
@@ -735,44 +730,51 @@ footer a {
 	list-style-type: none;
 	margin-left: 0;
 	text-align: center;
+	
+	li {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 }
-.socialButtons li, .socialLinks li {
-	display: inline-block;
-	margin-bottom: 0;
-}
-.socialButtons a {
-	display: block;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	font-size: 25px;
-	background-color: white;
-	color: black;
-	margin: 0 5px;
-	border-radius: 100%;
-	border: 0;
-	outline: 0;
+.socialButtons {
+	a {
+		display: block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 25px;
+		background-color: white;
+		color: black;
+		margin: 0 5px;
+		border-radius: 100%;
+		border: 0;
+		outline: 0;
 
-	-webkit-transition: all .3s;
-	-moz-transition: all .3s;
-	transition: all .3s;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		transition: all .3s;
+		
+		&:hover, &:focus, &:active {
+			background-color: #5ab8e2;
+		}
+	}
 }
-.socialButtons a:hover, .socialButtons a:focus, .socialButtons a:active {
-	background-color: #5ab8e2;
-}
-
 .socialLinks {
 	margin-top: 20px;
-}
-.socialLinks li {
-	margin: 0 5px;
-}
+	li {
+		margin: 0 5px;
+	}
 	.fb_iframe_widget span {
 		vertical-align: top !important;
 	}
+}
+	
 
 
 
+/* ************************************************ */
+/*					Net Neutrality					*/
+/* ************************************************ */
 #nncontainer {
     color: black;
     background-color: yellow;
@@ -823,5 +825,83 @@ footer a {
 	#nnsubcontainer p {
 	    width: 100%;
 	    margin: 0 0 10px;
+	}
+}
+
+
+
+
+
+
+/* ******************************************************** */
+/*					Spring 2016 Hackathon					*/
+/* ******************************************************** */
+.sp16_hackathon_info {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+.fact_title {
+	
+}
+.fact_bar_graph {
+	width: 100%;
+	text-align: center;
+}
+	.fact_graph_piece {
+		display: inline-block;
+		float: left;
+		height: 30px;
+		background: #BBBBBB;
+	}
+	.main {
+		background: #553377;
+	}
+	.fact_graph_6  { width:  6%; }
+	.fact_graph_40 { width: 40%; }
+	.fact_graph_60 { width: 60%; }
+	.fact_graph_94 { width: 94%; }
+	
+.fact_table {
+	width: 100%;
+	border-spacing: 2px;
+}
+	.fact_table td {
+		background: #553377;
+		padding: 3px 8px;
+	}
+
+.slideshowSlide {
+	position: relative;
+	display: none;
+	
+	.slideshowImg {
+		width: 100%;
+		height: 100%;
+	}
+	.slideshowDesc {
+		width: 100%;
+		height: 90px;
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.8);
+		position: absolute;
+		bottom: 7px;
+		z-index: 4;
+		text-align: center;
+		
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		
+		span {
+			position: absolute;
+			z-index: 5;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			padding: 0 20px;
+			color: white;
+		}
 	}
 }
