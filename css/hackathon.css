@@ -316,7 +316,7 @@ blockquote {
   background-repeat: repeat;
   background-position: center; }
 
-#faq {
+#faq, #workshops {
   /* yellow */
   background: #FFEDAE;
   background-image: url("../images/yellow.png");
