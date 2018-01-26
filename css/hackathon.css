@@ -236,7 +236,8 @@ blockquote {
     background: rgba(255, 255, 255, 0.7);
     padding: 20px;
     text-align: left;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    overflow: hidden; }
   .infoBlock li {
     margin-bottom: 10px;
     overflow: hidden; }
@@ -323,7 +324,7 @@ blockquote {
   background-repeat: repeat;
   background-position: top; }
 
-#schedule {
+#schedule, #tracks {
   /* pink */
   background: #FFB4BB;
   background-image: url("../images/pink.png");
@@ -711,5 +712,8 @@ footer {
       width: 100%;
       padding: 0 20px;
       color: white; }
+
+.img {
+  width: 100%; }
 
 /*# sourceMappingURL=hackathon.css.map */

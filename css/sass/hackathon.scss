@@ -309,6 +309,7 @@ blockquote {
 		padding: 20px;
 	    text-align: left;
 	    margin-bottom: 0;
+		overflow: hidden;
 	}
 	li {
 		margin-bottom: 10px;
@@ -422,7 +423,7 @@ blockquote {
 	background-repeat: repeat;
 	background-position: top;
 }
-#schedule { /* pink */
+#schedule, #tracks { /* pink */
 	background: $colorPink;
 	background-image: url("../images/pink.png");
 	background-repeat: repeat;
@@ -904,4 +905,11 @@ footer {
 			color: white;
 		}
 	}
+}
+
+
+
+
+.img {
+	width: 100%;
 }
