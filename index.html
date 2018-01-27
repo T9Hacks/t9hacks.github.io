@@ -189,14 +189,20 @@
 							<h3><span class="fa fa-microchip"></span>Cybersecurity</h3>
 						</div>
 						<div class="infoBlockBody">
-							<h4>All Female and Non-Binary Participant Track!!</h4>
-							<p>
-								Women and non-binary students in this track will be using <a href="https://www.circadence.com/" target="_blank">Circadence</a>'s <a href="https://www.circadence.com/project-ares/education-overview/" target="_blank">Project Ares</a> software to learn cyber security.  This track is open to participants at all levels, from basic beginner programmers to knowledgable hackers.  Participants will compete in teams to develop their cybersecurity skills.
-							</p> 
-							<p>
-								Students at all levels of proficiency have access to an evolving library of mission scenarios and modern educational resources in a hands-on, gamified environment that brings the static classroom to life. They work alone or in teams to stop hackers, protect systems, and hone their skills inside environments that mirror the actual businesses and organizations they will defend in their future careers.
-							</p>
-							<p>Track generously hosted by <a href="" target="_blank">MD5</a>.</p>
+							<div class="column8">
+								<h4>All Female and Non-Binary Participant Track!!</h4>
+								<p>
+									Use <a href="https://www.circadence.com/project-ares/education-overview/" target="_blank">Project Ares</a> online software to learn cybersecurity.  This track is open to participants at all experience levels, from students who've never written code before to advanced programmers. Participants can compete individually or in teams to develop their cybersecurity skills.
+								</p> 
+							</div>
+							<div class="column4">
+								<figure>
+									<img src="images/projectares_gameroom.png" alt="Screenshot of the Project Ares Game Room" class="img" />
+									<figcaption>
+										<h3>Game Room</h3>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
 					</div>
 					<blockquote>
@@ -358,6 +364,29 @@
 					<div class="slideshowSlide">
 						<img class="slideshowImg" src="spring2017.2/images/sp16_hackathon/7_demos/t9hacks_sp16hackathon_demos_photo14.jpg" alt="Photos of T9Hackers demoing their projects."><div class="slideshowDesc"><span>After 24 hours, teams demoed their work!</span></div>
 					</div>
+					
+					<script>
+						/*
+						 * 	Spring 2016 Hackathon Slideshow
+						 */
+						var slideIndex = 0;
+						carousel();
+						
+						function carousel() {
+						    var i;
+						    var x = document.getElementsByClassName("slideshowSlide");
+						    for (i = 0; i < x.length; i++) {
+						    	x[i].style.display = "none"; 
+						    }
+						    slideIndex++;
+						    if (slideIndex > x.length) {slideIndex = 1} 
+						    x[slideIndex-1].style.display = "block"; 
+						    setTimeout(carousel, 3000); // Change image every 2 seconds
+						}
+						/*
+						 * 	END Spring 2016 Hackathon Slideshow
+						 */
+					</script>
 					
 				</div>
 				
