@@ -152,6 +152,26 @@ blockquote {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+figure {
+	margin: 0;
+	overflow: hidden;
+	
+	img, iframe {
+		width: 40%;
+		display: inline-block;
+		float: left;
+	}
+	figcaption {
+		width: 60%;
+		display: inline-block;
+		float: left;
+		padding-left: 20px;
+		
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+}
 
 @media (max-width: $mediaBreakMediumMax) {
 	html, body {
@@ -170,6 +190,17 @@ blockquote {
 	}
 	blockquote {
 		width: 90%;
+	}
+}
+@media (max-width: $mediaBreakSmallMax) {
+	figure {
+		img, iframe {
+			width: 100%;
+		}
+		figcaption {
+			width: 100%;
+			padding-left: 0;
+		}
 	}
 }
 
@@ -905,11 +936,4 @@ footer {
 			color: white;
 		}
 	}
-}
-
-
-
-
-.img {
-	width: 100%;
 }

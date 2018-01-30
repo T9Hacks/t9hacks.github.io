@@ -85,6 +85,22 @@ blockquote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box; }
 
+figure {
+  margin: 0;
+  overflow: hidden; }
+  figure img, figure iframe {
+    width: 40%;
+    display: inline-block;
+    float: left; }
+  figure figcaption {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+
 @media (max-width: 1024px) {
   html, body {
     font-size: 18px; }
@@ -102,6 +118,12 @@ blockquote {
 
   blockquote {
     width: 90%; } }
+@media (max-width: 767px) {
+  figure img, figure iframe {
+    width: 100%; }
+  figure figcaption {
+    width: 100%;
+    padding-left: 0; } }
 .btn {
   padding: 10px 20px;
   margin: 20px auto;
@@ -712,8 +734,5 @@ footer {
       width: 100%;
       padding: 0 20px;
       color: white; }
-
-.img {
-  width: 100%; }
 
 /*# sourceMappingURL=hackathon.css.map */
