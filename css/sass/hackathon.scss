@@ -21,7 +21,7 @@ $colorPurpleOriginalDark:	#331155;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 
-$mediaBreakLargeMax: 1140px;
+$mediaBreakLargeMax: 1400px;
 $mediaBreakMediumMax: 1024px;
 $mediaBreakSmallMax: 767px;
 
@@ -949,15 +949,16 @@ footer {
 /* ******************************************************** */
 /*					Detailed Schedule Page					*/
 /* ******************************************************** */
-#detailedschedule {
+#detailedschedule, #trackspage {
 	display: flex;
 	align-items: stretch;
 }
-#scheduleSideBar {
+#pageSideBar {
 	position: fixed;
     left: 0;
     height: 100%;
     width: 300px;
+	padding-top: 50px;
     background: $colorPurpleOriginalDark;
     display: flex;
     align-items: stretch;
@@ -967,7 +968,7 @@ footer {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	
-	+ section, + section + section {
+	+ article {
 		margin-left: 300px;
 	}
 	.container {
@@ -1042,20 +1043,20 @@ footer {
 		}
 	}
 }
-@media (max-width: $mediaBreakMediumMax) {
-	#scheduleSideBar {
+@media (max-width: $mediaBreakLargeMax) {
+	#pageSideBar {
 	    width: 200px;
 		
-		+ section, + section + section {
+		+ article {
 			margin-left: 200px;
 		}
 	}
 }
 @media (max-width: $mediaBreakSmallMax) {
-	#scheduleSideBar {
+	#pageSideBar {
 	    display: none;
 		
-		+ section, + section + section {
+		+ article {
 			margin-left: 0;
 		}
 	}
