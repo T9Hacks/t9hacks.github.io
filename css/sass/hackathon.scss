@@ -6,12 +6,18 @@
 	pink 	#FFB4BB		255, 180, 187
 */
 $colorPurple: 		#A991E8;
-$colorPurpleDeep:	#594198;
-$colorPurpleDark:	#331155;
+$colorPurpleDeep:	#8971C8;
 $colorBlue: 		#ACF7FF;
+$colorBlueDeep: 	#8CD7DF;
 $colorGreen: 		#A2E891;
+$colorGreenDeep: 	#82C871;
 $colorYellow: 		#FFEDAE;
+$colorYellowDeep: 	#DFCD8E;
 $colorPink: 		#FFB4BB;
+$colorPinkDeep: 	#DF949B;
+
+$colorPurpleOriginalDeep:	#594198;
+$colorPurpleOriginalDark:	#331155;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 
@@ -74,7 +80,7 @@ html, body {
 	font-family: $fontText;
 	font-size: 20px;
 	line-height: 1.5em;
-	color: $colorPurpleDark;
+	color: $colorPurpleOriginalDark;
 	text-align: center;
 }
 
@@ -300,7 +306,7 @@ figure {
 	margin-bottom: 10px;
 	
 	h3 {
-		border: 1px solid $colorPurpleDark;
+		border: 1px solid $colorPurpleOriginalDark;
 		padding: 4px;
 	}
 }
@@ -387,7 +393,7 @@ figure {
 			
 			li {
 				padding-bottom: 10px;
-				border-bottom: 1px solid $colorPurpleDark;
+				border-bottom: 1px solid $colorPurpleOriginalDark;
 			}
 			li > div {
 				margin-bottom: 0;
@@ -461,7 +467,7 @@ figure {
 	background-position: center;
 }
 footer {
-	background: $colorPurpleDeep;
+	background: $colorPurpleOriginalDeep;
 }
 
 .hide {
@@ -479,7 +485,7 @@ section {
 }
 nav {
 	z-index: 2;
-	background: $colorPurpleDeep;
+	background: $colorPurpleOriginalDeep;
 	position: fixed;
 	width: 100%;
 	
@@ -738,7 +744,7 @@ footer {
 		border-bottom: white;
 	}
 	&.footer2 {
-		background: $colorPurpleDark;
+		background: $colorPurpleOriginalDark;
 		padding: 10px 0 0;
 	}
 }
@@ -934,6 +940,123 @@ footer {
 			width: 100%;
 			padding: 0 20px;
 			color: white;
+		}
+	}
+}
+
+
+
+/* ******************************************************** */
+/*					Detailed Schedule Page					*/
+/* ******************************************************** */
+#detailedschedule {
+	display: flex;
+	align-items: stretch;
+}
+#scheduleSideBar {
+	position: fixed;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background: $colorPurpleOriginalDark;
+    display: flex;
+    align-items: stretch;
+	border-right: 2px solid $colorPurpleOriginalDeep;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	
+	+ section, + section + section {
+		margin-left: 300px;
+	}
+	.container {
+		width: 100%;
+		display: flex;
+		align-items: stretch;
+
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	ul {
+		display: flex;
+	    flex-direction: column;
+		align-items: stretch;
+	    height: 100%;
+		width: 100%;
+	}
+	li {
+		display: flex;
+	    flex-direction: column;
+		align-items: stretch;
+		flex-grow: 1;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		border-bottom: 1px solid $colorPurpleOriginalDeep;
+		
+		&:last-child { border: 0; }
+		
+		&:nth-child(5n-0) a { 
+			background: $colorBlue;
+			&:hover, &:active, &:focus { background: $colorBlueDeep; }
+		}
+		&:nth-child(5n-1) a { 
+			background: $colorPink;
+			&:hover, &:active, &:focus { background: $colorPinkDeep; }
+		}
+		&:nth-child(5n-2) a { 
+			background: $colorGreen;
+			&:hover, &:active, &:focus { background: $colorGreenDeep; }
+		}
+		&:nth-child(5n-3) a { 
+			background: $colorPurple;
+			&:hover, &:active, &:focus { background: $colorPurpleDeep; }
+		}
+		&:nth-child(5n-4) a { 
+			background: $colorYellow;
+			&:hover, &:active, &:focus { background: $colorYellowDeep; }
+		}
+		
+		a {
+			display: flex;
+		    flex-direction: column;
+			align-items: stretch;
+			width: 100%;
+			height: 100%;
+			display: block;
+			border: 0;
+			
+			&:hover, &:active, &:focus {
+				color: $colorPurpleOriginalDark;
+			}
+		}
+		
+		span {
+			margin-bottom: 0;
+			position: absolute;
+			top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+	}
+}
+@media (max-width: $mediaBreakMediumMax) {
+	#scheduleSideBar {
+	    width: 200px;
+		
+		+ section, + section + section {
+			margin-left: 200px;
+		}
+	}
+}
+@media (max-width: $mediaBreakSmallMax) {
+	#scheduleSideBar {
+	    display: none;
+		
+		+ section, + section + section {
+			margin-left: 0;
 		}
 	}
 }

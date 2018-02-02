@@ -735,4 +735,97 @@ footer {
       padding: 0 20px;
       color: white; }
 
+/* ******************************************************** */
+/*					Detailed Schedule Page					*/
+/* ******************************************************** */
+#detailedschedule {
+  display: flex;
+  align-items: stretch; }
+
+#scheduleSideBar {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  background: #331155;
+  display: flex;
+  align-items: stretch;
+  border-right: 2px solid #594198;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  #scheduleSideBar + section, #scheduleSideBar + section + section {
+    margin-left: 300px; }
+  #scheduleSideBar .container {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  #scheduleSideBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    width: 100%; }
+  #scheduleSideBar li {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #594198; }
+    #scheduleSideBar li:last-child {
+      border: 0; }
+    #scheduleSideBar li:nth-child(5n-0) a {
+      background: #ACF7FF; }
+      #scheduleSideBar li:nth-child(5n-0) a:hover, #scheduleSideBar li:nth-child(5n-0) a:active, #scheduleSideBar li:nth-child(5n-0) a:focus {
+        background: #8CD7DF; }
+    #scheduleSideBar li:nth-child(5n-1) a {
+      background: #FFB4BB; }
+      #scheduleSideBar li:nth-child(5n-1) a:hover, #scheduleSideBar li:nth-child(5n-1) a:active, #scheduleSideBar li:nth-child(5n-1) a:focus {
+        background: #DF949B; }
+    #scheduleSideBar li:nth-child(5n-2) a {
+      background: #A2E891; }
+      #scheduleSideBar li:nth-child(5n-2) a:hover, #scheduleSideBar li:nth-child(5n-2) a:active, #scheduleSideBar li:nth-child(5n-2) a:focus {
+        background: #82C871; }
+    #scheduleSideBar li:nth-child(5n-3) a {
+      background: #A991E8; }
+      #scheduleSideBar li:nth-child(5n-3) a:hover, #scheduleSideBar li:nth-child(5n-3) a:active, #scheduleSideBar li:nth-child(5n-3) a:focus {
+        background: #8971C8; }
+    #scheduleSideBar li:nth-child(5n-4) a {
+      background: #FFEDAE; }
+      #scheduleSideBar li:nth-child(5n-4) a:hover, #scheduleSideBar li:nth-child(5n-4) a:active, #scheduleSideBar li:nth-child(5n-4) a:focus {
+        background: #DFCD8E; }
+    #scheduleSideBar li a {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: 0; }
+      #scheduleSideBar li a:hover, #scheduleSideBar li a:active, #scheduleSideBar li a:focus {
+        color: #331155; }
+    #scheduleSideBar li span {
+      margin-bottom: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+@media (max-width: 1024px) {
+  #scheduleSideBar {
+    width: 200px; }
+    #scheduleSideBar + section, #scheduleSideBar + section + section {
+      margin-left: 200px; } }
+@media (max-width: 767px) {
+  #scheduleSideBar {
+    display: none; }
+    #scheduleSideBar + section, #scheduleSideBar + section + section {
+      margin-left: 0; } }
+
 /*# sourceMappingURL=hackathon.css.map */
