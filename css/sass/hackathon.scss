@@ -105,7 +105,7 @@ h2 {
 		color: #fff; 
 	}
 h3 {
-	font-size: 1.3em;
+	font-size: 3em;
 	line-height: 1.5em;
 	margin: 10px 0;
 	text-align: center;
@@ -290,6 +290,7 @@ figure {
 	max-width: 2000px;
 	margin: 0 5%;
 	overflow: hidden;
+	text-align: left;
 	
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -308,6 +309,7 @@ figure {
 	h3 {
 		border: 1px solid $colorPurpleOriginalDark;
 		padding: 4px;
+		font-size: 1.3em;
 	}
 }
 .infoBlock {
@@ -327,6 +329,7 @@ figure {
 		    margin: 0 20px 0 0;
 		}
 		h3 {
+			font-size: 1.3em;
 		    float: left;
 		    text-align: left;
 		    color: white;
@@ -435,36 +438,54 @@ figure {
 
 
 
-
-#home, #sponsors { /* purple */
+section {
+	background-repeat: repeat;
+	background-position: center;
+}
+section:nth-child(5n-0), section.pink { /* pink */
 	background: $colorPurple;
 	background-image: url("../images/purple.png");
-	background-repeat: repeat;
-	background-position: center;
 }
-#about, #mission { /* blue */
+section:nth-child(5n-4), section.purple { /* purple */
 	background: $colorBlue;
 	background-image: url("../images/blue.png");
-	background-repeat: repeat;
-	background-position: center;
 }
-#registration, #infoPage { /* green */
+section:nth-child(5n-3), section.blue { /* blue */
 	background: $colorGreen;
 	background-image: url("../images/green.png");
-	background-repeat: repeat;
-	background-position: center;
 }
-#faq, #workshops { /* yellow */
+section:nth-child(5n-2), section.green { /* green */
 	background: $colorYellow;
 	background-image: url("../images/yellow.png");
-	background-repeat: repeat;
-	background-position: top;
 }
-#schedule, #tracks { /* pink */
+section:nth-child(5n-1), section.yellow { /* yellow */
 	background: $colorPink;
 	background-image: url("../images/pink.png");
-	background-repeat: repeat;
-	background-position: center;
+}
+
+#pageSideBar {
+	li {
+		&:nth-child(5n-0) a { 
+			background: $colorBlue;
+			&:hover, &:active, &:focus { background: $colorBlueDeep; }
+		}
+		&:nth-child(5n-4) a { 
+			background: $colorGreen;
+			&:hover, &:active, &:focus { background: $colorGreenDeep; }
+		}
+		&:nth-child(5n-3) a { 
+			background: $colorYellow;
+			&:hover, &:active, &:focus { background: $colorYellowDeep; }
+		}
+		&:nth-child(5n-2) a { 
+			background: $colorPink;
+			&:hover, &:active, &:focus { background: $colorPinkDeep; }
+		}
+		&:nth-child(5n-1) a { 
+			background: $colorPurple;
+			&:hover, &:active, &:focus { background: $colorPurpleDeep; }
+		}
+	}
 }
 footer {
 	background: $colorPurpleOriginalDeep;
@@ -998,27 +1019,6 @@ footer {
 		border-bottom: 1px solid $colorPurpleOriginalDeep;
 		
 		&:last-child { border: 0; }
-		
-		&:nth-child(5n-0) a { 
-			background: $colorBlue;
-			&:hover, &:active, &:focus { background: $colorBlueDeep; }
-		}
-		&:nth-child(5n-1) a { 
-			background: $colorPink;
-			&:hover, &:active, &:focus { background: $colorPinkDeep; }
-		}
-		&:nth-child(5n-2) a { 
-			background: $colorGreen;
-			&:hover, &:active, &:focus { background: $colorGreenDeep; }
-		}
-		&:nth-child(5n-3) a { 
-			background: $colorPurple;
-			&:hover, &:active, &:focus { background: $colorPurpleDeep; }
-		}
-		&:nth-child(5n-4) a { 
-			background: $colorYellow;
-			&:hover, &:active, &:focus { background: $colorYellowDeep; }
-		}
 		
 		a {
 			display: flex;
