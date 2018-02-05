@@ -17,8 +17,7 @@ html, body {
 
 h1 {
   font-size: 8em;
-  line-height: 1.5em;
-  margin: 30px;
+  line-height: 1.1em;
   color: #fff;
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif; }
 
@@ -303,6 +302,13 @@ figure {
 
   .infoBlockClear {
     padding: 0; } }
+#home {
+  padding-top: 80px; }
+
+.headerLogo {
+  width: 200px;
+  height: 200px; }
+
 .scheduleContainer {
   width: 100%; }
   .scheduleContainer span:nth-child(2n) {
@@ -319,6 +325,13 @@ figure {
   .containerShadowBox {
     width: 45%; } }
 @media (max-width: 767px) {
+  #home {
+    padding-top: 60px; }
+
+  .headerLogo {
+    width: 100px;
+    height: 100px; }
+
   .containerShadowBox {
     width: 100%; } }
 section {
