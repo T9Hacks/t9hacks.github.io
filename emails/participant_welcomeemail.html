@@ -1,13 +1,19 @@
 <style>
 .wrapper {
 	width: 100%;
+	max-width: 100%;
+}
+.wrapper > tbody > tr > td {
+	width: 100%;
+	max-width: 100%;
 }
 table.container {
 	background: #594198;
 	padding: 20px;
 	font-family: helvetica;
 	border-spacing:0;
-	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
 }
 table, thead, tbody, tr, th, td {
 	border-collapse: collapse;
@@ -15,6 +21,9 @@ table, thead, tbody, tr, th, td {
 	margin: 0;
 	padding: 0;
 	border-spacing:0;
+}
+.container thead, .container tbody {
+	padding: 0 20px;
 }
 .clear {
 	width: 30px;
@@ -24,25 +33,29 @@ table, thead, tbody, tr, th, td {
 	background: #594198;
 }
 
-thead tr:first-child th {
+.container thead tr:first-child th {
 	padding-top: 40px;
 }
-tbody tr:last-child td {
+.container tbody tr:last-child td {
 	padding-bottom: 40px;
 }
-.header {
+.container .header {
 	background: #A991E8;
 	text-align: center;
 	padding: 20px 40px;
 	overflow: hidden;
 	max-width: 600px;
     margin: 0 auto;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-	.header img {
+	.container .header img {
 		display: inline-block;
 		float: left;
 	}
-	.header h1 {
+	.container .header h1 {
 		color: white;
 	    margin: 0;
 	    padding: 0 0 0 20px;
@@ -52,22 +65,29 @@ tbody tr:last-child td {
 	    float: left;
 	}
 	
-tbody {
+.container tbody {
 	color: #594198;
 	line-height: 1.5em;
 	font-size: 18px;
 }
-.section {
+.container td {
+}
+.container .section {
 	padding: 0 40px;
-	max-width: 600px;
+	width: 100%;
 	margin: 0 auto 0;
 	background: white;
 	overflow: hidden;
+	max-width: 600px;
+	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
-	tbody tr:first-child .section {
+	.container tbody tr:first-child .section {
 		padding-top: 40px;
 	}
-	tbody tr:last-child .section {
+	.container tbody tr:last-child .section {
 		padding-bottom: 40px;
 	}
 p {
