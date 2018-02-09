@@ -164,6 +164,9 @@ figure {
     width: 30px;
     display: inline-block; }
 
+.listClear ul, .listClear ol {
+  margin-bottom: 10px; }
+
 .smallOnly {
   display: none !important; }
 

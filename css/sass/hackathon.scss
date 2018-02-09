@@ -259,6 +259,11 @@ figure {
 		}
 	}
 }
+.listClear {
+	ul, ol {
+		margin-bottom: 10px;
+	}
+}
 
 .smallOnly			{ display: none !important; }
 .mediumSmallOnly	{ display: none !important; }
