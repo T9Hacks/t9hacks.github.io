@@ -7,3 +7,6 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 # ---- Render pages without urls
 Options +MultiViews
+
+# Redirect index.html to home
+#Redirect 301 index.html home.html
