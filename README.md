@@ -1,9 +1,8 @@
-##T9Hacks Spring 2017
-T9Hacks is a 24 hour hackathon at the University of Colorado Boulder's ATLAS Institute.
+##T9Hacks Hackathon
+T9Hacks is a 24-hour female and non-binary hackathon at the University of Colorado Boulder's ATLAS Institute.
 
 ##When
-Spring 2017
+Fall 2018
 
 ##Where
 ATLAS Institute, University of Colorado Boulder
-<b>Black Box Experimental Studio</b>
