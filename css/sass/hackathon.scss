@@ -1,13 +1,23 @@
 /*
-	purple	#A991E8		169, 145, 232		#594198
-	blue 	#ACF7FF		172, 247, 255
-	green 	#A2E891		162, 232, 145
-	yellow 	#FFEDAE		255, 237, 174
-	pink 	#FFB4BB		255, 180, 187
+
 */
+
+$colorMain: #7961ab;
+$colorMainLightBy6: #cec5e0;
+$colorMainLightBy5: #bfb4d8;
+$colorMainLightBy4: #b1a4cf;
+$colorMainLightBy3: #a393c6;
+$colorMainLightBy2: #9582bd;
+$colorMainLightBy1: #8772b4;
+$colorMainDarkBy3: #55427d;
+$colorMainDarkBy2: #614b8e;
+$colorMainDarkBy1: #6c549e;
+$colorAccent1: #6193ab;
+$colorAccent2: #9e61ab;
+
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 $colorShadow: #aaa;
-$colorText: black;
+$colorText: #444;
 $colorBackground: white;
 $colorBorder: transparent;
 
@@ -15,23 +25,31 @@ $mediaBreakLargeMax: 1400px;
 $mediaBreakMediumMax: 1024px;
 $mediaBreakSmallMax: 767px;
 
-$fontHeadings:			"Rajdhani", "Raleway", Helvetica, sans-serif;
-$fontText: 				"Raleway", Helvetica, sans-serif;
+$fontHeadings: "Rajdhani", "Raleway", Helvetica, sans-serif;
+$fontText: "Raleway", Helvetica, sans-serif;
 
 
 $blockquoteBorder: transparent;
 $blockquoteBackground: transparent;
 
-$aColor: $colorText;
-$aHoverColor: $colorText;
+$aColor: $colorAccent1;
+$aHoverColor: $colorAccent1;
+$aWhiteColor: white;
+$aWhiteHoverColor: white;
 
-$navAColor: $aColor;
-$navAHoverColor: $aHoverColor;
 
-$navBackground: transparent;
+$navBackground: $colorMain;
+$navBackgroundActive: $colorAccent1;
+$navAColor: $aWhiteColor;
+$navAHoverColor: $aWhiteHoverColor;
 
-$btnBackground: transparent;
+
+$btnBackground: $colorAccent2;
+$btnBackgroundHoverColor: $colorAccent1;
 $btnBorder: transparent;
+$btnTextColor: white;
+$btnTextHoverColor: white;
+
 
 $sponsorLogoblockHoverBackground: transparent;
 
@@ -42,20 +60,40 @@ html, body {
 	line-height: 1.5em;
 	color: $colorText;
 	text-align: center;
+	background: $colorBackground;
 }
 
 h1 {
 	font-family: $fontHeadings;
+	font-size: 6em;
+	line-height: 1.5em;
+	color: $colorMain;
 }
 h2 {
 	font-family: $fontHeadings;
+	font-size: 2em;
+	line-height: 1.5em;
+	margin-bottom: 50px;
+	color: $colorMain;
 }
 h3 {
 	font-family: $fontHeadings;
+	font-size: 3em;
+	line-height: 1.5em;
+	margin: 30px 0 20px;
+	padding: 10px;
+	color: $colorMain;
+	border-top: 5px solid $colorAccent2;
+	border-bottom: 5px solid $colorAccent2;
+	text-align: center;
 }
 h4 {
+	font-family: $fontHeadings;
+	font-size: 2em;
+	line-height: 1.5em;
+	color: $colorMain;
 	font-style: italic;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 p {
 	margin-bottom: 10px;
@@ -65,9 +103,11 @@ p {
 a {
 	cursor: pointer;
 	color: $aColor;
+	text-decoration: none;
 }
 a:hover, a:focus, a:active {
 	color: $aHoverColor;
+	text-decoration: underline;
 }
 
 ul, li {
@@ -163,9 +203,12 @@ figure {
 	text-align: center;
 	text-decoration: none;
     text-shadow: $colorShadow 0px 1px 0px;
+	color: $btnTextColor;
 }
 .btn:hover, .btn:active, .btn:focus {
-	
+	background: $btnBackgroundHoverColor;
+	color: $btnTextHoverColor;
+	text-decoration: none;
 }
 
 .list {
@@ -236,6 +279,8 @@ article {
 
 
 
+
+
 /* ********************************************** */
 /*	  				Navigation					  */
 /* ********************************************** */
@@ -267,21 +312,30 @@ nav {
 		}
 		&.brand {
 			a {
-				padding: 10px 20px;
 				margin: 0;
-				height: 30px;
+				height: 50px;
 			}
 			img {
 				height: 30px;
 				width: 37px;
+				margin: 10px 20px;
+			}
+			span {
+				line-height: 50px;
+				float: right;
 			}
 		}
 		a {
 			display: block;
 			color: $navAColor;
+			padding: 0 20px;
+			line-height: 50px;
+			text-decoration: none;
 		}
 		a:hover, a:active, a:focus {
+			text-decoration: none;
 			color: $navAHoverColor;
+			background: $navBackgroundActive;
 		}
 	}
 }
@@ -302,13 +356,15 @@ nav {
 		height: 50px;
 		
 		a {
-		    height: 30px;
-		    padding: 10px 20px 10px 0;
-		    display: inline-block;
-		    float: left;
-		    line-height: 30px;
-			font-size: 1em;
+		    padding: 0;
+			img {
+				margin: 10px;
+			}
+			span {
+				padding-right: 10px;
+			}
 		}
+		
 	}
 }
 #navButton {
@@ -354,7 +410,7 @@ nav {
 		margin-right: 70px;
 	}
 	nav li a {
-    	padding: 15px;
+    	
 	}
 	#mlh-trust-badge {
 		max-width:70px;
@@ -367,14 +423,15 @@ nav {
 		display: block;
 	}
 	nav li a {
-	    padding: 15px 20px;
 	    font-size: 0.8em;
+		line-height: 1em;
+		padding: 15px 20px;
 	}
 	#navigationLarge {
 		display: none;
 		position: absolute;
 		top: 50px;
-		background: #7961B8;
+		background: $navBackground;
 		height: auto;
 		left: 0;
 		width: 100%;
@@ -385,7 +442,40 @@ nav {
 		li {
 			display: block;
 			float: none;
-			border-bottom: 1px solid #594198;
+			border-top: 1px solid #594198;
+		}
+	}
+}
+
+
+/* **************************************** */
+/*					Footer					*/
+/* **************************************** */
+footer {
+	padding: 30px 0;
+	background: $navBackground;
+	color: $navAColor;
+	
+	&.footer2 {
+		padding: 10px 0 0;
+	}
+	a {
+		color: $navAColor;
+		text-decoration: underline;
+		&:hover {
+			color: $navAColor;
+			text-decoration: underline;
+		}
+	}
+	
+}
+@media (min-width: $mediaBreakSmallMax) { /* big screens */
+	footer {
+		.location {
+			text-align: left;
+		}
+		.copyright {
+			text-align: right;
 		}
 	}
 }
@@ -417,6 +507,19 @@ nav {
 	.headerLogo {
 		width: 100px;
 		height: 100px;
+	}
+}
+
+
+
+/* ********************************************** */
+/*	  				Info Blocks					  */
+/* ********************************************** */
+.infoBlockClear {
+	h4 {
+		border-top: 2px solid $colorAccent2;
+		border-bottom: 2px solid $colorAccent2;
+		text-align: center;
 	}
 }
 
@@ -513,26 +616,7 @@ nav {
 
 
 
-/* **************************************** */
-/*					Footer					*/
-/* **************************************** */
-footer {
-	padding: 30px 0;
-	
-	&.footer2 {
-		padding: 10px 0 0;
-	}
-}
-@media (min-width: $mediaBreakSmallMax) { /* big screens */
-	footer {
-		.location {
-			text-align: left;
-		}
-		.copyright {
-			text-align: right;
-		}
-	}
-}
+
 
 
 
@@ -568,7 +652,7 @@ footer {
 		transition: all .3s;
 		
 		&:hover, &:focus, &:active {
-			background-color: #5ab8e2;
+			background-color: $colorAccent1;
 		}
 	}
 }

@@ -1,29 +1,45 @@
 /*
-	purple	#A991E8		169, 145, 232		#594198
-	blue 	#ACF7FF		172, 247, 255
-	green 	#A2E891		162, 232, 145
-	yellow 	#FFEDAE		255, 237, 174
-	pink 	#FFB4BB		255, 180, 187
+
 */
 html, body {
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5em;
-  color: black;
-  text-align: center; }
+  color: #444;
+  text-align: center;
+  background: white; }
 
 h1 {
-  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif; }
+  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+  font-size: 6em;
+  line-height: 1.5em;
+  color: #7961ab; }
 
 h2 {
-  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif; }
+  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+  color: #7961ab; }
 
 h3 {
-  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif; }
+  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+  font-size: 3em;
+  line-height: 1.5em;
+  margin: 30px 0 20px;
+  padding: 10px;
+  color: #7961ab;
+  border-top: 5px solid #9e61ab;
+  border-bottom: 5px solid #9e61ab;
+  text-align: center; }
 
 h4 {
+  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: #7961ab;
   font-style: italic;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 p {
   margin-bottom: 10px;
@@ -31,10 +47,12 @@ p {
 
 a {
   cursor: pointer;
-  color: black; }
+  color: #6193ab;
+  text-decoration: none; }
 
 a:hover, a:focus, a:active {
-  color: black; }
+  color: #6193ab;
+  text-decoration: underline; }
 
 ul, li {
   list-style-type: none; }
@@ -103,11 +121,17 @@ figure {
   margin: 20px auto;
   display: inline-block;
   cursor: pointer;
-  background: transparent;
+  background: #9e61ab;
   border: transparent;
   text-align: center;
   text-decoration: none;
-  text-shadow: #aaa 0px 1px 0px; }
+  text-shadow: #aaa 0px 1px 0px;
+  color: white; }
+
+.btn:hover, .btn:active, .btn:focus {
+  background: #6193ab;
+  color: white;
+  text-decoration: none; }
 
 .list li {
   margin-bottom: 10px;
@@ -193,7 +217,7 @@ section {
 
 nav {
   z-index: 2;
-  background: transparent;
+  background: #7961ab;
   position: fixed;
   width: 100%; }
   nav ul {
@@ -209,17 +233,25 @@ nav {
     nav li.right {
       float: right; }
     nav li.brand a {
-      padding: 10px 20px;
       margin: 0;
-      height: 30px; }
+      height: 50px; }
     nav li.brand img {
       height: 30px;
-      width: 37px; }
+      width: 37px;
+      margin: 10px 20px; }
+    nav li.brand span {
+      line-height: 50px;
+      float: right; }
     nav li a {
       display: block;
-      color: black; }
+      color: white;
+      padding: 0 20px;
+      line-height: 50px;
+      text-decoration: none; }
     nav li a:hover, nav li a:active, nav li a:focus {
-      color: black; }
+      text-decoration: none;
+      color: white;
+      background: #6193ab; }
 
 #navigationLarge {
   height: 50px;
@@ -236,12 +268,11 @@ nav {
     float: left;
     height: 50px; }
     .navigationMobile .brandMobile a {
-      height: 30px;
-      padding: 10px 20px 10px 0;
-      display: inline-block;
-      float: left;
-      line-height: 30px;
-      font-size: 1em; }
+      padding: 0; }
+      .navigationMobile .brandMobile a img {
+        margin: 10px; }
+      .navigationMobile .brandMobile a span {
+        padding-right: 10px; }
 
 #navButton {
   background: transparent;
@@ -278,9 +309,6 @@ nav {
   #navigationLarge {
     margin-right: 70px; }
 
-  nav li a {
-    padding: 15px; }
-
   #mlh-trust-badge {
     max-width: 70px;
     min-width: 40px;
@@ -290,14 +318,15 @@ nav {
     display: block; }
 
   nav li a {
-    padding: 15px 20px;
-    font-size: 0.8em; }
+    font-size: 0.8em;
+    line-height: 1em;
+    padding: 15px 20px; }
 
   #navigationLarge {
     display: none;
     position: absolute;
     top: 50px;
-    background: #7961B8;
+    background: #7961ab;
     height: auto;
     left: 0;
     width: 100%; }
@@ -306,7 +335,29 @@ nav {
     #navigationLarge li {
       display: block;
       float: none;
-      border-bottom: 1px solid #594198; } }
+      border-top: 1px solid #594198; } }
+/* **************************************** */
+/*					Footer					*/
+/* **************************************** */
+footer {
+  padding: 30px 0;
+  background: #7961ab;
+  color: white; }
+  footer.footer2 {
+    padding: 10px 0 0; }
+  footer a {
+    color: white;
+    text-decoration: underline; }
+    footer a:hover {
+      color: white;
+      text-decoration: underline; }
+
+@media (min-width: 767px) {
+  /* big screens */
+  footer .location {
+    text-align: left; }
+  footer .copyright {
+    text-align: right; } }
 /* ****************************************** */
 /*	  				Home					  */
 /* ****************************************** */
@@ -324,6 +375,14 @@ nav {
   .headerLogo {
     width: 100px;
     height: 100px; } }
+/* ********************************************** */
+/*	  				Info Blocks					  */
+/* ********************************************** */
+.infoBlockClear h4 {
+  border-top: 2px solid #9e61ab;
+  border-bottom: 2px solid #9e61ab;
+  text-align: center; }
+
 /* ******************************************** */
 /*					Sponsors					*/
 /* ******************************************** */
@@ -396,20 +455,6 @@ nav {
   #infoPage .sectionShadowBox .sectionShadowBox {
     text-align: left; }
 
-/* **************************************** */
-/*					Footer					*/
-/* **************************************** */
-footer {
-  padding: 30px 0; }
-  footer.footer2 {
-    padding: 10px 0 0; }
-
-@media (min-width: 767px) {
-  /* big screens */
-  footer .location {
-    text-align: left; }
-  footer .copyright {
-    text-align: right; } }
 /* ************************************************ */
 /*					Social Buttons					*/
 /* ************************************************ */
@@ -437,7 +482,7 @@ footer {
   -moz-transition: all .3s;
   transition: all .3s; }
   .socialButtons a:hover, .socialButtons a:focus, .socialButtons a:active {
-    background-color: #5ab8e2; }
+    background-color: #6193ab; }
 
 .socialLinks {
   margin-top: 20px; }
@@ -569,7 +614,7 @@ footer {
       display: block;
       border: 0; }
       #pageSideBar li a:hover, #pageSideBar li a:active, #pageSideBar li a:focus {
-        color: black; }
+        color: #6193ab; }
     #pageSideBar li span {
       margin-bottom: 0;
       position: absolute;
