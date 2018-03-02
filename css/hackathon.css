@@ -173,9 +173,9 @@ figure {
 section:nth-child(3n+1) {
   /* 1, 4, 7 */
   background: #7961ab;
-  background: -moz-linear-gradient(top, #9e61ab 0%, #9e61ab 50px, #7961ab 90%, #7961ab 100%);
-  background: -webkit-linear-gradient(top, #9e61ab 0%, #9e61ab 50px, #7961ab 90%, #7961ab 100%);
-  background: linear-gradient(to bottom, #9e61ab 0%, #9e61ab 50px, #7961ab 90%, #7961ab 100%); }
+  background: -moz-linear-gradient(top, #9e61ab 0%, #7961ab 50px, #7961ab 90%, #7961ab 100%);
+  background: -webkit-linear-gradient(top, #9e61ab 0%, #7961ab 50px, #7961ab 90%, #7961ab 100%);
+  background: linear-gradient(to bottom, #9e61ab 0%, #7961ab 50px, #7961ab 90%, #7961ab 100%); }
 
 section:nth-child(3n+2) {
   /* 2, 5, 8 */
@@ -244,7 +244,7 @@ section {
 
 nav {
   z-index: 100;
-  background: #7961ab;
+  background: #55427d;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
@@ -356,7 +356,7 @@ nav {
     display: none;
     position: absolute;
     top: 50px;
-    background: #7961ab;
+    background: #55427d;
     height: auto;
     left: 0;
     width: 100%; }
@@ -371,7 +371,7 @@ nav {
 /* **************************************** */
 footer {
   padding: 30px 0;
-  background: #7961ab;
+  background: #55427d;
   color: white; }
   footer.footer2 {
     padding: 10px 0 0; }

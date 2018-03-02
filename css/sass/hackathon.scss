@@ -40,7 +40,7 @@ $aWhiteColor: white;
 $aWhiteHoverColor: white;
 
 
-$navBackground: $colorMain;
+$navBackground: $colorMainDarkBy3;
 $navBackgroundActive: $colorAccent1;
 $navAColor: $aWhiteColor;
 $navAHoverColor: $aWhiteHoverColor;
@@ -254,7 +254,7 @@ article {
 $colorGradientPURPLE:		$colorMain 0%,		$colorMain 50px,	$colorMain 90%,		$colorMain 100%;
 $colorGradientPurpleBLUE:	$colorMain 0%,		$colorAccent1 50px,	$colorAccent1 90%,	$colorAccent1 100%;
 $colorGradientBluePINK:		$colorAccent1 0%,	$colorAccent2 50px,	$colorAccent2 90%,	$colorAccent2 100%;
-$colorGradientPinkPURPLE:	$colorAccent2 0%,	$colorAccent2 50px,	$colorMain 90%,		$colorMain 100%;
+$colorGradientPinkPURPLE:	$colorAccent2 0%,	$colorMain 50px,	$colorMain 90%,		$colorMain 100%;
 section:nth-child(3n+1) { /* 1, 4, 7 */
 	background: $colorMain;
 	background: -moz-linear-gradient(top, $colorGradientPinkPURPLE);
