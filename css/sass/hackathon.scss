@@ -17,7 +17,7 @@ $colorAccent2: #9e61ab;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 $colorShadow: #aaa;
-$colorText: #444;
+$colorText: white;
 $colorBackground: white;
 $colorBorder: transparent;
 
@@ -25,15 +25,17 @@ $mediaBreakLargeMax: 1400px;
 $mediaBreakMediumMax: 1024px;
 $mediaBreakSmallMax: 767px;
 
-$fontHeadings: "Rajdhani", "Raleway", Helvetica, sans-serif;
 $fontText: "Raleway", Helvetica, sans-serif;
 
+$headingsFont: "Rajdhani", "Raleway", Helvetica, sans-serif;
+$headingsTextColor: white;
+$headingsBorderAll: 5px solid white;
 
 $blockquoteBorder: transparent;
 $blockquoteBackground: transparent;
 
-$aColor: $colorAccent1;
-$aHoverColor: $colorAccent1;
+$aColor: white;
+$aHoverColor: white;
 $aWhiteColor: white;
 $aWhiteHoverColor: white;
 
@@ -64,34 +66,34 @@ html, body {
 }
 
 h1 {
-	font-family: $fontHeadings;
+	font-family: $headingsFont;
 	font-size: 6em;
 	line-height: 1.5em;
-	color: $colorMain;
+	color: $headingsTextColor;
 }
 h2 {
-	font-family: $fontHeadings;
+	font-family: $headingsFont;
 	font-size: 2em;
 	line-height: 1.5em;
 	margin-bottom: 50px;
-	color: $colorMain;
+	color: $headingsTextColor;
 }
 h3 {
-	font-family: $fontHeadings;
+	font-family: $headingsFont;
 	font-size: 3em;
 	line-height: 1.5em;
 	margin: 30px 0 20px;
 	padding: 10px;
-	color: $colorMain;
-	border-top: 5px solid $colorAccent2;
-	border-bottom: 5px solid $colorAccent2;
+	color: $headingsTextColor;
+	border-top: $headingsBorderAll;
+	border-bottom: $headingsBorderAll;
 	text-align: center;
 }
 h4 {
-	font-family: $fontHeadings;
+	font-family: $headingsFont;
 	font-size: 2em;
 	line-height: 1.5em;
-	color: $colorMain;
+	color: $headingsTextColor;
 	font-style: italic;
 	margin-bottom: 20px;
 }
@@ -249,6 +251,34 @@ figure {
 
 article {
 }
+$colorGradientPURPLE:		$colorMain 0%,		$colorMain 50px,	$colorMain 90%,		$colorMain 100%;
+$colorGradientPurpleBLUE:	$colorMain 0%,		$colorAccent1 50px,	$colorAccent1 90%,	$colorAccent1 100%;
+$colorGradientBluePINK:		$colorAccent1 0%,	$colorAccent2 50px,	$colorAccent2 90%,	$colorAccent2 100%;
+$colorGradientPinkPURPLE:	$colorAccent2 0%,	$colorAccent2 50px,	$colorMain 90%,		$colorMain 100%;
+section:nth-child(3n+1) { /* 1, 4, 7 */
+	background: $colorMain;
+	background: -moz-linear-gradient(top, $colorGradientPinkPURPLE);
+	background: -webkit-linear-gradient(top, $colorGradientPinkPURPLE);
+	background: linear-gradient(to bottom, $colorGradientPinkPURPLE);
+}
+section:nth-child(3n+2) { /* 2, 5, 8 */
+	background: $colorAccent1;
+	background: -moz-linear-gradient(top, $colorGradientPurpleBLUE);
+	background: -webkit-linear-gradient(top, $colorGradientPurpleBLUE);
+	background: linear-gradient(to bottom, $colorGradientPurpleBLUE);
+}
+section:nth-child(3n+3) { /* 3, 6, 9 */
+	background: $colorAccent2;
+	background: -moz-linear-gradient(top, $colorGradientBluePINK);
+	background: -webkit-linear-gradient(top, $colorGradientBluePINK);
+	background: linear-gradient(to bottom, $colorGradientBluePINK);
+}
+section:first-child { 
+	background: $colorMain;
+	background: -moz-linear-gradient(top, $colorGradientPURPLE);
+	background: -webkit-linear-gradient(top, $colorGradientPURPLE);
+	background: linear-gradient(to bottom, $colorGradientPURPLE);
+}
 
 @media (max-width: $mediaBreakMediumMax) {
 	.smallOnly			{ display: none !important; }
@@ -288,10 +318,13 @@ section {
 	padding-top: 50px; /* added on to leave room for nav at all times */
 }
 nav {
-	z-index: 2;
+	z-index: 100;
 	background: $navBackground;
 	position: fixed;
 	width: 100%;
+	-webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 	
 	ul {
 		padding: 0;
@@ -517,8 +550,8 @@ footer {
 /* ********************************************** */
 .infoBlockClear {
 	h4 {
-		border-top: 2px solid $colorAccent2;
-		border-bottom: 2px solid $colorAccent2;
+		border-top: $headingsBorderAll;
+		border-bottom: $headingsBorderAll;
 		text-align: center;
 	}
 }
