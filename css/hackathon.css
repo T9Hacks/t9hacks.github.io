@@ -1,6 +1,29 @@
 /*
 
 */
+.infoBlockBodysplit{
+  width: 50%;
+  float: left;
+  /*clear:both;*/
+}
+
+.columnsplit{
+  /*width: 10%;*/
+  /*margin-bottom: 10px;*/
+  float: left;
+  margin-right: 10px;
+}
+
+.columnsplit2{
+  /*width: 55%;*/
+  /*float: left;*/
+}
+
+.infoBlockBodysplit ul li{
+  margin-bottom: 10px;
+  /*width: 50%;*/
+}
+
 html, body {
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 20px;
