@@ -1,0 +1,29 @@
+/* ******************** */
+/*		Team Page		*/
+/* ******************** */
+.teamMemberContainer { text-align: center; }
+.teamMember {
+	width: 70%;
+	display: inline-block;
+    margin-bottom: 50px;
+    color: white;
+}
+.teamMember img {
+	width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.teamMember h3 {
+	margin: 15px 0 10px;
+}
+.teamMember p {
+    margin-top: 0;
+}
+.teamMember .socialButtons a {
+	background-color: black;
+	color: white;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
