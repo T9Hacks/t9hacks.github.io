@@ -523,6 +523,10 @@ footer {
     display: inline;
   }
 
+  #schedule .center{
+    text-align: center;
+  }
+
 /* ****************************************** */
 /*            Last Year           */
 /* ****************************************** */
