@@ -1,0 +1,140 @@
+/* **************** */
+/*		Signup		*/
+/* **************** */
+.signupTitle {
+	color: white;
+	text-align: center;
+}
+.signupTitle h1 {
+	margin-bottom: 10px;
+}
+
+#signup {  }
+#signup h1 {
+	margin-bottom: 10px;
+}
+.noTop { margin-top: 0; }
+
+/* Page 1 - Choose Participant or mentor */
+#signupWait {  }
+#signupChoice {  }
+#signupChoice .btn {
+	display: block;
+	overflow: hidden;
+	float: none;
+}
+.btnHolder { overflow: hidden; }
+.waitMessage { text-align: center; }
+
+/* Page 2 - Wrapper that holds loading, result, form, and confirmation */
+.signupWrapper {
+	position: relative;
+	background: #FFFFF0;
+	padding: 20px;
+	width: 81.33%;
+	margin: 0 9.335%;
+	overflow: hidden;
+}
+
+/* confirmation section */
+.signupConfirmation { display: none; }
+
+/* loading section */
+.signupLoading {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: rgba(200, 200, 200, 0.6);
+	width: 100%;
+	height: 100%;
+}
+.signupLoading i {
+	width: 80px;
+	height: 80px;
+	font-size: 80px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -40px 0 0 -40px;;
+}
+
+/* signupSuccess */
+.signupResult {
+	display: none;
+	overflow: hidden;
+}
+.signupResult.error {
+	margin-bottom: 20px;
+	display: block;
+}
+
+
+/* form with all inputs */
+.signupForm {
+	overflow: hidden;
+}
+
+
+#upload {
+	position: relative;
+	overflow: hidden;
+}
+#resumeName {
+	background: white;
+}
+#resumeUploadBtn {
+	width: 72px;
+	height: 32px;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+	
+	z-index: 2;
+	
+	box-shadow: none;
+}
+#resumeUploadInput {
+	width: 72px;
+	height: 32px;
+	position: absolute;
+	top: 4px;
+	right: 5px;
+	
+	z-index: 3;
+	
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#resumeUploadInput:hover + #resumeUploadBtn, #resumeUploadInput:focus + #resumeUploadBtn, #resumeUploadInput:active + #resumeUploadBtn {
+	cursor: pointer;
+	background-color: #3a98c2;
+}
+
+
+.confirmationTable {
+	width: 100%;
+}
+.confirmationTable tr:nth-child(2n-1) {
+	background: #EEE;
+}
+.confirmationTable tr:nth-child(2n) {
+	background: white;
+}
+.confirmationTable td {
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+}
+.confirmationTable td:nth-child(2n) {
+	word-wrap: break-word;
+}
+
+
+.cancelConfirm {
+	display: none;
+}
+
