@@ -1,0 +1,288 @@
+/*
+ * 1140 - The lite 1140px resoponsive framework
+ * URI: http://kodestudios.com/code/1140.css
+ * 
+ * Version: 2.6 | 2017-01-19
+ * 
+ * License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+ * License URI: https://creativecommons.org/licenses/by-nc/4.0/
+ * 
+ * Author: Kode Studios
+ * Author URI: http://kodestudios.com
+ */
+
+
+
+
+
+
+/* 
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object
+	{display:block}
+a img
+	{border:0}
+figure
+	{position:relative}
+figure img
+	{width:100%}
+/* 
+	End resets
+*/
+
+
+/* text */
+.text-left 			{ text-align: left !important; }
+.text-right 		{ text-align: right !important; }
+.text-center 		{ text-align: center !important; }
+.text-justify		{ text-align: justify !important; }
+.text-bold 			{ font-weight: bold !important; }
+.text-nowrap 		{ white-space: nowrap !important; }
+.text-lowercase		{ text-transform: lowercase !important; }
+.text-uppercase 	{ text-transform: uppercase !important; }
+.text-capitalize	{ text-transform: capitalize !important; }
+
+	
+
+/* columns */	
+.container12, .container16 {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 1140px;
+}
+.row { margin: 0 0 20px 0; }
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column10, .column11, .column12, .column13, .column14, .column15, .column16 {
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+    box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.alpha, .container12 .alpha, .container16 .alpha { margin-right: 0; margin-left: 0; }
+.beta,  .container12 .beta,  .container16 .beta  { margin-left: 0; }
+.omega, .container12 .omega, .container16 .omega { margin-right: 0;}
+
+.column1,  .container12 .column1  { width:  6.33333%; }
+.column2,  .container12 .column2  { width: 14.66667%; }
+.column3,  .container12 .column3  { width: 23.00000%; }
+.column4,  .container12 .column4  { width: 31.33333%; }
+.column5,  .container12 .column5  { width: 39.66667%; }
+.column6,  .container12 .column6  { width: 48.00000%; }
+.column7,  .container12 .column7  { width: 56.33333%; }
+.column8,  .container12 .column8  { width: 64.66667%; }
+.column9,  .container12 .column9  { width: 73.00000%; }
+.column10, .container12 .column10 { width: 81.33333%; }
+.column11, .container12 .column11 { width: 89.66667%; }
+.column12, .container12 .column12 { width: 98.00000%; }
+.column1.beta,  .container12 .column1.beta,  .column1.omega,  .container12 .column1.omega  { width:  7.33333%; }
+.column2.beta,  .container12 .column2.beta,  .column2.omega,  .container12 .column2.omega  { width: 15.66667%; }
+.column3.beta,  .container12 .column3.beta,  .column3.omega,  .container12 .column3.omega  { width: 24.00000%; }
+.column4.beta,  .container12 .column4.beta,  .column4.omega,  .container12 .column4.omega  { width: 32.33333%; }
+.column5.beta,  .container12 .column5.beta,  .column5.omega,  .container12 .column5.omega  { width: 40.66667%; }
+.column6.beta,  .container12 .column6.beta,  .column6.omega,  .container12 .column6.omega  { width: 49.00000%; }
+.column7.beta,  .container12 .column7.beta,  .column7.omega,  .container12 .column7.omega  { width: 57.33333%; }
+.column8.beta,  .container12 .column8.beta,  .column8.omega,  .container12 .column8.omega  { width: 65.66667%; }
+.column9.beta,  .container12 .column9.beta,  .column9.omega,  .container12 .column9.omega  { width: 74.00000%; }
+.column10.beta, .container12 .column10.beta, .column10.omega, .container12 .column10.omega { width: 82.33333%; }
+.column11.beta, .container12 .column11.beta, .column11.omega, .container12 .column11.omega { width: 90.66667%; }
+.column12.beta, .container12 .column12.beta, .column12.omega, .container12 .column12.omega { width: 99.00000%; }
+.column1.alpha,  .container12 .column1.alpha  { width:   8.33333%; }
+.column2.alpha,  .container12 .column2.alpha  { width:  16.66667%; }
+.column3.alpha,  .container12 .column3.alpha  { width:  25.00000%; }
+.column4.alpha,  .container12 .column4.alpha  { width:  33.33333%; }
+.column5.alpha,  .container12 .column5.alpha  { width:  41.66667%; }
+.column6.alpha,  .container12 .column6.alpha  { width:  50.00000%; }
+.column7.alpha,  .container12 .column7.alpha  { width:  58.33333%; }
+.column8.alpha,  .container12 .column8.alpha  { width:  66.66667%; }
+.column9.alpha,  .container12 .column9.alpha  { width:  75.00000%; }
+.column10.alpha, .container12 .column10.alpha { width:  83.33333%; }
+.column11.alpha, .container12 .column11.alpha { width:  91.66667%; }
+.column12.alpha, .container12 .column12.alpha { width:  100.0000%; }
+.prefix1,  .container12 .prefix1  { margin-left:   8.33333%; }
+.prefix2,  .container12 .prefix2  { margin-left:  16.66667%; }
+.prefix3,  .container12 .prefix3  { margin-left:  25.00000%; }
+.prefix4,  .container12 .prefix4  { margin-left:  33.33333%; }
+.prefix5,  .container12 .prefix5  { margin-left:  41.66667%; }
+.prefix6,  .container12 .prefix6  { margin-left:  50.00000%; }
+.prefix7,  .container12 .prefix7  { margin-left:  58.33333%; }
+.prefix8,  .container12 .prefix8  { margin-left:  66.66667%; }
+.prefix9,  .container12 .prefix9  { margin-left:  75.00000%; }
+.prefix10, .container12 .prefix10 { margin-left:  83.33333%; }
+.prefix11, .container12 .prefix11 { margin-left:  91.66667%; }
+
+.container16 .column1  { width:  4.25%; }
+.container16 .column2  { width: 10.49%; }
+.container16 .column3  { width: 16.75%; }
+.container16 .column4  { width: 23.00%; }
+.container16 .column5  { width: 29.25%; }
+.container16 .column6  { width: 35.49%; }
+.container16 .column7  { width: 41.75%; }
+.container16 .column8  { width: 48.00%; }
+.container16 .column9  { width: 54.25%; }
+.container16 .column10 { width: 60.49%; }
+.container16 .column11 { width: 66.75%; }
+.container16 .column12 { width: 73.00%; }
+.container16 .column13 { width: 79.25%; }
+.container16 .column14 { width: 85.49%; }
+.container16 .column15 { width: 91.75%; }
+.container16 .column16 { width: 98.00%; }
+.container16 .column1.beta,   .container16 .column1.omega   { width:   5.25%; }
+.container16 .column2.beta,   .container16 .column2.omega   { width:  11.49%; }
+.container16 .column3.beta,   .container16 .column3.omega   { width:  17.75%; }
+.container16 .column4.beta,   .container16 .column4.omega   { width:  24.00%; }
+.container16 .column5.beta,   .container16 .column5.omega   { width:  30.25%; }
+.container16 .column6.beta,   .container16 .column6.omega   { width:  36.49%; }
+.container16 .column7.beta,   .container16 .column7.omega   { width:  42.75%; }
+.container16 .column8.beta,   .container16 .column8.omega   { width:  49.00%; }
+.container16 .column9.beta,   .container16 .column9.omega   { width:  55.25%; }
+.container16 .column10.beta,  .container16 .column10.omega  { width:  61.49%; }
+.container16 .column12.beta,  .container16 .column11.omega  { width:  67.75%; }
+.container16 .column13.beta,  .container16 .column12.omega  { width:  74.00%; }
+.container16 .column14.beta,  .container16 .column13.omega  { width:  80.25%; }
+.container16 .column15.beta,  .container16 .column14.omega  { width:  86.49%; }
+.container16 .column16.beta,  .container16 .column15.omega  { width:  92.75%; }
+.container16 .column17.beta,  .container16 .column16.omega  { width:  99.00%; }
+.container16 .column1.alpha  { width:   6.25%; }
+.container16 .column2.alpha  { width:  12.49%; }
+.container16 .column3.alpha  { width:  18.75%; }
+.container16 .column4.alpha  { width:  25.00%; }
+.container16 .column5.alpha  { width:  31.25%; }
+.container16 .column6.alpha  { width:  37.49%; }
+.container16 .column7.alpha  { width:  43.75%; }
+.container16 .column8.alpha  { width:  50.00%; }
+.container16 .column9.alpha  { width:  56.25%; }
+.container16 .column10.alpha { width:  62.49%; }
+.container16 .column11.alpha { width:  68.75%; }
+.container16 .column12.alpha { width:  75.00%; }
+.container16 .column13.alpha { width:  81.25%; }
+.container16 .column14.alpha { width:  87.49%; }
+.container16 .column15.alpha { width:  93.75%; }
+.container16 .column16.alpha { width:  100.0%; }
+.container16 .prefix1  { margin-left:   6.25%; }
+.container16 .prefix2  { margin-left:  12.49%; }
+.container16 .prefix3  { margin-left:  18.75%; }
+.container16 .prefix4  { margin-left:  25.00%; }
+.container16 .prefix5  { margin-left:  31.25%; }
+.container16 .prefix6  { margin-left:  37.49%; }
+.container16 .prefix7  { margin-left:  43.75%; }
+.container16 .prefix8  { margin-left:  50.00%; }
+.container16 .prefix9  { margin-left:  56.25%; }
+.container16 .prefix10 { margin-left:  62.49%; }
+.container16 .prefix11 { margin-left:  68.75%; }
+.container16 .prefix12 { margin-left:  75.00%; }
+.container16 .prefix13 { margin-left:  81.25%; }
+.container16 .prefix14 { margin-left:  87.49%; }
+.container16 .prefix15 { margin-left:  93.75%; }
+
+@media only screen and (max-width: 1160px) and (min-width: 960px) {
+    .container12, .container16 { width: 960px; }
+}
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+    .container12, .container16 { width: 768px; }
+}
+
+@media only screen and (max-width: 767px) {
+    .container12, .container16 { width: 100%; }
+    .column1,  .column1.alpha,  .column1.beta,  .column1.omega,
+    .column2,  .column2.alpha,  .column2.beta,  .column2.omega,
+    .column3,  .column3.alpha,  .column3.beta,  .column3.omega,
+    .column4,  .column4.alpha,  .column4.beta,  .column4.omega,
+    .column5,  .column5.alpha,  .column5.beta,  .column5.omega,
+    .column6,  .column6.alpha,  .column6.beta,  .column6.omega,
+    .column7,  .column7.alpha,  .column7.beta,  .column7.omega,
+    .column8,  .column8.alpha,  .column8.beta,  .column8.omega,
+    .column9,  .column9.alpha,  .column9.beta,  .column9.omega,
+    .column10, .column10.alpha, .column10.beta, .column10.omega,
+    .column11, .column11.alpha, .column11.beta, .column11.omega,
+    .column12, .column12.alpha, .column12.beta, .column12.omega,
+    
+    .container12 .column1,  .container12 .column1.alpha,  .container12 .column1.beta,  .container12 .column1.omega,
+    .container12 .column2,  .container12 .column2.alpha,  .container12 .column2.beta,  .container12 .column2.omega,
+    .container12 .column3,  .container12 .column3.alpha,  .container12 .column3.beta,  .container12 .column3.omega,
+    .container12 .column4,  .container12 .column4.alpha,  .container12 .column4.beta,  .container12 .column4.omega,
+    .container12 .column5,  .container12 .column5.alpha,  .container12 .column5.beta,  .container12 .column5.omega,
+    .container12 .column6,  .container12 .column6.alpha,  .container12 .column6.beta,  .container12 .column6.omega,
+    .container12 .column7,  .container12 .column7.alpha,  .container12 .column7.beta,  .container12 .column7.omega,
+    .container12 .column8,  .container12 .column8.alpha,  .container12 .column8.beta,  .container12 .column8.omega,
+    .container12 .column9,  .container12 .column9.alpha,  .container12 .column9.beta,  .container12 .column9.omega,
+    .container12 .column10, .container12 .column10.alpha, .container12 .column10.beta, .container12 .column10.omega,
+    .container12 .column11, .container12 .column11.alpha, .container12 .column11.beta, .container12 .column11.omega,
+    .container12 .column12, .container12 .column12.alpha, .container12 .column12.beta, .container12 .column12.omega,
+    
+	.container16 .column1,  .container16 .column1.alpha,  .container16 .column1.beta,  .container16 .column1.omega,
+    .container16 .column2,  .container16 .column2.alpha,  .container16 .column2.beta,  .container16 .column2.omega,
+    .container16 .column3,  .container16 .column3.alpha,  .container16 .column3.beta,  .container16 .column3.omega,
+    .container16 .column4,  .container16 .column4.alpha,  .container16 .column4.beta,  .container16 .column4.omega,
+    .container16 .column5,  .container16 .column5.alpha,  .container16 .column5.beta,  .container16 .column5.omega,
+    .container16 .column6,  .container16 .column6.alpha,  .container16 .column6.beta,  .container16 .column6.omega,
+    .container16 .column7,  .container16 .column7.alpha,  .container16 .column7.beta,  .container16 .column7.omega,
+    .container16 .column8,  .container16 .column8.alpha,  .container16 .column8.beta,  .container16 .column8.omega,
+    .container16 .column9,  .container16 .column9.alpha,  .container16 .column9.beta,  .container16 .column9.omega,
+    .container16 .column10, .container16 .column10.alpha, .container16 .column10.beta, .container16 .column10.omega,
+    .container16 .column11, .container16 .column11.alpha, .container16 .column11.beta, .container16 .column11.omega,
+    .container16 .column12, .container16 .column12.alpha, .container16 .column12.beta, .container16 .column12.omega,
+    .container16 .column13, .container16 .column13.alpha, .container16 .column13.beta, .container16 .column13.omega,
+    .container16 .column14, .container16 .column14.alpha, .container16 .column14.beta, .container16 .column14.omega,
+    .container16 .column15, .container16 .column15.alpha, .container16 .column15.beta, .container16 .column15.omega,
+    .container16 .column16, .container16 .column16.alpha, .container16 .column16.beta, .container16 .column16.omega
+	{
+        margin: 0 0 20px;
+        width: 100%;
+    }
+    .prefix1, .prefix2, .prefix3, .prefix4, .prefix5, .prefix6, .prefix7, .prefix8, .prefix9, .prefix10, .prefix11, 
+    .container12 .prefix1, .container12 .prefix2, .container12 .prefix3, .container12 .prefix4, .container12 .prefix5, .container12 .prefix6, .container12 .prefix7, .container12 .prefix8, .container12 .prefix9, .container12 .prefix10, .container12 .prefix11, 
+    .container16 .prefix1, .container16 .prefix2, .container16 .prefix3, .container16 .prefix4, .container16 .prefix5, .container16 .prefix6, .container16 .prefix7, .container16 .prefix8, .container16 .prefix9, .container16 .prefix10, .container16 .prefix11, .container16 .prefix12, .container16 .prefix13, .container16 .prefix14, .container16 .prefix15 
+    	{ padding-left: 0; }
+    .row { margin: 0; }
+}
+
+
+.container .center,
+.container12 .center,
+.container16 .center { 
+	margin-left: auto; 
+	margin-right: auto;
+	display: block;
+	float: none;
+}
+
+.clearfix:before, .clearfix:after,
+.row:before, .row:after,
+.container12:before, .container12:after, .container16:before, .container16:after {
+    content: '.';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+.row:after, .clearfix:after, .container12:after, .container16:after { clear: both; }
+
+
+/* For IE7. Move this to separate file when you notice some problems */
+.row, .clearfix { zoom: 1; }
+img, object, embed { max-width: 100%; }
+img { height: auto; }
+
+
+.noMargin { margin-bottom: 0 !important; }

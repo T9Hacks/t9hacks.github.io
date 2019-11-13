@@ -21,7 +21,7 @@
 	v2.0 | 20110126
 	License: none (public domain)
 */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,object
 	{display:block}
 a img
 	{border:0}
@@ -191,7 +191,7 @@ figure img
 }
 
 @media only screen and (max-width: 767px) {
-    .container12, .container16 { width: 100%; }
+    .container12, .container16 { width: 90%; }
     .column1,  .column1.alpha,  .column1.beta,  .column1.omega,
     .column2,  .column2.alpha,  .column2.beta,  .column2.omega,
     .column3,  .column3.alpha,  .column3.beta,  .column3.omega,

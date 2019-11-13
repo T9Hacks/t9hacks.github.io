@@ -1,0 +1,74 @@
+#pacman {
+  position: relative; }
+
+.pacmanWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: 90px;
+  overflow: hidden;
+  animation: move 30s infinite linear; }
+
+.pacmanMouth {
+  position: absolute;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  border: 45px solid #CFBD7E;
+  border-radius: 45px;
+  transform: rotate(0deg); }
+
+.pacmanMouthTop {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  animation: biteTop 2s infinite linear; }
+
+.pacmanMouthBottom {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  animation: biteBottom 2s infinite linear; }
+
+@keyframes move {
+  0%, 100% {
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    transform: rotate(0deg); }
+  24.999% {
+    margin-left: -98px;
+    transform: rotate(0deg); }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: rotate(90deg); }
+  49.999% {
+    margin-left: -98px;
+    transform: rotate(90deg); }
+  50% {
+    top: 100%;
+    bottom: 0;
+    left: 100%;
+    transform: rotate(180deg); }
+  74.999% {
+    margin-left: 0;
+    transform: rotate(180deg); }
+  75% {
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg); }
+  99.999% {
+    transform: rotate(270deg); } }
+@keyframes biteTop {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(45deg); } }
+@keyframes biteBottom {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(-45deg); } }
+
+/*# sourceMappingURL=animations.css.map */

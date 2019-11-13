@@ -1,0 +1,65 @@
+h1 {
+	color: black;
+}
+.scheduleOuter {
+	text-align: center;
+}
+.scheduleInner {
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+.scheduleSection {
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	margin: 0 3%;
+	width: 44%;
+	background: #FFFFF0;
+}
+.scheduleSection h2 {
+	margin-bottom: 20px;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 0;
+	background: #553377;
+	text-align: center;
+	color: white;
+}
+
+.item {
+	overflow: hidden;
+	clear: both;
+	margin: 0 20px 20px;
+}
+.time, .event {
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+.time { 
+	width: 33%;
+	padding-right: 10px;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+.event {
+	width: 67%;
+}
+.time p, .event p {
+	margin: 0;
+	font-size: 1.3em;
+}
+.event span {
+	display: block;
+}
+
+@media only screen and (max-width: 767px) {
+	.scheduleSection:first-child, .scheduleSection:last-child {
+		display: block;
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.scheduleSection:last-child { margin-top: 50px; }
+}
