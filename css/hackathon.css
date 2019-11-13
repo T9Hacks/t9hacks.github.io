@@ -1,29 +1,6 @@
 /*
 
 */
-.infoBlockBodysplit{
-  width: 50%;
-  float: left;
-  /*clear:both;*/
-}
-
-.columnsplit{
-  /*width: 10%;*/
-  /*margin-bottom: 10px;*/
-  float: left;
-  margin-right: 10px;
-}
-
-.columnsplit2{
-  /*width: 55%;*/
-  /*float: left;*/
-}
-
-.infoBlockBodysplit ul li{
-  margin-bottom: 10px;
-  /*width: 50%;*/
-}
-
 html, body {
   font-family: "Raleway", Helvetica, sans-serif;
   font-size: 20px;
@@ -60,58 +37,12 @@ h4 {
   line-height: 1.5em;
   margin-bottom: 20px; }
 
-<<<<<<< HEAD
 h5{
   font-size:3em;
   color:#ef5060;
   margin-bottom: 20px;
 }
 
-=======
-  h5 {
-  font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
-  font-size: 2em;
-  line-height: 1.5em;
-  color: white;
-  font-style: italic;
-  margin-bottom: 20px; }
-
-  .splitcolumn{
-    width: 40%;
-    float: left;
-    padding: 5%;
-  }
-
-  table {
-    border-collapse:collapse;
-}
-
-  tr{
-    border-color: white;
-    border: solid;
-    border-width: 1px 0;
-    padding: 5px;
-  }
-
-  th, tr, td{
-    margin: 0;
-    /*padding: 0;*/
-  }
-
-  tr:hover{
-    background-color: rgba(0,0,0,0.1);
-    padding: 1px;
-  }
-
-  tr:first-child {
-    border-top: none;
-  }
-
-  table{
-    width: 100%;
-  }
-
->>>>>>> upstream/master
 p {
   margin-bottom: 10px;
   line-height: 1.5; }
@@ -179,15 +110,6 @@ figure {
   blockquote {
     width: 90%; } }
 @media (max-width: 767px) {
-  .splitcolumn{
-    width: 100%;
-    padding: 5px;
-  }
-  table{
-    width: 60%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
   figure img, figure iframe {
     width: 100%; }
   figure figcaption {
