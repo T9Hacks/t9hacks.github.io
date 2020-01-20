@@ -17,19 +17,18 @@ h1 {
 
 h2 {
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
+  font-weight: bold;
   font-size: 2.2em;
   line-height: 1.5em;
  }
 
 h3 {
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
-  font-size: 3em;
+  font-size: 1.5em;
   line-height: 1.5em;
   margin: 30px 0 20px;
   padding: 10px;
-  color: white;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  color: #ef5060;
   text-align: center; }
 
 h4 {
@@ -49,7 +48,7 @@ p {
 
 a {
   cursor: pointer;
-  text-decoration: none; }
+}
 
 a:hover, a:focus, a:active {
   text-decoration: underline;
@@ -234,6 +233,11 @@ figure {
   .gradient{
     background-image: linear-gradient(white, #b1a6c1 );
   }
+
+  .center{
+    text-align: center;
+  }
+
 /* ********************************************** */
 /*	  				Navigation					  */
 /* ********************************************** */
@@ -439,6 +443,41 @@ nav {
     transition: max-height 0.2s ease-out;
   }
 
+  /* ********************************************** */
+/*          Schedule       */
+/* ********************************************** */
+  .scheduleTable {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #ffffff;
+  }
+
+  .scheduleTable th{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .scheduleTable td{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #w {
+    width: 75%;
+  }
+
+  .scheduleTable tr:last-child td {
+  border-bottom: 0;
+}
+
+#schedule h5{
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+
+
 
   /* ********************************************** */
 /*           Projects          */
@@ -491,7 +530,7 @@ footer {
 #home {
   padding-top: 80px;
   /*background-image: url('../images/const.png');*/
-  background-image: url('../images/stars.jpg');
+  background-image: url('../images/stars4.png');
   background-repeat : no-repeat;
   background-size : 100%;
   width: 100%;
@@ -523,9 +562,6 @@ footer {
     display: inline;
   }
 
-  #schedule .center{
-    text-align: center;
-  }
 
 /* ****************************************** */
 /*            Last Year           */
@@ -573,38 +609,35 @@ footer {
 .sponsorRowWrapper {
   display: inline-block; }
 
-.sponsor {
-  text-align: center;
-  margin: 20px;
-  display: inline-block;
-  float: left; }
-  .sponsor a {
-    border: 0;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: relative; }
-  .sponsor a:hover, .sponsor a:focus {
-    background: transparent; }
-  .sponsor img {
-    max-width: 80%;
-    max-height: 80%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-.platinum .sponsor {
-  width: 250px;
-  height: 250px; }
+.down{
+  margin-top: 60px;
+}
 
-.gold .sponsor {
-  width: 212px;
-  height: 212px; }
+#sponserImages{
+  margin-top: 50px;
+}
 
-.silver .sponsor {
-  width: 175px;
-  height: 175px; }
+.sponserHover a:hover{
+  background-color: #ef5060;
+  opacity: 0.5;
+}
+
+
+.platinum {
+  width: 250px;}
+
+.gold {
+  width: 212px; }
+
+.silver{
+  width: 175px;` }
 
 @media (max-width: 1024px) {
   .sponsor {
@@ -613,17 +646,15 @@ footer {
   .sponsor {
     margin: 5px; }
 
-  .platinum .sponsor {
-    width: 115px;
-    height: 115px; }
+  .platinum {
+    width: 115px; }
 
-  .gold .sponsor {
-    width: 100px;
-    height: 100px; }
+  .gold {
+    width: 100px; }
 
-  .silver .sponsor {
-    width: 85px;
-    height: 85px; } }
+  .silver {
+    width: 85px;} 
+  }
 /* **************************************** */
 /*					Info					*/
 /* **************************************** */
