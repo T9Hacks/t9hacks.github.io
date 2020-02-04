@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1.5em;
   margin: 30px 0 20px;
   padding: 10px;
@@ -554,12 +554,16 @@ footer {
 /*            About           */
 /* ****************************************** */
 
-  #about p{
+  #about p, #info p{
     text-align: left;
   }
 
   #about video{
     display: inline;
+  }
+
+  .tracks{
+    padding: 30px;
   }
 
 
