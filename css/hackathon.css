@@ -57,6 +57,7 @@ a:hover, a:focus, a:active {
 ul, li {
   list-style-type: none; }
 
+
 blockquote {
   font-style: italic;
   font-size: 0.9em;
@@ -105,6 +106,9 @@ figure {
   p{
     font-size: .75em;
   }
+  li{
+  font-size: 0.75em;
+}
 
   blockquote {
     width: 90%; } }
@@ -418,7 +422,7 @@ nav {
 /* ********************************************** */
   
 .accordion{
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #fff;
     margin-bottom: 20px;
     margin-right: 40px;
   }
@@ -560,11 +564,27 @@ footer {
 
   #about video{
     display: inline;
+    max-width: 640;
+    max-height:360;
+    width: 80%;
+    height:auto;
   }
 
   .tracks{
     padding: 30px;
   }
+
+  @media (max-width: 767px) {
+  .tracksImage{
+    width: 50%;
+    height:auto;
+    }  }
+
+  @media (max-width: 767px) {
+  #video{
+    width: 100%;
+    height:auto;
+    }  }
 
 
 /* ****************************************** */
@@ -680,6 +700,13 @@ footer {
   .socialButtons li, .socialLinks li {
     display: inline-block;
     margin-bottom: 0; }
+#topSocial, #topSocial2{
+  text-align: left;
+}
+
+.icon{
+  margin-left: 10px;
+}
 
 .socialButtons a {
   display: block;
@@ -705,6 +732,10 @@ footer {
     margin: 0 5px; }
   .socialLinks .fb_iframe_widget span {
     vertical-align: top !important; }
+
+  #tweet{
+    color: #ffffff;
+  }
 
 /* ******************************************************** */
 /*					Spring 2016 Hackathon					*/
