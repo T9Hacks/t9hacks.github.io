@@ -534,7 +534,8 @@ footer {
 #home {
   padding-top: 80px;
   /*background-image: url('../images/const.png');*/
-  background-image: url('../images/stars4.jpg');
+  /*background-image: url('../images/stars4.jpg');*/
+  background-image: url('../images/gradientbackground.png');
   background-repeat : no-repeat;
   background-size : 100%;
   width: 100%;
