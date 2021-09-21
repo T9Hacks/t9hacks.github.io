@@ -112,6 +112,7 @@ function navIconToggle() {
 	var navIcon = document.getElementById("navIcon");
 	var navLarge = document.getElementById('navigationLarge');
 	if(navOpen) {
+		console.log("Nav open");
 		navOpen = false;
 		navLarge.style.display = 'none';
 		navIcon.classList.remove("fa-close");
@@ -119,7 +120,7 @@ function navIconToggle() {
     }
     else {
         navOpen = true;
-		navLarge.style.display = 'block';
+		navLarge.style.display = 'inline-block';
 		navIcon.classList.remove("fa-bars");
 		navIcon.classList.add("fa-close");
     }
