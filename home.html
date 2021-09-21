@@ -32,394 +32,271 @@
 	<meta property="og:url"				content="http://www.t9hacks.org" />
 	<meta property="og:title"			content="T9Hacks" />
 
-
+	<!-- Javascript -->
+	<script src="js/common.js" type="text/javascript" defer></script>
 </head>
 <body>
-	<!-- Header -->
-	<header>
-	
-		<!-- Navigation -->
-		<nav id="navigation">
-			<div class="containerWide">
-				
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navigationMobile">
-					<div class="brandMobile">
-						<ul>
-							<li class="brand">
-								<a class="pageScroll" href="#home">
-									<img src="images/logos/t9hacks_logo_white_100x82.png">
-									<span>T9Hacks</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<button type="button" id="navButton">
-						<span id="navIcon" class="fa fa-bars"></span>
-					</button>
-				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div id="navigationLarge">
-					<ul>
-						<!--li class="brand mediumSmallOnly left">
-							<a class="pageScroll" href="#home">
-								<img src="images/logos/t9hacks_logo_white_100x82.png">
-								<span>T9Hacks</span>
-							</a>
-						</li-->
-						<li class="left">
-							<a class="pageScroll" href="#home">T9Hacks</a>
-						</li>
-						
-						<li class="left">
-							<a class="pageScroll" href="#info">Info</a>
-						</li>
-						
-						<li class="left">
-							<a class="pageScroll" href="#tracks">Tracks</a>
-						</li>
-						<li class="left">
-							<a class="pageScroll" href="#seminars">Seminars</a>
-						</li>
-						
-						<li class="left">
-							<a class="pageScroll" href="#mission">Mission</a>
-						</li>
-						
-						<li class="left">
-							<a class="pageScroll" href="#faq">FAQ</a>
-						</li>
-						
-						<li class="left">
-							<a class="pageScroll" href="#last_year">Last Year</a>
-						</li>
-						<li class="left">
-							<a class="pageScroll" href="#team">Team</a>
-						</li>
-						<li class="left">
-							<a class="pageScroll" href="#code_conduct">Code of Conduct</a>
-						</li>
-
-						<li class="left">
-							<a class="pageScroll" href="#sponsor">Sponsors</a>
-						</li>
-					</ul>
-				</div>
-				
+	<!-- Top Navigation -->
+	<nav id="navigation" class='containerWide'>
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navigationMobile">
+			<div class="brandMobile">
+				<ul>
+					<li class="brand">
+						<a class="pageScroll" href="#home">
+							<img src="images/logos/t9hacks_logo_white_100x82.png">
+							<span>T9Hacks</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-		
+			<button type="button" id="navButton">
+				<span id="navIcon" class="fa fa-bars"></span>
+			</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div id="navigationLarge">
+			<ul>
+				<!--li class="brand mediumSmallOnly left">
+					<a class="pageScroll" href="#home">
+						<img src="images/logos/t9hacks_logo_white_100x82.png">
+						<span>T9Hacks</span>
+					</a>
+				</li-->
+				<li class="left">
+					<a class="pageScroll" href="#home">T9Hacks</a>
+				</li>
+				
+				<li class="left">
+					<a class="pageScroll" href="#info">Info</a>
+				</li>
+				
+				<!-- <li class="left">
+					<a class="pageScroll" href="#event_tracks">Tracks</a>
+				</li> -->
+				<!-- <li class="left">
+					<a class="pageScroll" href="#seminars">Seminars</a>
+				</li> -->
+				
+				<li class="left">
+					<a class="pageScroll" href="#mission">Mission</a>
+				</li>
+				
+				<li class="left">
+					<a class="pageScroll" href="#faq">FAQ</a>
+				</li>
+				
+				<li class="left">
+					<a class="pageScroll" href="#last_year">Last Year</a>
+				</li>
+				<li class="left">
+					<a class="pageScroll" href="#team">Team</a>
+				</li>
+				<li class="left">
+					<a class="pageScroll" href="#code_conduct">Code of Conduct</a>
+				</li>
+
+				<li class="left">
+					<a class="pageScroll" href="#sponsor">Sponsors</a>
+				</li>
+			</ul>
+		</div>
+			
+	</nav>
+
+	<!-- Header -->
+	<header id='home'>
+		<div class='container12'><div class="row">
+			<div id='header_logo' class="column5">
+				<img src="images/t9website.png" alt="T9Hacks Sticker logo" class="headerLogo"/>
+			</div>
+			<div id='header_info' class="column7">
+				<h1><strong>T9Hacks</strong></h1>
+				<h2>Hackathon for Women and Traditionally Underrepresented Students</h2>
+				<h4>Next Event TBA</h4>
+				<ul class="socialButtons" id="topSocial">
+					<li>
+						<a href="https://www.facebook.com/t9hacks/" target="_blank"><i class="fa fa-facebook icon"></i></a>
+					</li>
+					<li>
+						<a href="https://twitter.com/t9hacks" target="_blank"><i class="fa fa-twitter icon"></i></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/t9hacks" target="_blank"><i class="fa fa-instagram icon"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/t9hacks" target="_blank"><i class="fa fa-github icon"></i></a>
+					</li>
+					<li>
+						<a href="https://t9hacks.slack.com" target="_blank"><i class="fa fa-slack icon"></i></a>
+					</li>
+				</ul>
+				<p> We are looking for interested organizers and sponsors. </p>
+				<p>
+					<a href="https://forms.gle/mHv4aoH3CRLBnVfC9" target="_blank" class="btn"><strong>Volunteer!</strong></a>
+					<a href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20Sponsoring" class="btn"><strong>Sponsor!</strong></a>
+					<!-- <a href="https://forms.gle/f3uRZVnXYfbNi2e97" target="_blank" class="btn"><strong>Mentor!</strong></a> --> <!-- form needs updated -->
+				</p>
+			</div> <!-- end header_info -->
+		</div></div> <!-- wrapper divs -->
 	</header>
 	
-	
-	<article>
-		
-		<section id="home">
-			<div class="container12">
-				
-				<div class="row">
-					<div class="column5">
-						<img src="images/t9website.png" alt="T9Hacks Sticker logo" class="headerLogo"/>
-					</div>
-					<div class="column7">
-						<h1><strong>T9Hacks</strong></h1>
-						<h2>Hackathon for Women and Traditionally Underrepresented Students</h2>
-                        			<h4>March 19-21, 2021 | Virtually Anywhere</h4>
-						<ul class="socialButtons" id="topSocial">
-							<li>
-								<a href="https://www.facebook.com/t9hacks/" target="_blank"><i class="fa fa-facebook icon"></i></a>
-							</li>
-							<li>
-								<a href="https://twitter.com/t9hacks" target="_blank"><i class="fa fa-twitter icon"></i></a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/t9hacks" target="_blank"><i class="fa fa-instagram icon"></i></a>
-							</li>
-							<li>
-								<a href="https://github.com/t9hacks" target="_blank"><i class="fa fa-github icon"></i></a>
-							</li>
-							<li>
-								<a href="https://t9hacks.slack.com" target="_blank"><i class="fa fa-slack icon"></i></a>
-							</li>
-						</ul>
-						<p> We are looking for interested participants, sponsors and mentors. </p>
-							<p><a href="https://forms.gle/Bj4MMBDeBLq4pixy8" target="_blank" class="btn"><strong>Register!</strong></a>
-							<a href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20Sponsoring" class="btn"><strong>Sponsor!</strong></a>
-							<a href="https://forms.gle/f3uRZVnXYfbNi2e97" target="_blank" class="btn"><strong>Mentor!</strong></a></p>
-
-					</div>
-				</div>
-				
-			</div>
-		</section>
-		<!-- End #home -->
-
-<!--<div class="gradient">-->
-
-		
+	<main>
 		
 		<!-- Begin #info -->
 		<section id="info">
-			<div class="container12">
-				<div class="row">
-					<!--<div class="column9 center">-->
-					  <h3 style="text-align:center">2021 Winners</h3>
-					<p><strong>Congrats to all of this year's winners!</strong></p>
-					<p><strong>Outstanding Artist</strong> - <a href="https://devpost.com/software/linda-dprsu9" target="_blank">:poofy</a> by Linh Nguyen & Dan Líu</p>
-					<p><strong>Outstanding Social Impact</strong> - <a href="https://devpost.com/software/project-global" target="_blank">Project Global</a> by Mahzabin Rashid Fariha and Humayra Rashid Safa</p>
-					<p><strong>Outstanding Humanitarian</strong> - <a href="https://creative.colorado.edu/~sahe2032/dev/T9_Hacks/The%20Disaster%20Displacement%20Database/" target="_blank">The Disaster Displacement Database</a> by Fiona Bell, Sam Herwig, and Emma Petersen</p>
-					<p><strong>Outstanding Maker</strong> - <a href="https://devpost.com/software/foodie-s-world-4xs2ir" target="_blank">Foodie’s World!</a> by Sahana Gokulakrishnan</p>
-					<p><strong>Outstanding Entrepreneur</strong> - <a href="https://devpost.com/software/change-my-name" target="_blank">Change-My-Name (4 hour of sleep)</a> by Ann Marie, Gwen, Spencer, and Charlotte</p>
-					<p><strong>Outstanding Developer</strong> - <a href="https://github.com/jary7635/StarcrossedVoyagers/tree/main" target="_blank">Starcrossed Voyagers: The Perilous Planet</a> by Allison Palmer, Jenna Rothe, James Ryan, and Emma Wenzel</p>
-					<p><strong>EchoAR Award</strong> - <a href="https://devpost.com/software/lession-mustar" target="_blank">Lesson mustAR</a> by Ahelee Bhattacharya</p>
-					<p><strong>Fans’ Choice</strong> - <a href="https://drive.google.com/drive/u/1/folders/16k9l4G3YSjyysP5whDWgbXmACETSTO2l" target="_blank">CSAG/The Invisible Line Project</a> by Audrey Viland, Spencer Bajcar, and Greg Gassen</p>
-					<p><strong>Rookie Award</strong> - <a href="https://adobe.ly/3vK4jDG" target="_blank">Lively, Lovely (Li(o)vely)</a> by Minso Kim and Catherine Xiao</p>
-										
-					<h2 class="text-center">Information for this Year</h2>
-					
-					        <h3>General Info</h3>
-						<p>T9Hacks is a 36 hour virtul hackathon. The whole event will run from Friday, March 19, 2021 at 6:00 PM (MST) – Sunday, March 21, 2021 at 1:00 PM (MST). The <strong>entire</strong> event will be virtual. To attend events and workshops follow the schedule below for each day. Attendance for all events other than opening and closing ceremonies are optional, but highly encouraged!</a>
-						</p>
-				</div>
-				<div class="row">
-					<div class="column12">
-						<h3 class="center">Friday</h3>
-						<table class="scheduleTable">
-							<colgroup>
-								<col>
-    							<col class="w">
-  							</colgroup>
-							<tr>
-								<th>Time</th>
-								<th>Event</th>
-								<th>Link</th>
-							</tr>
-							<tr>
-								<td>10:00 AM</td>
-								<td>Check-In Begins</td>
-								<td><a href="https://forms.gle/ZN5YQuPJwQPQMKdY7" target="_blank">https://forms.gle/ZN5YQuPJwQPQMKdY7</a></td>	
-							</tr>
-							<tr>
-								<td>6:00 PM</td>
-								<td>Opening Ceremony</td>
-								<td><a href="https://cuboulder.zoom.us/j/92278455799" target="_blank">https://cuboulder.zoom.us/j/92278455799</a></td>	
-							</tr>
-							<tr>
-								<td>7:00 PM</td>
-								<td>Team Formation</td>
-								<td><a href="https://app.joinglimpse.com/room?key=DB34438" target="_blank">https://app.joinglimpse.com/room?key=DB34438</a></td>
-							</tr>
-							<tr>
-								<td>8:00 PM</td>
-								<td>Hacking Begins!</td>
-								<td>N/A</td>
-							</tr>
-							<tr>
-								<td>8:30 PM</td>
-								<td>Intro to Web Workshop</td>
-								<td><a href="https://cuboulder.zoom.us/j/92326111147" target="_blank">https://cuboulder.zoom.us/j/92326111147</a></td>
-							</tr>
-						</table>
-					</div>
-					<div class="row">
-					<div class="column12">						
-						<h3 class="center">Saturday</h3>
-						<table class="scheduleTable">
-							<colgroup>
-								<col>
-    							<col class="w">
-  							</colgroup>
-							<tr>
-								<th>Time</th>
-								<th>Event</th>
-								<th>Link</th>
-							</tr>
-							<tr>
-								<td>9:45 AM</td>
-								<td>Zumba with CUWIC</td>
-								<td><a href="https://cuboulder.zoom.us/j/91811977292" target="_blank">https://cuboulder.zoom.us/j/91811977292</a></td>
-							</tr>
-							<tr>
-								<td>11:00 AM</td>
-								<td>AR Workshop</td>
-								<td><a href="https://cuboulder.zoom.us/j/92606166444" target="_blank">https://cuboulder.zoom.us/j/92606166444</a></td>
-							</tr>
-							<tr>
-								<td>12:00 PM</td>
-								<td>iOS Phone App Workshop</td>
-								<td><a href="https://cuboulder.zoom.us/j/99293009176" target="_blank">https://cuboulder.zoom.us/j/99293009176</a></td>
-							</tr>
-							<tr>
-								<td>1:00 PM</td>
-								<td>Resume and Interview Workshop</td>
-								<td><a href="https://cuboulder.zoom.us/j/98462924629" target="_blank">https://cuboulder.zoom.us/j/98462924629</a></td>
-							</tr>
-							<tr>
-								<td>2:00 PM</td>
-								<td>API Workshop with Blueprint</td>
-								<td><a href="https://cuboulder.zoom.us/j/96984683711" target="_blank">https://cuboulder.zoom.us/j/96984683711</a></td>
-							</tr>
-							<tr>
-								<td>2:30 PM</td>
-								<td>Meditation</td>
-								<td><a href="https://cuboulder.zoom.us/j/92202215347" target="_blank">https://cuboulder.zoom.us/j/92202215347</a></td>
-							</tr>
-							<tr>
-								<td>4:00 PM</td>
-								<td>Wearable Technology Workshop</td>
-								<td><a href="https://cuboulder.zoom.us/j/99126300241" target="_blank">https://cuboulder.zoom.us/j/99126300241</a></td>
-							</tr>
-							<tr>
-								<td>6:00 PM</td>
-								<td>Yoga</td>
-								<td><a href="https://cuboulder.zoom.us/j/97326823576" target="_blank">https://cuboulder.zoom.us/j/97326823576</a></td>
-							</tr>
-							<tr>
-								<td>7:00 PM</td>
-								<td>Chat with Trimble</td>
-								<td><a href="https://cuboulder.zoom.us/j/92278455799" target="_blank">https://cuboulder.zoom.us/j/92278455799</a></td>
-							</tr>
-						</table>
-					</div>
-					<div class="row">
-						<div class="column12">
-						<h3 class="center">Sunday</h3>
-						<table class="scheduleTable">
-							<colgroup>
-								<col>
-    							<col class="w">
-  							</colgroup>
-							<tr>
-								<th>Time</th>
-								<th>Event</th>
-								<th>Link</th>
-							</tr>
-							<tr>
-								<td>8:00 AM</td>
-								<td>Project Submission Due</td>
-								<td><a href="https://tinyurl.com/T9HacksSubmission" target="_blank">https://tinyurl.com/T9HacksSubmission</a></td>
-							</tr>
-							<tr>
-								<td>9:00 AM</td>
-								<td>Project Showcase</td>
-								<td><a href="https://cuboulder.zoom.us/j/92326111147" target="_blank">https://cuboulder.zoom.us/j/92326111147</a></td>
-							</tr>
-							<tr>
-								<td>12:00 PM</td>
-								<td>Judging</td>
-								<td>N/A</td>
-							</tr>
-							<tr>
-								<td>1:00 PM</td>
-								<td>Closing Ceremony</td>
-								<td><a href="https://cuboulder.zoom.us/j/92278455799" target="_blank">https://cuboulder.zoom.us/j/92278455799</a></td>
-							</tr>
-						</table>
-					</div>
-				</div>
+
+			<div id='info_nextevent' class='container12'>
+				<h3>Coming Soon: Fall 2021</h3>
+				<p>
+					T9Hacks is partnering with <a href='https://www.stemblazers.org/' target='_blank'>STEMblazers</a> to host a one-day hackathon.
+					More details coming soon.
+				</p>
 			</div>
-				<div class="container12">
-					<div class="row">
-						<h3>Slack</h3>
-						<p>We'll be using the <a href="t9hacks.slack.com">T9Hacks Slack</a> as our main form of communication at the hackathon. If you've never used Slack before, it's a like a instant messaging system.</p>
-						<p>Look through the #team_formation channel to look for a team or project before the hackathon. You’ll also have time to talk with other hackers to form a team before hacking begins.</p>
-					</div>
-						<h3>Submissions</h3>
+
+			<div id='info_discord' class='container12'>
+				<h3 class='center'>Discord</h3>
+				<p>
+					<a href='https://discord.com/' target='_blank'>Discord</a> is our primary form of communication across all
+					organizers, participants, mentors, sponsors, and any other people involved. 
+				</p>
+				<p>
+					If you are unfamiliar with Discord, it is a group instant messaging platform that can be accessed via browser, desktop, or mobile application.
+					A validated email address is required to join and participate. Join the conversation and stay up-to-date on announcements
+					<a href='https://discord.gg/mdkRKKEupy' target='_blank'>here</a> once you're set up.
+				</p>
+			</div>
+			
+		<!-- CURRENT EVENT SECTION (beware of inner comments)
+			<div id='info_currentevent' class='container12'>
+				<div id='event_info' class='row'>
+					<h3 class='center'>General Info</h3>
+					<p>Specific to current event info...</p>
+				</div> <!-- event_info
+				<div id='event_schedule' class='row'>
+					<h3 class='center'>Seminars</h3>
+					<table class='scheduleTable'>
+						<thead>
+							<tr>
+								<th>Date & Time</th>
+								<th>Seminar</th>
+								<th>Speaker</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+						</tbody>
+					</table> <!-- seminars schedule
+
+					<h3 class='center'>Someday, DD Month Year</h3>
+					<table class='scheduleTable'>
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Event</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							</tr>
+						</tbody>
+					</table> <!-- day x schedule
+				</div> <!-- event_schedule
+				<div id='event_submissions' class='row'>
+					<h3 class='center'>Submissions</h3>
+					<p>Information on how to submit projects....</p>
+				</div> <!-- event_submissions
+				<div id='event_prizes' class='row'>
+					<h3 class='center'>Prizes</h3>
+					<p>Information about awards...</p>
+					<p>
+						The <strong>Rookie Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>Fans' Choice Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>Outstanding __ Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>(Sponsor) Award</strong>
+						is awarded for...
+					</p>
+				</div> <!-- event_prizes
+				<div id='event_tracks' class='row'>
+					<h3 class='center'>Tracks</h3>
+					<p>
+						T9Hacks is dedicated to making a positive impact on the world, so we've compiled some major global
+						issues and discussion topics into categories. Event participants are encouraged to come up with a
+						solution or proposal for any of these problems. There is no single form of these solutions; it could be
+						a game, an artwork, a product design, or something else innovative. Participants should strive for
+						sustainable ideas that can be built upon after the event.
+					</p>
+					<div class='column3'><img src='' alt='' class='tracksImage center'></div>
+					<div class='column9 tracks'>
+						<p><strong>Track Title</strong></p>
 						<p>
-						Projects <strong>must</strong> be submitted through this <a href="https://tinyurl.com/T9HacksSubmission" target="_blank">Google Form</a>. What you submit is completely up to you as long as it is a link. Example submission links: personal website, GitHub, Devpost page, Google drive folder, etc. </p>
-						<p><strong>Mandatory Google Submission Form: <a href="https://tinyurl.com/T9HacksSubmission">https://tinyurl.com/T9HacksSubmission</a>.</strong></p>
-						<p>If you would like to create your submission link through a <a href="https://tinyurl.com/T9Hacks2021" target="_blank">Google Drive folder</a> or <a href="https://t9hacks-2021.devpost.com/" target="_blank">Devpost page</a> use the following links below. </p>	
-						<p>Google Drive: <a href="https://tinyurl.com/T9Hacks2021">https://tinyurl.com/T9Hacks2021</a>.</p>
-						<p>Devpost: <a href="https://t9hacks-2021.devpost.com/">https://t9hacks-2021.devpost.com/</a>.</p>
+							Track description.
+						</p>
 					</div>
-				</div>
-				<div class="container12">
-					<div class="row">
-						<h3>Prizes</h3>
-						<p>There will be <strong>three special awards</strong> and <strong>six regular awards</strong>. Winning teams of the special awards will recieve recieve a $100 Amazon gift card per team and winning teams of the regular awards will each recieve a $75 Amazon gift card per team.</p>
-						<p><strong>Special Awards:</strong> Rookie Award, Fans' Choice Award, and echoAR Award. The Rookie Award  will go to the team of beginners who created the best hack. To qualify, the team should have at least one person who has never participated in a hackathon before. The Fans' Choice Award will go to the team with the most total fans. To qualify, the team needs to have at least one social media account. The echoAR Award will go to the team who uses the echoAR technology the best. To qualify, the team needs to use EchoAR as their primary technology.</p>
-						<p><strong>Regular Awards:</strong> Outstanding Social Impact, Outstanding Maker, Outstanding Developer, Outstanding Artist, Outstanding Entrepreneur, and Outstanding Humanitarian.</p>
+					<div class='column3'><img src='' alt='' class='tracksImage center'></div>
+					<div class='column9 tracks'>
+						<p><strong>Track Title</strong></p>
+						<p>
+							Track description.
+						</p>
 					</div>
-				</div>
-				<div class="container12">
-					<div class="row">
-					<h3>Resources</h3>
-					<p>T9Hacks encourages you to work on a project that inspires you. We provide five tracks that can help provide this inspiration and we compiled a list of websites andinstitutions that offer publically available data sets as well as links to other resources that might help you solve these real-world problems. Keep in mind that there are problems that may cross tracks, and there are solutions that address multiple problems simultaneously.</p>
-					<ul class="list">
-						<li><a href="https://www.youtube.com/watch?v=VRqi3TBkolM" target="_blank">How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less</a></li>
-						<li><a href="https://www.un.org/en/sections/issues-depth/global-issues-overview/index.html" target="_blank">United Nations ​(Global Issues)</a>​</li> 
-						<li><a href="http://www.rtd-denver.com/Developer.shtml" target="_blank">Colorado RTD ​(Regional Transport District)</a>​</li>
-						<li><a href="https://srdata.nist.gov/gateway/gateway?dblist=0" target="_blank">​NIST ​(National Institute of Standards and Technology)</a></li>
-						<li><a href="https://www.ncdc.noaa.gov/cdo-web/" target="_blank">NOAA ​(National Oceanic and Atmospheric Administration) </a></li>
-						<li><a href="https://www2.ucar.edu/research-resources/data-archive-services" target="_blank">NCAR/UCAR ​(National Center for Atmospheric Research/University Corporation for Atmospheric Research) </a></li>
-						<li><a href="http://freegisdata.rtwilson.com/" target="_blank">GIS ​(Geographic Information Systems)</a></li>
-						<li><a href="https://opencolorado.org/" target="_blank">Open Colorado</a></li>
-						</ul>
-				</div>
-			</div>
+				</div> <!-- event_tracks
+			</div> <!-- info_currentevent
+		CURRENT EVENT SECTION -->
+
+			<!-- <div id='resources' class="container12"><div class="row">
+				<h3>Resources</h3>
+				<p>T9Hacks encourages you to work on a project that inspires you. We provide five tracks that can help provide this inspiration and we compiled a list of websites andinstitutions that offer publically available data sets as well as links to other resources that might help you solve these real-world problems. Keep in mind that there are problems that may cross tracks, and there are solutions that address multiple problems simultaneously.</p>
+				<ul class="list">
+					<li><a href="https://www.youtube.com/watch?v=VRqi3TBkolM" target="_blank">How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less</a></li>
+					<li><a href="https://www.un.org/en/sections/issues-depth/global-issues-overview/index.html" target="_blank">United Nations ​(Global Issues)</a>​</li> 
+					<li><a href="http://www.rtd-denver.com/Developer.shtml" target="_blank">Colorado RTD ​(Regional Transport District)</a>​</li>
+					<li><a href="https://srdata.nist.gov/gateway/gateway?dblist=0" target="_blank">​NIST ​(National Institute of Standards and Technology)</a></li>
+					<li><a href="https://www.ncdc.noaa.gov/cdo-web/" target="_blank">NOAA ​(National Oceanic and Atmospheric Administration) </a></li>
+					<li><a href="https://www2.ucar.edu/research-resources/data-archive-services" target="_blank">NCAR/UCAR ​(National Center for Atmospheric Research/University Corporation for Atmospheric Research) </a></li>
+					<li><a href="http://freegisdata.rtwilson.com/" target="_blank">GIS ​(Geographic Information Systems)</a></li>
+					<li><a href="https://opencolorado.org/" target="_blank">Open Colorado</a></li>
+					</ul>
+			</div></div> --> <!-- resources -->
+
+		</section> <!-- info -->
 		<!--End #info-->
-
-		<!--Begin #tracks-->
-			<section id="tracks">
-				<div class="container12">
-					<div class="row">
-						<h2 class="text-center">Tracks</h2>
-			</div>
-						<p>T9Hacks is dedicated to making a positive impact on the world, so we've summarized some major global issues into different categories and encourage event participants to choose one of them, find the problem they want to solve, and come up with their own solution. There is no single form of these solutions: it could be a game, an artwork, a product design, and anything else. Participants are encouraged, but not required, to complete their work within the 36 hours of the T9 hackathon. We want the ideas your ideas to be unique and sustainable, and we strongly encourage you to continue your work after the event.<br>
-
-				<div class="row">
-					 <div class="column3">
-						<img src="images/Underserved.png" alt="Track Icon" class="tracksImage center">
-					</div> 
-					<div class="column9 tracks">
-						<p><strong>Underserved Populations</strong></p>
-						<p>Technology should never just belong to those who possess the privilege to handle it. Change the narrative and begin finding ways to include voices and ideas that have constantly been pushed to the wayside. Create a project that includes everyone at the table - regardless of race, class, ability, gender, sex, and sexual orientation.</p>
-					</div>
-				</div>
-				<div class="row">
-					 <div class="column3">
-						<img src="images/Health.png" alt="Track Icon" class="tracksImage center">
-					</div>  
-					<div class="column9 tracks">
-						<p><strong>Health</strong></p>
-						<p>The United Nations, since its inception, has been actively involved in promoting and protecting good health worldwide. Leading that effort within the UN system is the World Health Organization (WHO), whose constitution came into force on 7 April 1948. Create a project that improves global health.</p>
-					</div>
-				</div>
-				<div class="row">
-					 <div class="column3">
-						<img src="images/Education.png" alt="Track Icon" class="tracksImage center">
-					</div> 
-					<div class="column9 tracks">
-						<p><strong>Children and Education</strong></p>
-						<p>Every child has the right to health, education and protection, and every society has a stake in expanding children’s opportunities in life. Yet, around the world, millions of children are denied a fair chance for no reason other than the country, gender or circumstances into which they are born. Create a project that supports children and education.</p>
-					</div>
-				</div>
-				<div class="row">
-					 <div class="column3">
-						<img src="images/Earth.png" alt="Track Icon" class="tracksImage center">
-					</div> 
-					<div class="column9 tracks">
-						<p><strong>Earth Protection and Sustainable Development</strong></p>
-						<p>Climate change is one of the major challenges of our time. From shifting weather patterns that threaten food production, to rising sea levels that increase the risk of catastrophic flooding, the impacts of climate change are global in scope and unprecedented in scale. Create a project that adresses climate change and sustainability.</p>
-					</div>
-				</div>
-				<div class="row">
-					 <div class="column3">
-						<img src="images/Equality.png" alt="Track Icon" class="tracksImage center">
-					</div>  
-					<div class="column9 tracks">
-						<p><strong>Equality</strong></p>
-						<p>Bringing together people of various backgrounds with different life experiences can generate ideas or perspectives that others may not have ever considered or been aware of. However, there are still many groups of people who are discriminated against based on gender, race, ethnicity, sexuality, and so on. Create a project that advocates equality. <p>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--End #tracks -->
 				
-		<!--Seminars Section-->
-		<section id="seminars">
+		<!--Seminars Section--> <!-- Update: this section moved into event schedule section above -->
+		<!-- <section id="seminars">
 			<div class="container12">
 				<div class="row">
 					<h2 class="text-center">Seminars</h2>
@@ -454,22 +331,25 @@
 						<p><strong>Recording:</strong> <a href="https://youtu.be/g0SKojmeZvM">https://youtu.be/g0SKojmeZvM</a>.</p>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!--End Code of Conduct Section-->
 			
-	<!--Mission Section-->
-		<section id="mission">
-			<div class="container12">
-				<div class="row">
-					<h2 class="text-center">Mission</h2>
-					<p>The mission of T9Hacks is to create a welcoming and safe place for women and traditionally underrepresented students to explore hackathons. Our goal is to create opportunities for newcomers to explore a hackathon environment while learning and solving compelling problems. T9Hacks works towards this mission by creating women, gender equality, creative technology, beginner, and other similar types of hackathons that support women and marginalized students. T9hacks is open to everyone and values all dimensions of gender identity.</p>
-					<p>We are now further beyond gender and expanding to create a safe space—a learning environment—for people that are traditionally underrepresented in the Engineering field. By this we mean that T9Hacks is a place for people who have felt alone in a classroom, work environment, etc. as a member of engineering simply due to their gender, race, ethnicity, sexual orientation, disabilities, or mental health. We want to make T9Hacks a place to build a community of support as we learn and grow in our respective fields.</p>
-				</div>
+		<!--Mission Section-->
+		<section id="mission" class='container12'><div class="row">
+			<h2 class="text-center">Mission</h2>
+			<p>The mission of T9Hacks is to create a welcoming and safe place for women and traditionally underrepresented students to explore hackathons. Our goal is to create opportunities for newcomers to explore a hackathon environment while learning and solving compelling problems. T9Hacks works towards this mission by creating women, gender equality, creative technology, beginner, and other similar types of hackathons that support women and marginalized students. T9hacks is open to everyone and values all dimensions of gender identity.</p>
+			<p>We are now further beyond gender and expanding to create a safe space—a learning environment—for people that are traditionally underrepresented in the Engineering field. By this we mean that T9Hacks is a place for people who have felt alone in a classroom, work environment, etc. as a member of engineering simply due to their gender, race, ethnicity, sexual orientation, disabilities, or mental health. We want to make T9Hacks a place to build a community of support as we learn and grow in our respective fields.</p>
+
+			<div class="column6">
+				<img src="images/pics/T9Hacks_2019_7.jpg">
 			</div>
-		</section>
-	<!--End Mission Section-->
+			<div class="column6">
+				<img src="images/pics/T9Hacks_2019_8.jpg">
+			</div>
+		</div></section>
+		<!--End Mission Section-->
 			
-<!--Begin #faq-->
+		<!--Begin #faq-->
 		<section id="faq">
 			<div class="container12">
 				<div class="row">
@@ -483,7 +363,8 @@
 							</div>
 							<div class="panel">
 								<p>
-								T9Hacks is a 36 hour hackathon (we affectionally refer to ourselves as a "make-a-thon"!) that champions a welcoming enviornment for our participants to learn and express themselves creatively.
+								  T9Hacks is a 36 hour hackathon (we affectionally refer to ourselves as a "make-a-thon"!) 
+                  that champions a welcoming enviornment for our participants to learn and express themselves creatively.
 								</p>
 							</div>
 							<div class="accordion">
@@ -491,7 +372,8 @@
 							</div>
 							<div class="panel">
 								<p>
-									A hackathon is an event where teams of students come together to use their technology and design skills to transform ideas into reality.  Hackathons are marathon “hacking” (i.e. inventing, building, creating, making) gatherings — traditionally in-person — where students can express their creativity and learn something new.
+									A hackathon is an event where teams of students come together to use their technology and design skills to transform ideas into reality.  
+                  Hackathons are marathon “hacking” (i.e. inventing, building, creating, making) gatherings — traditionally in-person — where students can express their creativity and learn something new.
 								</p>
 							</div>
 							<div class="accordion">
@@ -499,7 +381,8 @@
 							</div>
 							<div class="panel">
 								<p>
-									T9Hacks is for college students (and recent college grads) to not only discover what hackathons are, but also to learn, explore, and create something new.  We encourage all women and non-binary students with an interest or enthusiasm for technology and computing to join, regardless of experience!  The only requirements are:
+									T9Hacks is for college students (and recent college grads) to not only discover what hackathons are, but also to learn, explore, and create something new.  
+                  We encourage all women and non-binary students with an interest or enthusiasm for technology and computing to join, regardless of experience!  The only requirements are:
 									<br><br><strong>(1)</strong> you must be over the age of 18; 
 									<br><strong>(2)</strong> you must be enrolled in a college or higher education program, OR have graduated within one year, so undergraduates and graduate students are welcome.
 								</p>
@@ -509,7 +392,8 @@
 							</div>
 							<div class="panel">
 								<p>
-									We encourage people to work in teams of four.  36 hours isn't a lot of time to guide a project from start to finish, so having teammates is incredibly helpful.  This is a great place to meet lots of wonderful people with different skillsets. You can come with a pre-formed group and idea, an idea of your own and no team, or a desire to help someone else's idea along. If you don't have a team nor an idea, we'll host an icebreaker event before the hackathon for everyone to meet and share ideas.
+									We encourage people to work in teams of four.  36 hours isn't a lot of time to guide a project from start to finish, so having teammates is incredibly helpful.  
+                  This is a great place to meet lots of wonderful people with different skillsets. You can come with a pre-formed group and idea, an idea of your own and no team, or a desire to help someone else's idea along. If you don't have a team nor an idea, we'll host an icebreaker event before the hackathon for everyone to meet and share ideas.
 								</p>
 							</div>
 							<div class="accordion">
@@ -570,27 +454,37 @@
 		</section>
 		<!--End #faq-->
 				
-	<!--Begin #last_year-->
-		<section id="last_year">
-			<div class="container12">
-				<div class="row">
-					<h2>Last Year</h2>
+		<!--Begin #last_year-->
+		<section id="last_year" class='container12'> <!-- NOTE: not updated for Sp21 -->
+			<div id='past_stats' class='row center'>
+				<h2>Last Year</h2> <br/>
+				<div class='column4 text-center'>
+					<h5>120</h5>
+					<p class='center'>hackers participated</p>
 				</div>
-				<div class="row center">
-					<div class="column4 text-center">
-						<h5>120</h5>
-						<p class="center">hackers participated</p>
-					</div>
-					<div class="column4 text-center">
-						<h5>65%</h5>
-						<p class="center">of hackers were women</p>
-					</div>
-					<div class="column4 text-center">
-						<h5>50%</h5>
-						<p class="center">were first time hackers</p>
-					</div>
+				<div class='column4 text-center'>
+					<h5>65%</h5>
+					<p class='center'>of hackers were women</p>
+				</div>
+				<div class='column4 text-center'>
+					<h5>50%</h5>
+					<p class='center'>were first-time hackers</p>
 				</div>
 			</div>
+
+			<div id='past_winners' class="row">
+				<h3 style="text-align:center">Spring 2021 Winners</h3>
+				<p><strong>Outstanding Artist</strong> - <a href="https://devpost.com/software/linda-dprsu9" target="_blank">:poofy</a> by Linh Nguyen & Dan Líu</p>
+				<p><strong>Outstanding Social Impact</strong> - <a href="https://devpost.com/software/project-global" target="_blank">Project Global</a> by Mahzabin Rashid Fariha and Humayra Rashid Safa</p>
+				<p><strong>Outstanding Humanitarian</strong> - <a href="https://creative.colorado.edu/~sahe2032/dev/T9_Hacks/The%20Disaster%20Displacement%20Database/" target="_blank">The Disaster Displacement Database</a> by Fiona Bell, Sam Herwig, and Emma Petersen</p>
+				<p><strong>Outstanding Maker</strong> - <a href="https://devpost.com/software/foodie-s-world-4xs2ir" target="_blank">Foodie’s World!</a> by Sahana Gokulakrishnan</p>
+				<p><strong>Outstanding Entrepreneur</strong> - <a href="https://devpost.com/software/change-my-name" target="_blank">Change-My-Name (4 hour of sleep)</a> by Ann Marie, Gwen, Spencer, and Charlotte</p>
+				<p><strong>Outstanding Developer</strong> - <a href="https://github.com/jary7635/StarcrossedVoyagers/tree/main" target="_blank">Starcrossed Voyagers: The Perilous Planet</a> by Allison Palmer, Jenna Rothe, James Ryan, and Emma Wenzel</p>
+				<p><strong>EchoAR Award</strong> - <a href="https://devpost.com/software/lession-mustar" target="_blank">Lesson mustAR</a> by Ahelee Bhattacharya</p>
+				<p><strong>Fans’ Choice</strong> - <a href="https://drive.google.com/drive/u/1/folders/16k9l4G3YSjyysP5whDWgbXmACETSTO2l" target="_blank">CSAG/The Invisible Line Project</a> by Audrey Viland, Spencer Bajcar, and Greg Gassen</p>
+				<p><strong>Rookie Award</strong> - <a href="https://adobe.ly/3vK4jDG" target="_blank">Lively, Lovely</a> by Minso Kim and Catherine Xiao</p>
+			</div> <!-- past winners -->
+
 			<div id="devpost">
 				<h3 class="center">
 					<a href="https://t9hacks-2020.devpost.com/participants" target="_blank">View 2020 Devpost Submissions</a>	
@@ -627,46 +521,39 @@
 		</section>
 		End #video-->
 
-<!--Begin #team-->
-			<section id="team">
-				<div class="container12">
-					<div class="row">
-						<h2 class="text-center">Team</h2>
-			</div>
-				<div class=""row teamImages"">
-					 <div class="column4">
-						<img src="images/neha.png" alt="Team" class="teamsImages center">
-						<p><strong>Co-Lead Organizer</strong> | Niharika Kunapuli</p>
-					</div>
-					 <div class="column4">
-						<img src="images/oceane.png" alt="Team" class="teamsImages center">
-						<p><strong>Co-Lead Organizer</strong> | Oceane Andreis</p>
-					</div>
-					 <div class="column4">
-						<img src="images/ruhan.png" alt="Team" class="teamsImages center">
-						<p><strong>Event Experience</strong> | Ruhan Yang</p>
-					</div>
+		<!--Begin #team-->
+		<section id="team" class='container12'>
+			<h2 class='text-center'>Team</h2>
+			<div class="row teamImages">
+				<div class="column4">
+					<img src="images/neha.png" alt="Team" class="teamsImages center">
+					<p><strong>Co-Lead Organizer</strong> | Niharika Kunapuli</p>
 				</div>
-					
-				<div class="row">
-					 <div class="column4">
-						<img src="images/sophia.png" alt="Team" class="teamsImages center">
-						<p><strong>Sponsorship</strong> | Sophia Eisner</p>
-					</div>
-
-					 <div class="column4">
-						<img src="images/fiona.png" alt="Team" class="teamsImages center">
-						<p><strong>Marketing</strong> | Fiona Bell</p>
-					</div>
-					 <div class="column4">
-						<img src="images/aileen.png" alt="Team" class="teamsImages center">
-						<p><strong>Advisor</strong> | Aileen Pierce</p>
-					</div>
+				<div class="column4">
+					<img src="images/oceane.png" alt="Team" class="teamsImages center">
+					<p><strong>Co-Lead Organizer</strong> | Oceane Andreis</p>
 				</div>
-			</div>
+				<div class="column4">
+					<img src="images/ruhan.png" alt="Team" class="teamsImages center">
+					<p><strong>Event Experience</strong> | Ruhan Yang</p>
+				</div>
+			</div> <!-- team images row 1-->
+			<div class="row teamImages">
+				<div class="column4">
+					<img src="images/sophia.png" alt="Team" class="teamsImages center">
+					<p><strong>Sponsorship</strong> | Sophia Eisner</p>
+				</div>
+				<div class="column4">
+					<img src="images/fiona.png" alt="Team" class="teamsImages center">
+					<p><strong>Marketing</strong> | Fiona Bell</p>
+				</div>
+				<div class="column4">
+					<img src="images/aileen.png" alt="Team" class="teamsImages center">
+					<p><strong>Advisor</strong> | Aileen Pierce</p>
+				</div>
+			</div> <!-- team images row 2 -->
 		</section>
 		<!--End #team -->
-
 	
 		<!--Code of Conduct Section-->
 		<section id="code_conduct">
@@ -687,57 +574,56 @@
 				</div>
 				</div>
 			</div>
-		</section>
+		</div></section>
 		<!--End Code of Conduct Section-->
 				
 		<!--Begin Sponsorship-->
-		<section>
-			<div class="container12" id="sponsor">
-				<div>
-					<h2 class="center">Sponsors</h2>
-				</div>
-				<div class="column12 text-center">					
-					<p><strong>
-						Interested in sponsoring T9Hacks 2021?
-						Reach us at <a href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20Sponsoring">t9hacks@colorado.edu</a>
-					<strong></p>
-				</div>
-				<div class="row teamImages">
-					 <div class="column4">
-						<a href="https://www.invisionapp.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/invision.png" alt="InVision"></a>
-					</div>
-					 <div class="column4">
-						<a href="https://www.tortugaagtech.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/tortuga.png" alt="TortugaAgTech"></a>
-					</div>
-					 <div class="column4">
-						<a href="https://www.echoar.xyz/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/echoAR.png" alt="echoAR"></a>
-					</div>
-				</div>
-					
-				<div class="row">
-					 <div class="column4">
-						<a href="https://www.trimble.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/trimble.png" alt="Trimble"></a>
-					</div>
-
-					 <div class="column4">
-						<a href="https://www.sparkfun.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/sparkfun.png" alt="sparkfun"></a>
-					</div>
-					 <div class="column4">
-						<a href="https://toolcase.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/toolcase.png" alt="ToolCASE"></a>
-					</div>
-				</div>	
-				<div class="row">
-					 <div class="column6">
-						<a href="https://www.colorado.edu/atlas" target="_blank"><img class="gold centerImage" src="images/sp21_sponsors/atlas.png" alt="atlas"></a>
-					</div>
-
-					 <div class="column6">
-						<a href="https://www.colorado.edu/engineering/" target="_blank"><img class="gold centerImage" src="images/sp21_sponsors/engineering.png" alt="atlas"></a>
-					</div>
-				</div>	
+		<section id='sponsor' class='container12'>
+			<h2 class="center">Sponsors</h2>
+			<div class="column12 text-center">					
+				<p><strong>
+					Interested in sponsoring T9Hacks 2022?
+					Reach us at <a href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20Sponsoring">t9hacks@colorado.edu</a>
+				<strong></p>
 			</div>
+			<!-- <div class="row">
+				<div class="column4">
+					<a href="https://www.invisionapp.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/invision.png" alt="InVision"></a>
+				</div>
+				<div class="column4">
+					<a href="https://www.tortugaagtech.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/tortuga.png" alt="TortugaAgTech"></a>
+				</div>
+				<div class="column4">
+					<a href="https://www.echoar.xyz/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/echoAR.png" alt="echoAR"></a>
+				</div>
+			</div> -->
+				
+			<!-- <div class="row">
+				<div class="column4">
+					<a href="https://www.trimble.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/trimble.png" alt="Trimble"></a>
+				</div>
+
+				<div class="column4">
+					<a href="https://www.sparkfun.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/sparkfun.png" alt="sparkfun"></a>
+				</div>
+				<div class="column4">
+					<a href="https://toolcase.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/toolcase.png" alt="ToolCASE"></a>
+				</div>
+			</div>	 -->
+
+			<!-- (Mission Zero) https://missionzero.tech/ sp22_sponsors/mission_zero.png -->
+			<div class="row">
+				<div class="column6">
+					<a href="https://www.colorado.edu/atlas" target="_blank"><img class="gold centerImage" src="images/sp21_sponsors/atlas.png" alt="atlas"></a>
+				</div>
+
+				<div class="column6">
+					<a href="https://www.colorado.edu/engineering/" target="_blank"><img class="gold centerImage" src="images/sp21_sponsors/engineering.png" alt="atlas"></a>
+				</div>
+			</div>	
 		</section>
 		<!--End Sponsorship-->	
+		</main>
 				
 </div>		
 
@@ -749,8 +635,6 @@
 						<div class="location">
 							<p>
 								<span class="text">
-									Spring 2021
-									<br/>
 									<a href="http://www.colorado.edu/" target="_blank">University of Colorado Boulder</a>
 									<br/>
 									<a href="http://atlas.colorado.edu/" target="_blank">ATLAS Institute</a>
@@ -797,16 +681,6 @@
 				</div>
 			</div>
 		</footer>
-		
-		
-	</article>
-	
-	
-	<!---------------------------->
-	<!--		Javascript		-->
-	<!---------------------------->
-	<script src="js/common.js" type="text/javascript"></script>
-	
-
+			
 </body>
 </html>
