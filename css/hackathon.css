@@ -501,7 +501,7 @@ nav {
   }
 
   #past_projects img{
-    width: 100%
+    width: 100%;
     height:auto;
     overflow: hidden;
   }
@@ -662,7 +662,7 @@ footer {
   width: 212px; }
 
 .silver{
-  width: 175px;` }
+  width: 175px; }
 
 @media (max-width: 1024px) {
   .sponsor {
