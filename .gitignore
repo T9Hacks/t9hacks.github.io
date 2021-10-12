@@ -9,3 +9,5 @@
 
 # database files
 /hidden/
+
+.DS_Store
