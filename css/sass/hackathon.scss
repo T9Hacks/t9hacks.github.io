@@ -2,23 +2,38 @@
 
 */
 
-$colorMain: #7961ab;
-$colorMainLightBy6: #cec5e0;
-$colorMainLightBy5: #bfb4d8;
-$colorMainLightBy4: #b1a4cf;
-$colorMainLightBy3: #a393c6;
-$colorMainLightBy2: #9582bd;
-$colorMainLightBy1: #8772b4;
-$colorMainDarkBy3: #55427d;
-$colorMainDarkBy2: #614b8e;
-$colorMainDarkBy1: #6c549e;
-$colorAccent1: #6193ab;
+/* Turquoise-Purple theme */
+// $colorMain: #7961ab;
+// $colorMainLightBy6: #cec5e0;
+// $colorMainLightBy5: #bfb4d8;
+// $colorMainLightBy4: #b1a4cf;
+// $colorMainLightBy3: #a393c6;
+// $colorMainLightBy2: #9582bd;
+// $colorMainLightBy1: #8772b4;
+// $colorMainDarkBy3: #55427d;
+// $colorMainDarkBy2: #614b8e;
+// $colorMainDarkBy1: #6c549e;
+// $colorAccent1: #6193ab;
+// $colorAccent2: #9e61ab;
+
+/* Au{t9}umn Hacks theme */
+$colorMain: #E29967;
+$colorMainLightBy6: #DDBBA4;
+$colorMainLightBy5: #E0B396;
+$colorMainLightBy4: #E2AF8C;
+$colorMainLightBy3: #E2A881;
+$colorMainLightBy2: #E2A47A;
+$colorMainLightBy1: #E29E71;
+$colorMainDarkBy3: #E57C37;
+$colorMainDarkBy2: #E58342;
+$colorMainDarkBy1: #E58A4E;
+$colorAccent1: #D3CD60;
 $colorAccent2: #9e61ab;
 
 $colorWhiteOpaque: rgba(255, 255, 255, 0.7);
 $colorShadow: #aaa;
 $colorText: white;
-$colorBackground: white;
+$colorBackground: #F2F1F1;
 $colorBorder: transparent;
 
 $mediaBreakLargeMax: 1400px;
