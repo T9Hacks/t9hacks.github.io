@@ -50,6 +50,7 @@ p {
 
 a {
   cursor: pointer;
+  color: #E29967;
 }
 
 a:hover,
@@ -294,6 +295,8 @@ h4 {
 
 .center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ********************************************** */
@@ -306,7 +309,7 @@ section {
 
 nav {
   z-index: 100;
-  background:#e29967;
+  background:#f2f1f1;
   /* background: #55427d; */
   position: fixed;
   width: 100%;
@@ -345,7 +348,7 @@ nav li.brand span {
 }
 nav li a {
   display: block;
-  color: white;
+  color: #e29667;
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
@@ -627,7 +630,7 @@ footer a:hover {
   padding-top: 80px;
   /*background-image: url('../images/const.png');*/
   /*background-image: url('../images/stars4.jpg');*/
-  background-image: url("../images/gradientbackground.png");
+  background-image: url("../images/t9website-autumn.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
