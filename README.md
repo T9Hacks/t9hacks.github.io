@@ -1,13 +1,16 @@
 # T9Hacks Hackathon
+
 T9Hacks is a beginner-friendly hackathon aimed towards underrepresented minority groups at the University of Colorado Boulder's ATLAS Institute.T9Hacks strives to build an inclusive and welcoming STEM environment for students to explore creative ways to build, hack, and problem-solve.
 
 ## Contributors
+
 if you are a T9Hacks team member wanting to edit the website please read below:
 
 ```bash
 git clone https://github.com/T9Hacks/t9hacks.github.io.git
 ```
-After, you can open you editor of choice edit `home.html` and `css/hackathon.css`
+
+After, you can open your editor of choice edit `home.html` and `css/hackathon.css`
 Once you are happy with your changes open your terminal and do these commands
 
 ```bash
