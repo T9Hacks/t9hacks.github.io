@@ -27,7 +27,7 @@ h3 {
   line-height: 1.5em;
   margin: 30px 0 20px;
   padding: 10px;
-  color: #d3cd60;
+  color: black;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@ h4 {
 
 h5 {
   font-size: 3em;
-  color: #d3cd60;
+  color: #ef5060;
   margin-bottom: 20px;
 }
 
@@ -50,14 +50,14 @@ p {
 
 a {
   cursor: pointer;
-  color: #e29967;
+  color: #55427d;
 }
 
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: #d3cd60;
+  color: #black;
 }
 
 ul,
@@ -154,7 +154,7 @@ figure figcaption {
   margin: 20px;
   display: inline-block;
   cursor: pointer;
-  background: #d3cd60;
+  background: black;
   border: transparent;
   text-align: center;
   text-decoration: none;
@@ -165,8 +165,7 @@ figure figcaption {
 .btn:hover,
 .btn:active,
 .btn:focus {
-  /* background: #55427d; */
-  background: #e29967;
+  background: #55427d;
   color: white;
   text-decoration: none;
 }
@@ -309,8 +308,7 @@ section {
 
 nav {
   z-index: 100;
-  background: #f2f1f1;
-  /* background: #55427d; */
+  background: #55427d;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
@@ -348,7 +346,7 @@ nav li.brand span {
 }
 nav li a {
   display: block;
-  color: #e29667;
+  color: white;
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
@@ -358,7 +356,7 @@ nav li a:active,
 nav li a:focus .dropdown {
   text-decoration: none;
   color: white;
-  background: #d3cd60;
+  background: #ef5060;
 }
 
 #navigationLarge {
@@ -401,7 +399,7 @@ nav li a:focus .dropdown {
 #navButton #navIcon {
   line-height: 40px;
   font-size: 35px;
-  color: rgb(216, 156, 112);
+  color: white;
 }
 
 /* MLH Trust Badge */
@@ -452,7 +450,7 @@ nav li a:focus .dropdown {
     /* position: absolute; */
     top: 50px;
     /* e29967 */
-    background: rgb(242, 241, 241);
+    background: #55427d;
     height: auto;
     left: 0;
     width: 100%;
@@ -463,7 +461,7 @@ nav li a:focus .dropdown {
   #navigationLarge li {
     display: block;
     float: none;
-    border-top: 1px solid #e29967;
+    border-top: 1px solid #55427d;
   }
 }
 
@@ -487,7 +485,7 @@ nav li a:focus .dropdown {
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: #d3cd60;
+  color: #ef5060;
 }
 
 .dropdown:hover .dropdown-content {
@@ -495,7 +493,7 @@ nav li a:focus .dropdown {
 }
 
 .dropdown:hover {
-  background-color: #d3cd60;
+  background-color: #ef5060;
 }
 
 .dropdown .dropbtn {
@@ -524,7 +522,7 @@ nav li a:focus .dropdown {
 }
 .accordion:after {
   content: "\002B";
-  color: #d3cd60;
+  color: #ef5060;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -600,7 +598,7 @@ nav li a:focus .dropdown {
 /* **************************************** */
 footer {
   padding: 30px 0;
-  background: #e29967;
+  background: #55427d;
   color: white;
 }
 footer.footer2 {
@@ -629,13 +627,14 @@ footer a:hover {
 /* ****************************************** */
 #home {
   padding-top: 80px;
-  /*background-image: url('../images/const.png');*/
-  /*background-image: url('../images/stars4.jpg');*/
+  /* Change this background to something else */
+  background-image: url("../images/const.png");
+  /* background-image: url('../images/stars4.jpg'); */
   /* background-image: url("../images/t9website-autumn.jpg"); */
   background-repeat: no-repeat;
   background-size: 100%;
   /* For responsiveness, I opted for a background color rather than the image */
-  background-color: #e29967;
+  /* background-color: #55427d; */
   width: 100%;
   text-align: left;
   color: white;
@@ -753,7 +752,7 @@ footer a:hover {
 }
 
 .sponserHover a:hover {
-  background-color: #d3cd60;
+  background-color: #ef5060;
   opacity: 0.5;
 }
 
@@ -884,10 +883,6 @@ footer a:hover {
   background: #bbbbbb;
 }
 
-/* .main {
-  background: #e29967;
-} */
-
 .fact_graph_6 {
   width: 6%;
 }
@@ -910,7 +905,7 @@ footer a:hover {
 }
 
 .fact_table td {
-  background: #e29967;
+  background: #55427d;
   padding: 3px 8px;
 }
 
