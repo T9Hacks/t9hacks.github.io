@@ -849,7 +849,7 @@ footer a:hover {
 .socialButtons li,
 .socialLinks li {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 5%;
 }
 
 #topSocial,
@@ -1080,6 +1080,14 @@ footer a:hover {
   #pageSideBar + article {
     margin-left: 0;
   }
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
 }
 
 /*# sourceMappingURL=hackathon.css.map */
