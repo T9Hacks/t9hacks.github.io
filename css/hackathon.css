@@ -57,7 +57,7 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: #black;
+  color: black;
 }
 
 ul,
@@ -150,15 +150,15 @@ figure figcaption {
 }
 
 .btn {
-  padding: 10px 20px;
-  margin: 20px;
+  padding: 1em 2em;
+  margin: 1em;
   display: inline-block;
   cursor: pointer;
-  background: black;
+  background: white;
   border: transparent;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: black;
   border-radius: 8px;
 }
 
@@ -174,6 +174,7 @@ figure figcaption {
   margin-bottom: 10px;
   margin-left: 30px;
 }
+
 .list li::before {
   content: "\25C7";
   margin-left: -30px;
@@ -243,9 +244,11 @@ figure figcaption {
     margin: 0;
   }
 }
+
 h4 {
   font-size: 1em;
 }
+
 @media (max-width: 767px) {
   h1 {
     font-size: 2em;
@@ -315,35 +318,43 @@ nav {
   -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
   box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 }
+
 nav ul {
   padding: 0;
   display: block;
   overflow: hidden;
 }
+
 nav li {
   list-style-type: none;
   display: inline-block;
   float: left;
 }
+
 nav li.left {
   float: left;
 }
+
 nav li.right {
   float: right;
 }
+
 nav li.brand a {
   margin: 0;
   height: 50px;
 }
+
 nav li.brand img {
   height: 35px;
   width: 35px;
   margin: 10px 20px;
 }
+
 nav li.brand span {
   line-height: 50px;
   float: right;
 }
+
 nav li a {
   display: block;
   color: white;
@@ -351,6 +362,7 @@ nav li a {
   line-height: 50px;
   text-decoration: none;
 }
+
 nav li a:hover,
 nav li a:active,
 nav li a:focus .dropdown {
@@ -371,18 +383,22 @@ nav li a:focus .dropdown {
   display: none;
   margin: 0 10px;
 }
+
 .navigationMobile .brandMobile {
   display: inline-block;
   text-align: left;
   float: left;
   height: 50px;
 }
+
 .navigationMobile .brandMobile a {
   padding: 0;
 }
+
 .navigationMobile .brandMobile a img {
   margin: 8px;
 }
+
 .navigationMobile .brandMobile a span {
   padding-right: 10px;
 }
@@ -396,6 +412,7 @@ nav li a:focus .dropdown {
   margin: 5px 0;
   float: right;
 }
+
 #navButton #navIcon {
   line-height: 40px;
   font-size: 35px;
@@ -418,6 +435,7 @@ nav li a:focus .dropdown {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 #mlh-trust-badge img {
   width: 100%;
 }
@@ -434,6 +452,7 @@ nav li a:focus .dropdown {
     width: 10%;
   }
 }
+
 @media (max-width: 767px) {
   .navigationMobile {
     display: block;
@@ -455,9 +474,11 @@ nav li a:focus .dropdown {
     left: 0;
     width: 100%;
   }
+
   #navigationLarge ul {
     display: block;
   }
+
   #navigationLarge li {
     display: block;
     float: none;
@@ -520,6 +541,7 @@ nav li a:focus .dropdown {
 #faq h4 {
   display: inline;
 }
+
 .accordion:after {
   content: "\002B";
   color: #ef5060;
@@ -528,9 +550,11 @@ nav li a:focus .dropdown {
   margin-left: 5px;
   font-size: 3em;
 }
+
 .active:after {
   content: "\2212";
 }
+
 .panel {
   display: none;
   margin-right: 40px;
@@ -601,13 +625,16 @@ footer {
   background: #55427d;
   color: white;
 }
+
 footer.footer2 {
   padding: 10px 0 0;
 }
+
 footer a {
   color: white;
   text-decoration: underline;
 }
+
 footer a:hover {
   color: white;
   text-decoration: underline;
@@ -628,20 +655,23 @@ footer a:hover {
 #home {
   padding-top: 80px;
   /* Change this background to something else */
-  background-image: url("../images/const.png");
+  background-image: url("../images/Website\ Banner\ 2022\ \ Low\ opacity.svg");
+  /* background-image: url("../images/Website\ Banner\ 2022.svg"); */
+
   /* background-image: url('../images/stars4.jpg'); */
   /* background-image: url("../images/t9website-autumn.jpg"); */
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   /* For responsiveness, I opted for a background color rather than the image */
   /* background-color: #55427d; */
   width: 100%;
+
   text-align: left;
   color: white;
 }
 
 .headerLogo {
-  width: 400px;
+  width: 800px;
 }
 
 @media (max-width: 767px) {
@@ -796,10 +826,12 @@ footer a:hover {
 #infoPage {
   font-size: 18px;
 }
+
 #infoPage h2 {
   font-size: 3em;
   margin: 0;
 }
+
 #infoPage .sectionShadowBox .sectionShadowBox {
   text-align: left;
 }
@@ -813,11 +845,13 @@ footer a:hover {
   margin-left: 0;
   text-align: center;
 }
+
 .socialButtons li,
 .socialLinks li {
   display: inline-block;
   margin-bottom: 0;
 }
+
 #topSocial,
 #topSocial2 {
   text-align: left;
@@ -843,6 +877,7 @@ footer a:hover {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 .socialButtons a:hover,
 .socialButtons a:focus,
 .socialButtons a:active {
@@ -852,9 +887,11 @@ footer a:hover {
 .socialLinks {
   margin-top: 20px;
 }
+
 .socialLinks li {
   margin: 0 5px;
 }
+
 .socialLinks .fb_iframe_widget span {
   vertical-align: top !important;
 }
@@ -913,10 +950,12 @@ footer a:hover {
   position: relative;
   display: none;
 }
+
 .slideshowSlide .slideshowImg {
   width: 100%;
   height: 100%;
 }
+
 .slideshowSlide .slideshowDesc {
   width: 100%;
   height: 90px;
@@ -930,6 +969,7 @@ footer a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 .slideshowSlide .slideshowDesc span {
   position: absolute;
   z-index: 5;
@@ -964,9 +1004,11 @@ footer a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 #pageSideBar + article {
   margin-left: 300px;
 }
+
 #pageSideBar .container {
   width: 100%;
   display: flex;
@@ -975,6 +1017,7 @@ footer a:hover {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
 #pageSideBar ul {
   display: flex;
   flex-direction: column;
@@ -982,6 +1025,7 @@ footer a:hover {
   height: 100%;
   width: 100%;
 }
+
 #pageSideBar li {
   display: flex;
   flex-direction: column;
@@ -992,9 +1036,11 @@ footer a:hover {
   height: 100%;
   border-bottom: 1px solid transparent;
 }
+
 #pageSideBar li:last-child {
   border: 0;
 }
+
 #pageSideBar li a {
   display: flex;
   flex-direction: column;
@@ -1004,11 +1050,13 @@ footer a:hover {
   display: block;
   border: 0;
 }
+
 #pageSideBar li a:hover,
 #pageSideBar li a:active,
 #pageSideBar li a:focus {
   color: white;
 }
+
 #pageSideBar li span {
   margin-bottom: 0;
   position: absolute;
