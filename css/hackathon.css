@@ -7,6 +7,14 @@ body {
   width: 100%;
 }
 
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
 h1 {
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
   font-size: 5em;
@@ -1080,14 +1088,6 @@ footer a:hover {
   #pageSideBar + article {
     margin-left: 0;
   }
-}
-
-.visually-hidden {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
 }
 
 /*# sourceMappingURL=hackathon.css.map */
