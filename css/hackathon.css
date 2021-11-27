@@ -685,7 +685,6 @@ footer a:hover {
 @media (max-width: 767px) {
   #home {
     padding-top: 60px;
-    background-size: 200%;
   }
 
   .headerLogo {
