@@ -766,7 +766,8 @@ footer a:hover {
 /* ******************************************** */
 .sponsorRow {
   text-align: center;
-  margin-bottom: 0;
+  margin: 12% 0;
+  padding-bottom: 8%;
 }
 
 .sponsorRowWrapper {
@@ -793,6 +794,10 @@ footer a:hover {
   opacity: 0.5;
 }
 
+.diamond {
+  width: 388px;
+}
+
 .platinum {
   width: 250px;
 }
@@ -813,6 +818,10 @@ footer a:hover {
 @media (max-width: 767px) {
   .sponsor {
     margin: 5px;
+  }
+
+  .diamond {
+    width: 180px;
   }
 
   .platinum {
@@ -841,6 +850,14 @@ footer a:hover {
 
 #infoPage .sectionShadowBox .sectionShadowBox {
   text-align: left;
+}
+dt {
+  font-weight: bold;
+  color: #55427d;
+  margin-top: 3%;
+}
+dd {
+  margin-left: 3%;
 }
 
 /* ************************************************ */
