@@ -795,19 +795,23 @@ footer a:hover {
 }
 
 .diamond {
-  width: 388px;
+  width: 400px;
 }
 
 .platinum {
-  width: 250px;
+  width: 340px;
 }
 
 .gold {
-  width: 212px;
+  width: 280px;
 }
 
 .silver {
-  width: 175px;
+  width: 250px;
+}
+
+.silverSmall {
+  width: 130px;
 }
 
 @media (max-width: 1024px) {
@@ -834,6 +838,10 @@ footer a:hover {
 
   .silver {
     width: 85px;
+  }
+
+  .silverSmall {
+    width: 40px;
   }
 }
 /* **************************************** */
