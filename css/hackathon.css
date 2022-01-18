@@ -766,12 +766,19 @@ footer a:hover {
 /* ******************************************** */
 .sponsorRow {
   text-align: center;
-  margin: 12% 0;
-  padding-bottom: 8%;
+  margin: 4% 0;
+  padding-bottom: 4%;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.column12 .silver {
+  margin-top: -7%;
 }
 
 .sponsorRowWrapper {
-  display: inline-block;
+  display: flex;
 }
 
 .centerImage {
@@ -794,8 +801,12 @@ footer a:hover {
   opacity: 0.5;
 }
 
+.emptySpace {
+  width: 50%;
+}
 .diamond {
-  width: 400px;
+  margin-top: 5%;
+  width: 440px;
 }
 
 .platinum {
@@ -814,18 +825,25 @@ footer a:hover {
   width: 130px;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .sponsor {
     float: none;
   }
-}
+} */
 @media (max-width: 767px) {
   .sponsor {
     margin: 5px;
   }
+  .sponsorRow {
+    display: block;
+  }
+  .column12 .silver {
+    margin-top: 0%;
+  }
 
   .diamond {
-    width: 180px;
+    margin-top: 6%;
+    width: 200px;
   }
 
   .platinum {
