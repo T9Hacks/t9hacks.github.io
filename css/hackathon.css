@@ -128,11 +128,11 @@ figure figcaption {
     margin-top: 10px;
   }
 
-  p {
+  p,
+  li,
+  aside {
     font-size: 0.75em;
-  }
-  li {
-    font-size: 0.75em;
+    line-height: 1.5;
   }
 
   blockquote {
