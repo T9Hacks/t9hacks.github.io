@@ -1,0 +1,1421 @@
+<!-- editing example -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>T9Hacks</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Custom Fonts -->
+    <link
+      href="plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rajdhani"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/1140.css" rel="stylesheet" type="text/css" media="all" />
+    <link
+      href="css/hackathon.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <!--<link href="css/animations.css" rel="stylesheet" type="text/css" media="all">-->
+
+    <!-- Javascript -->
+    <script src="js/common.js" defer></script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+
+    <!-- FB Meta Tags -->
+    <meta property="fb:app_id" content="1734809350067997" />
+    <meta property="og:site_name" content="T9Hacks" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://www.t9hacks.org/images/FBShare_Standard_Colors.png"
+    />
+    <meta
+      property="og:description"
+      content="T9Hacks is a beginner-friendly hackathon aimed towards underrepresented minority groups at the University of Colorado Boulder's ATLAS Institute.
+       T9Hacks strives to build an inclusive and welcoming STEM environment for students to explore creative ways to build, hack, and problem-solve."
+    />
+    <meta property="og:url" content="https://www.t9hacks.org" />
+    <meta property="og:title" content="T9Hacks" />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <nav id="navigation" class="containerWide">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navigationMobile">
+        <div class="brandMobile">
+          <ul>
+            <li class="brand">
+              <a class="pageScroll" href="#home">
+                <img src="images/logos/t9basic2021.png" alt="T9Hacks Logo" />
+                <span>T9Hacks</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" id="navButton" aria-label="Navigation Button">
+          <span id="navIcon" class="fa fa-bars"></span>
+        </button>
+      </div>
+      <br id="breakForMenu" style="display: none" />
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="navigationLarge">
+        <ul>
+          <li class="left">
+            <a class="pageScroll" href="#home">T9Hacks</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#info">Info</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#mission">Mission</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#faq">FAQ</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#last_year">Last Year</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#team">Team</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#code_conduct">Code of Conduct</a>
+          </li>
+          <li class="left">
+            <a class="pageScroll" href="#sponsor">Sponsors</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+      <div class="container12">
+        <div class="row">
+          <div id="header_logo" class="column5">
+            <img
+              src="images/logos/T9Hacks%202022%20Logo.svg"
+              srcset="images/logos/T9Hacks%202022%20Logo.png"
+              alt="T9Hacks Sticker logo"
+              class="headerLogo"
+            />
+          </div>
+          <div id="header_info" class="column7">
+            <h1><strong>T9Hacks</strong></h1>
+            <h2>
+              Hackathon for Women and Traditionally Underrepresented Students
+            </h2>
+            <h4>February 18-19, 2022 | ATLAS Institute</h4>
+            <ul class="socialButtons" id="topSocial">
+              <li>
+                <a href="https://www.facebook.com/t9hacks/" target="_blank"
+                  ><i class="fa fa-facebook icon"
+                    ><span class="visually-hidden">T9Hacks Facebook</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/t9hacks" target="_blank"
+                  ><i class="fa fa-twitter icon"
+                    ><span class="visually-hidden">T9Hacks Twitter</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/t9hacks" target="_blank"
+                  ><i class="fa fa-instagram icon"
+                    ><span class="visually-hidden">T9Hacks Instagram</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/t9hacks" target="_blank"
+                  ><i class="fa fa-github icon"
+                    ><span class="visually-hidden">T9Hacks Github</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  style="text-align: center"
+                  href="https://discord.gg/mdkRKKEupy"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="1.25em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 640 400"
+                  >
+                    <path
+                      d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91a337.461 337.461 0 0 0-14.9 30.6a447.848 447.848 0 0 0-134.426 0a309.541 309.541 0 0 0-15.135-30.6a1.89 1.89 0 0 0-1.924-.91a483.689 483.689 0 0 0-119.688 37.107a1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375a487.666 487.666 0 0 0 146.825 74.189a1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588a321.173 321.173 0 0 1-45.868-21.853a1.885 1.885 0 0 1-.185-3.126a251.047 251.047 0 0 0 9.109-7.137a1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233a234.533 234.533 0 0 0 9.132 7.16a1.884 1.884 0 0 1-.162 3.126a301.407 301.407 0 0 1-45.89 21.83a1.875 1.875 0 0 0-1 2.611a391.055 391.055 0 0 0 30.014 48.815a1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239c0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239c0 32.654-23.177 59.241-52.844 59.241z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <!-- <i class='fa fa-discord-alt'></i> -->
+                  <!-- <i class='fab fa-discord'></i> -->
+                  <!-- <img alt="discord-logo" src='images/logos/discord_clyde.ico'> -->
+                  <span class="visually-hidden">T9Hacks Discord</span>
+                </a>
+              </li>
+            </ul>
+            <p>Come join our team! Fill the interest form or contact us!</p>
+            <p>
+              <!-- <a
+                href="https://forms.gle/mHv4aoH3CRLBnVfC9"
+                target="_blank"
+                class="btn"
+                ><strong>Volunteer!</strong></a
+              > -->
+
+              <!-- <a
+                href="https://forms.gle/3SWVMnXyDK2cHDDL9"
+                target="_blank"
+                class="btn"
+                ><strong>Register!</strong></a
+              > -->
+              <a href="https://forms.gle/xs1ZY3AeMPgXTPv9A" target="_blank" class="btn"><strong>Interest Form</strong></a>
+              <!-- <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeR0eaAM1ChqBUK91ZPWhjVKlymGOncOFwY0GSr41sUCoQi1w/viewform"
+                target="_blank"
+                class="btn"><strong>Register!</strong></a>
+
+              <a
+                href="https://forms.gle/8WCJfLtRhUj4SyzX8"
+                target="_blank"
+                class="btn"><strong>Mentor!</strong></a> -->
+
+             <a href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20helping%20T9Hacks" class="btn"><strong>Contact Us</strong></a>
+
+              <!-- <a href="https://forms.gle/f3uRZVnXYfbNi2e97" target="_blank" class="btn"><strong>Mentor!</strong></a> -->
+              <!-- form needs updated -->
+            </p>
+          </div>
+          <!-- end header_info -->
+        </div>
+      </div>
+      <!-- wrapper divs -->
+    </header>
+
+    <main>
+      <!-- Begin #info -->
+      <section id="info">
+        <div id="info_nextevent" class="container12">
+          <h2 class="text-center">General Info</h2>
+          <p>
+            T9Hacks is coming back with its 7th Hackathon! This year’s theme is
+            to “Go Beyond”. We all have dreams and desires and with our busy
+            schedules we don’t have the time to explore. We want you to go
+            beyond your day to day and take the time to learn something new,
+            challenge yourself, and be creative! Book your calendars for
+            <strong>February 18-19</strong>! Check-in will begin at 4:30 pm in Roser ATLAS.
+            Details below!
+            If you would like to mentor (help participants during the event) or volunteer (help set-up before and clean-up after the event), please
+            sign-up using the button above! <br>
+            If you are interested in checking out hardware during the event, you can checkout our <a href="https://docs.google.com/spreadsheets/d/1qSShNCiXgOG6N_WKD-sr2RHr16hxwQZgVxmYoWpVJk4/edit?usp=sharing" target="_blank">hardware list</a>.
+
+            <aside>T9Hacks will do its best to host a hackathon that is more sustainable and less wasteful. 
+              We have made the decision to not offer plastic water bottles at the event. We request that you bring your own reusable water bottles. There will be water fountains and refill stations at the venue. 
+              If you forget your own water bottle, we will still have more eco-friendly options.</aside><br>
+
+              <strong>Bookmark this page and keep checking it for updates!</strong>
+            <!-- registration form: https://forms.gle/ojLM11Uz5xKcqMbJ6 -->
+          </p>
+        </div>
+        <div id="info_schedule" class="container12">
+          <h3 class="center">Schedule</h3>
+          <table class="scheduleTable">
+            <tr style="color: #ffffff; background-color: #7a5ea7">
+              <th colspan="3">Friday, February 18</th>
+            </tr>
+            <tr>
+              <th colspan="1">Time</th>
+              <th colspan="1">Event</th>
+              <th colspan="1">Location</th>
+            </tr>
+            <tr>
+              <td>4:30 pm</td>
+              <td>Check-In</td>
+              <td>ATLS Lobby</td>
+            </tr>
+            <tr>
+              <td>5:30 pm</td>
+              <td>Opening Ceremony</td>
+              <td>ATLS 100</td>
+            </tr>
+            <tr>
+              <td >6:00 pm</td>
+              <td >Hackathon Starts!<br> (Team Formation & Dinner)</td>
+              <td >ATLS 104 (Team Formation) <br>ATLS Lobby (Dinner)</td>
+            </tr>
+            <tr>
+              <td>7:00 pm</td>
+              <td>Climate Change Kickoff <br> | Mission Zero |</td>
+              <td>ATLS 100</td>
+            </tr>
+            <tr>
+              <td>8:00 pm</td>
+              <td>Intro to Web3 and Cryptocurrency<br> | Earni.fi |</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>9:00 pm</td>
+              <td>Intro to Arduino & Neopixels<br> | Eric Bogatin | <br><br> Intro to Web Development<br> | Casey Hunt |</td>
+              <td>BTU Lab <br> <br>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>10:30 pm</td>
+              <td>Typeracer Tournament</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>11:00 pm</td>
+              <td>Midnight Snack (Insomnia Cookies)</td>
+              <td>ATLS Lobby</td>
+            </tr>
+            <tr style="color: #ffffff; background-color: #7a5ea7">
+              <th colspan="3">Saturday, February 19</th>
+            </tr>
+            <tr>
+              <th colspan="1">Time</th>
+              <th colspan="1">Event</th>
+              <th colspan="1">Location</th>
+            </tr>
+            <tr>
+              <td>12:00 am</td>
+              <td>Midnight Jackbox</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>8:00 am</td>
+              <td>Breakfast</td>
+              <td>ATLS Lobby</td>
+            </tr>
+            <tr>
+              <td>9:00 am</td>
+              <td>Sketching in Hardware (How to Rapid Prototype) <br> | Chris Hill |</td>
+              <td>BTU Lab</td>
+            </tr>
+            <tr>
+              <td>10:00 am</td>
+              <td>Source Control Best Practices <br> | Verily |</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>12:00 pm</td>
+              <td>Lunch</td>
+              <td>ATLS Lobby</td>
+            </tr>
+            <tr>
+              <td>1:00 pm</td>
+              <td>Guided Origami</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>2:00 pm</td>
+              <td>Disney Trivia <br> | CU WIC |</td>
+              <td>ATLS 104</td>
+            </tr>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Hackathon Ends! (Devpost Submissions)</td>
+              <td><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfl_gY4XkJniShCbOYl-kS7O5_Zfw2UgUIrCTgPG-E_StivJg/viewform">Submit google form</a> & <a target="_blank" href="https://t9hacks-2022.devpost.com/">Submit on Devpost</a></td>
+            </tr>
+            <tr>
+              <td>6:00 pm</td>
+              <td>Project Demos Preparations</td>
+              <td>Black Box</td>
+            </tr>
+            <tr>
+              <td>6:30 pm</td>
+              <td>Dinner <br> Project Demos & Judging</td>
+              <td>ATLS Lobby <br> Black Box</td>
+            </tr>
+            <tr>
+              <td>8:00 pm</td>
+              <td>Evaluation Period</td>
+              <td>ATLS 100</td>
+            </tr>
+            <tr>
+              <td>8:30 pm</td>
+              <td>Closing Ceremony (Award Announcements)</td>
+              <td>ATLS 100</td>
+            </tr>
+            <tr></tr>
+          </table>
+          <!-- <p>
+            <strong>Note:</strong> This is a general schedule of the hackathon,
+            individual events are subject to change. The schedule will be
+            updated with more details as we get closer to the event.
+          </p> -->
+        </div>
+        <div id="tracks" class="container12">
+          <h3 class="center">Tracks</h3>
+          <dl>
+            <dt>CLIMATE CHANGE:</dt>
+            <dd>
+              What are some ideas for projects and campaigns you can come up with that will convey the science, 
+              build understanding, and propose solutions to the growing issues surrounding Climate Change 
+              to your student peers and community members?
+            </dd>
+            <dt>ACCESSSIBILITY:</dt>
+            <dd>
+              In what ways can we adapt existing technologies/designs to expand
+              usage towards a greater audience? How might we design something
+              new to address the lack of accessibility in a currently existing
+              field?
+            </dd>
+            <dt>EMPATHY:</dt>
+            <dd>
+              How can we bolster human connection (in digital spaces) beyond the
+              limitations of a screen? How can we address the anonymity that
+              exists in an expanding digital world?
+            </dd>
+            <dt>EDUCATION:</dt>
+            <dd>
+              How can we improve upon existing educational standards and
+              technologies to further extend the right of education to
+              disadvantaged populations? How can we address misinformation in
+              academia or in the media and communicate information in better,
+              more effective ways?
+            </dd>
+          </dl>
+        </div>
+
+        <div id="judging-criteria" class="container12">
+          <h3 class="center">Judging Criteria</h3>
+          <dl>
+            <dt>SMARTICLES AND CREATIVITY:</dt>
+            <dd>
+              Reinventing the wheel, no matter how awesome the wheel is, is quite banal. 
+              Exploration of ideas is a value we want all hackers to pursue. We're looking for novel hacks engineered from the minds of our awesome hackers.
+            </dd>
+            <dt>AESTHETIC:</dt>
+            <dd>
+              We are looking for hacks that are not only functional but are designed well. 
+              There needs to be clear thought put into the user experience and over design of their idea. 
+              How visually appealing is the idea?
+            </dd>
+            <dt>ACADEMIC EXCELLENCE:</dt>
+            <dd>
+              We want to see what you've learned. 
+              T9hacks is about learning and exploring technology, so show us where you came into the competition and show us what you've learned in the last 24-hours.
+            </dd>
+            <dt>VIABILITY:</dt>
+            <dd>
+              We are looking for hacks that are well-built and could easily be continued to become a viable product. 
+              The hack should be more than just a pitch. 
+              The project solves a real problem and can be carried out in a feasible manner.
+            </dd>
+            <dt>TECHNICAL DIFFICULTY:</dt>
+            <dd>
+              Hacks can easily have a variety of ranges of difficulty. 
+              We want to reward hackers who demonstrate a large amount of technical prowess in the projects created.
+            </dd>
+            <dt>ON TRACK:</dt>
+            <dd>
+              Hackers should contribute to their field of interest so that their work can benefit the community. 
+              The hack attempts to solve an important problem in the given track the team applies for, leaving a positive impact on their community/ the world.
+            </dd>
+          </dl>
+        </div>
+
+        <div>
+        <h3 class="center">Directions</h3>
+        <div id="directions" class="container12">
+          <div>
+          <p>
+            T9Hacks will take place at the ATLAS Institute. The whole event will
+            run from Friday, February 18, 2022 at 4:30 PM (MST) – Saturday,
+            February 19, 2022 at 9 PM (MST). Please use the following address:
+            <a
+              href="https://www.google.com/maps/place/Roser+ATLAS+Center,+1125+18th+St,+Boulder,+CO+80302/@40.0074416,-105.2721174,17z/data=!4m5!3m4!1s0x876bec33866b4d51:0xa4ced41760be8040!8m2!3d40.0074416!4d-105.2699287?hl=en"
+              target="_blank"
+              >1125 18th St. Boulder, CO 80309</a
+            >. Participants will be responsible for coordinating sleeping
+            arrangements.
+          </p>
+          <h4>
+            Please note: For those attending in-person, masks will be mandatory
+            as per CU Boulder's current policy.
+          </h4>
+        </div>
+        <div>
+          <iframe title="Atlas google map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.0450364211283!2d-105.2721227495615!3d40.00744157931373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec33866b4d51%3A0xa4ced41760be8040!2sRoser%20ATLAS%20Center%2C%201125%2018th%20St%2C%20Boulder%2C%20CO%2080302!5e0!3m2!1sen!2sus!4v1644527557635!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <h3>ATLAS Institute Map</h3>
+      <div id="atlasBuildingMap" class="container12">
+       
+        <div>
+          <img src="images/T9%20Hacks%20Map%20Updated.png" alt="Atlas Map">
+        </div>
+        <div>
+          <p> We have the privilege of using this beautiful building
+            for T9Hacks. The ATLAS institute has its main floor with 
+            Room 100 for opening & closing ceremony. 
+            The main floor also contains: the BTU lab for diverse workshops, 
+            ATLS 104 for more awesome workshops, and the lobby area for check in and food.
+            One floor down contains a gender neutral restroom, and another floor below contain the Black Box.
+            The Black Box is an amazing creative space that hackers will use as hacking space.
+          </p>
+        </div>
+
+      </div>
+    </div>
+        <!-- <div id="parking" class="container12">
+          <h3 class="center">Parking</h3>
+          <p>
+            Campus parking at Lot 204 is available. Please visit
+            <a href="https://cuboulder.pmreserve.com/">this site</a> to reserve
+            parking. Note that it is
+            <strong>$5 per vehicle registration</strong>. Navigate to the date,
+            Sunday November 7th, and select the event titled “Au{T9}umn Hacks”.
+          </p>
+          <p>
+            Review this
+            <a href="https://www.colorado.edu/map/?id=336&mrkIid=194091"
+              >campus map</a
+            >
+            to find Lot 204. This lot can be accessed from northbound Broadway
+            and 18th Street, and the entrance is the second drive on the left.
+            Directions to the lot can be found via
+            <a href="https://goo.gl/maps/aiFMCg4FZE2AxdLv8">Google Maps</a>.
+          </p>
+        </div> -->
+      </section>
+
+      <!-- CURRENT EVENT SECTION (beware of inner comments)
+			<div id='info_currentevent' class='container12'>
+				<div id='event_info' class='row'>
+					<h3 class='center'>General Info</h3>
+					<p>Specific to current event info...</p>
+				</div> event_info
+				<div id='event_schedule' class='row'>
+					<h3 class='center'>Seminars</h3>
+					<table class='scheduleTable'>
+						<thead>
+							<tr>
+								<th>Date & Time</th>
+								<th>Seminar</th>
+								<th>Speaker</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+						</tbody>
+					</table> seminars schedule
+
+					<h3 class='center'>Someday, DD Month Year</h3>
+					<table class='scheduleTable'>
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Event</th>
+								<th>Location</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							<tr>
+								<td>0:00</td>
+								<td>TBD</td>
+								<td>TBD</td>
+							</tr>
+							</tr>
+						</tbody>
+					</table>day x schedule
+				</div> event_schedule
+				<div id='event_submissions' class='row'>
+					<h3 class='center'>Submissions</h3>
+					<p>Information on how to submit projects....</p>
+				</div> event_submissions
+				<div id='event_prizes' class='row'>
+					<h3 class='center'>Prizes</h3>
+					<p>Information about awards...</p>
+					<p>
+						The <strong>Rookie Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>Fans' Choice Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>Outstanding __ Award</strong>
+						is awarded for...
+					</p>
+					<p>
+						The <strong>(Sponsor) Award</strong>
+						is awarded for...
+					</p>
+				</div> event_prizes
+				<div id='event_tracks' class='row'>
+					<h3 class='center'>Tracks</h3>
+					<p>
+						T9Hacks is dedicated to making a positive impact on the world, so we've compiled some major global
+						issues and discussion topics into categories. Event participants are encouraged to come up with a
+						solution or proposal for any of these problems. There is no single form of these solutions; it could be
+						a game, an artwork, a product design, or something else innovative. Participants should strive for
+						sustainable ideas that can be built upon after the event.
+					</p>
+					<div class='column3'><img src='' alt='' class='tracksImage center'></div>
+					<div class='column9 tracks'>
+						<p><strong>Track Title</strong></p>
+						<p>
+							Track description.
+						</p>
+					</div>
+					<div class='column3'><img src='' alt='' class='tracksImage center'></div>
+					<div class='column9 tracks'>
+						<p><strong>Track Title</strong></p>
+						<p>
+							Track description.
+						</p>
+					</div>
+				</div> --><!-- event_tracks
+			</div>-->
+      <!-- info_currentevent
+		CURRENT EVENT SECTION -->
+
+      <!-- <div id='resources' class="container12"><div class="row">
+				<h3>Resources</h3>
+				<p>T9Hacks encourages you to work on a project that inspires you. We provide five tracks that can help provide this inspiration and we compiled a list of websites andinstitutions that offer publically available data sets as well as links to other resources that might help you solve these real-world problems. Keep in mind that there are problems that may cross tracks, and there are solutions that address multiple problems simultaneously.</p>
+				<ul class="list">
+					<li><a href="https://www.youtube.com/watch?v=VRqi3TBkolM" target="_blank">How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less</a></li>
+					<li><a href="https://www.un.org/en/sections/issues-depth/global-issues-overview/index.html" target="_blank">United Nations ​(Global Issues)</a>​</li> 
+					<li><a href="https://www.rtd-denver.com/Developer.shtml" target="_blank">Colorado RTD ​(Regional Transport District)</a>​</li>
+					<li><a href="https://srdata.nist.gov/gateway/gateway?dblist=0" target="_blank">​NIST ​(National Institute of Standards and Technology)</a></li>
+					<li><a href="https://www.ncdc.noaa.gov/cdo-web/" target="_blank">NOAA ​(National Oceanic and Atmospheric Administration) </a></li>
+					<li><a href="https://www2.ucar.edu/research-resources/data-archive-services" target="_blank">NCAR/UCAR ​(National Center for Atmospheric Research/University Corporation for Atmospheric Research) </a></li>
+					<li><a href="https://freegisdata.rtwilson.com/" target="_blank">GIS ​(Geographic Information Systems)</a></li>
+					<li><a href="https://opencolorado.org/" target="_blank">Open Colorado</a></li>
+					</ul>
+			</div></div> -->
+      <!-- resources -->
+
+      <!-- </section> info -->
+      <!--End #info-->
+
+      <!--Seminars Section-->
+      <!-- Update: this section moved into event schedule section above -->
+      <!-- <section id="seminars">
+			<div class="container12">
+				<div class="row">
+					<h2 class="text-center">Seminars</h2>
+					<h3>Seminar #1 Earth Protection & Sustainable Development</h3>
+						<p><strong>Speaker:</strong> Shaz Zamore (They/Them)</p>
+						<p><strong>Description:</strong> In this seminar, Shaz Zamore, ATLAS instructor,  will look at one of T9Hacks' 2021 tracks - Earth protection and sustainable development. What should we do about climate change? How can we protect and use the Earth's resources wisely? How can we develop sustainably? How can we protect animals and slow down the extinction rate?</p>
+						<p><strong>Date & Time:</strong> February 19th 7PM MST</p>
+						<p><strong>Zoom Link:</strong> <a href="https://cuboulder.zoom.us/j/95339505031">https://cuboulder.zoom.us/j/95339505031</a></p>
+						<p><strong>Recording:</strong> <a href="https://youtu.be/A7x_DV0Pvww">https://youtu.be/A7x_DV0Pvww</a>.</p>
+					<h3>Seminar #2 Health</h3>
+						<p><strong>Speaker:</strong> Aubrey Shick (She/Her)</p>
+						<p><strong>Description:</strong> In this seminar, Aubrey Shick, ATLAS research affiliate, will look at one of T9Hacks' 2021 tracks - Health. How do we promote and protect global health? How can we improve health conditions? How can we use technology to provide better medical care for all?</p>
+						<p><strong>Date & Time:</strong> February 23th 3:30PM MST</p>
+						<p><strong>Zoom Link:</strong> <a href="https://cuboulder.zoom.us/j/95339505031">https://cuboulder.zoom.us/j/95339505031</a></p>
+						<p><strong>Recording:</strong> <a href="https://youtu.be/-wWZasQacoU">https://youtu.be/-wWZasQacoU</a>.</p>
+					<h3>Seminar #3 Underserved Populations</h3>
+						<p><strong>Speaker:</strong> Anne Tapp (She/Her)</p>
+						<p><strong>Description:</strong> Anne Tapp is the Executive Director at Safehouse Progressive Alliance for Non-Violence. This seminar will focus on Anne’s current work at Safehouse Progressive Alliance for Non-Violence and engage attendees in meaningful conversations about human rights and how we can help end violence against adults, youth and children through advocacy, support, education and community organizing. </p>						<p><strong>Date & Time:</strong> February 26th 11:30AM MST</p>
+						<p><strong>Zoom Link:</strong> <a href="https://cuboulder.zoom.us/j/95339505031">https://cuboulder.zoom.us/j/95339505031</a></p>
+						<p><strong>Recording:</strong> <a href="https://youtu.be/VOnQUc2bfgM">https://youtu.be/VOnQUc2bfgM</a>.</p>
+					<h3>Seminar #4 Equality</h3>
+						<p><strong>Speaker:</strong> Simone Johnson (She/Her)</p>
+						<p><strong>Description:</strong>In this session, Simone Johnson, project manager at Future Coalition will share her personal journey to building a career rooted in her calling to advocate for a more just and equitable world. She’ll share insights on how she’s organized in coalition with organizations including Future Coalition,  March On, the US Climate Strike Coalition and Stop the Money Pipeline Coalition to mobilize young people to impact mass change in politics and business. Simone will share how making a difference in the world starts with healing intergenerational trauma, radical self-love, and taking risks in order to tap into your greatest potential. Simone is a community organizer from Denver, CO. In 2015 she received her BS from CU Boulder in Business Administration with a minor in Technology, Arts & Media. She is a project manager for Future Coalition, a national network and community for youth-led organizations and youth leaders. Future Coalition supports 1000s of grassroots organizers, mobilizing young people to advocate for social change and to inspire youth leadership in all fabrics of society. Future Coalition organized the 2019 Climate Strikes and Earth Day Live.</p>
+						<p><strong>Date & Time:</strong> March 2nd 5PM MST</p>
+						<p><strong>Zoom Link:</strong> <a href="https://cuboulder.zoom.us/j/95339505031">https://cuboulder.zoom.us/j/95339505031</a></p>
+						<p><strong>Recording:</strong> <a href="https://youtu.be/fCdcqiC8ULc">https://youtu.be/fCdcqiC8ULc</a>.</p>
+					<h3>Seminar #5 Children & Education</h3>
+						<p><strong>Speaker:</strong> Annie (She/Her)</p>
+						<p><strong>Description:</strong> Annie Margaret is an educator, researcher, and human enthusiast motivated by questions at the intersections of mental health, technology, addictive design, tribalism, the attention economy, and mindfulness. Her teaching and research address psychotechnologies and cognitive states that counteract the negative impact of social media on our mental health and wellbeing. In this seminar Annie will lead a discussion about how we can encourage better relationships between children/teens and technology as well as how to better our educational system. In this seminar, Annie will lead a discussion about how we can encourage better relationships between children/teens and technology as well as how to better our educational system.</p>
+						<p><strong>Date & Time:</strong> March 5th 2PM MST</p>
+						<p><strong>Zoom Link:</strong> <a href="https://cuboulder.zoom.us/j/95339505031">https://cuboulder.zoom.us/j/95339505031</a></p>
+						<p><strong>Recording:</strong> <a href="https://youtu.be/g0SKojmeZvM">https://youtu.be/g0SKojmeZvM</a>.</p>
+				</div>
+			</div>
+		</section> -->
+      <!--End Code of Conduct Section-->
+
+      <!--Mission Section-->
+      <section id="mission" class="container12">
+        <div class="row">
+          <h2 class="text-center">Mission</h2>
+          <p>
+            The mission of T9Hacks is to create a welcoming and safe place for
+            women and traditionally underrepresented students to explore
+            hackathons. Our goal is to create opportunities for newcomers to
+            explore a hackathon environment while learning and solving
+            compelling problems. T9Hacks works towards this mission by creating
+            women, gender equality, creative technology, beginner, and other
+            similar types of hackathons that support women and marginalized
+            students. T9hacks is open to everyone and values all dimensions of
+            gender identity.
+          </p>
+          <p>
+            We are now further beyond gender and expanding to create a safe
+            space—a learning environment—for people that are traditionally
+            underrepresented in the Engineering field. By this we mean that
+            T9Hacks is a place for people who have felt alone in a classroom,
+            work environment, etc. as a member of engineering simply due to
+            their gender, race, ethnicity, sexual orientation, disabilities, or
+            mental health. We want to make T9Hacks a place to build a community
+            of support as we learn and grow in our respective fields.
+          </p>
+        </div>
+      </section>
+      <!--End Mission Section-->
+
+      <!--Begin #last_year-->
+      <section id="last_year" class="container12">
+        <!-- NOTE: not updated for Sp21 -->
+        <div id="past_stats" class="row center">
+          <h2>At T9Hacks 2021</h2>
+          <br />
+          <div class="column4 text-center">
+            <h5>66+</h5>
+            <p class="center">hackers participated virtually</p>
+          </div>
+          <div class="column4 text-center">
+            <h5>74%+</h5>
+            <p class="center">were women and non-binary</p>
+          </div>
+          <div class="column4 text-center">
+            <h5>44%+</h5>
+            <p class="center">were first-time hackers</p>
+          </div>
+        </div>
+
+        <div id="past_winners" class="row">
+          <h3 style="text-align: center">Spring 2021 Winners</h3>
+          <p>
+            <strong>Outstanding Artist</strong> -
+            <a href="https://devpost.com/software/linda-dprsu9" target="_blank"
+              >:poofy</a
+            >
+            by Linh Nguyen & Dan Líu
+          </p>
+          <p>
+            <strong>Outstanding Social Impact</strong> -
+            <a
+              href="https://devpost.com/software/project-global"
+              target="_blank"
+              >Project Global</a
+            >
+            by Mahzabin Rashid Fariha and Humayra Rashid Safa
+          </p>
+          <p>
+            <strong>Outstanding Humanitarian</strong> -
+            <a
+              href="https://creative.colorado.edu/~sahe2032/dev/T9_Hacks/The%20Disaster%20Displacement%20Database/"
+              target="_blank"
+              >The Disaster Displacement Database</a
+            >
+            by Fiona Bell, Sam Herwig, and Emma Petersen
+          </p>
+          <p>
+            <strong>Outstanding Maker</strong> -
+            <a
+              href="https://devpost.com/software/foodie-s-world-4xs2ir"
+              target="_blank"
+              >Foodie’s World!</a
+            >
+            by Sahana Gokulakrishnan
+          </p>
+          <p>
+            <strong>Outstanding Entrepreneur</strong> -
+            <a
+              href="https://devpost.com/software/change-my-name"
+              target="_blank"
+              >Change-My-Name (4 hour of sleep)</a
+            >
+            by Ann Marie, Gwen, Spencer, and Charlotte
+          </p>
+          <p>
+            <strong>Outstanding Developer</strong> -
+            <a
+              href="https://github.com/jary7635/StarcrossedVoyagers/tree/main"
+              target="_blank"
+              >Starcrossed Voyagers: The Perilous Planet</a
+            >
+            by Allison Palmer, Jenna Rothe, James Ryan, and Emma Wenzel
+          </p>
+          <p>
+            <strong>EchoAR Award</strong> -
+            <a
+              href="https://devpost.com/software/lession-mustar"
+              target="_blank"
+              >Lesson mustAR</a
+            >
+            by Ahelee Bhattacharya
+          </p>
+          <p>
+            <strong>Fans’ Choice</strong> -
+            <a
+              href="https://drive.google.com/drive/u/1/folders/16k9l4G3YSjyysP5whDWgbXmACETSTO2l"
+              target="_blank"
+              >CSAG/The Invisible Line Project</a
+            >
+            by Audrey Viland, Spencer Bajcar, and Greg Gassen
+          </p>
+          <p>
+            <strong>Rookie Award</strong> -
+            <a href="https://adobe.ly/3vK4jDG" target="_blank"
+              >Lively, Lovely</a
+            >
+            by Minso Kim and Catherine Xiao
+          </p>
+        </div>
+        <!-- past winners -->
+
+        <div id="devpost">
+          <h3 class="center">
+            <a
+              href="https://t9hacks-2020.devpost.com/participants"
+              target="_blank"
+              >View 2020 Devpost Submissions</a
+            >
+          </h3>
+        </div>
+      </section>
+      <!--End #last_year-->
+
+      <!--Begin #discord-->
+      <section id="discord" class="container12">
+        <h2 class="center">Discord</h2>
+        <p>
+          <a href="https://discord.com/" target="_blank">Discord</a> is our
+          primary form of communication across all organizers, participants,
+          mentors, sponsors, and any other people involved.
+        </p>
+        <p>
+          If you are unfamiliar with Discord, it is a group instant messaging
+          platform that can be accessed via browser, desktop, or mobile
+          application. A validated email address is required to join and
+          participate. Join the conversation and stay up-to-date on
+          announcements
+          <a href="https://discord.gg/mdkRKKEupy" target="_blank">here</a>
+          once you're set up.
+        </p>
+      </section>
+      <!--End #discord-->
+
+      <!--Begin #faq-->
+      <section id="faq">
+        <div class="container12">
+          <div class="row">
+            <h2 class="text-center">Spring Hackathon FAQ</h2>
+          </div>
+          <div class="row">
+            <div class="column6">
+              <div>
+                <div class="accordion">
+                  <h4>What is T9Hacks?</h4>
+                </div>
+                <div class="panel">
+                  <p>
+                    T9Hacks is a 24 hour hackathon (we affectionally refer to
+                    ourselves as a "make-a-thon"!) that champions a welcoming
+                    environment for our participants to learn and express
+                    themselves creatively.
+                  </p>
+                </div>
+                <div class="accordion">
+                  <h4>What is a hackathon?</h4>
+                </div>
+                <div class="panel">
+                  <p>
+                    A hackathon is an event where teams of students come
+                    together to use their technology and design skills to
+                    transform ideas into reality. Hackathons are marathon
+                    “hacking” (i.e. inventing, building, creating, making)
+                    gatherings — traditionally in-person — where students can
+                    express their creativity and learn something new.
+                  </p>
+                </div>
+                <div class="accordion">
+                  <h4>Who can come?</h4>
+                </div>
+                <div class="panel">
+                  <p>
+                    T9Hacks is for college students (and recent college grads)
+                    to not only discover what hackathons are, but also to learn,
+                    explore, and create something new. We encourage all women
+                    and non-binary students with an interest or enthusiasm for
+                    technology and computing to join, regardless of experience!
+                    The only requirements are:
+                    <br /><br /><strong>(1)</strong> you must be over the age of
+                    18; <br /><strong>(2)</strong> you must be enrolled in a
+                    college or higher education program, OR have graduated
+                    within one year, so undergraduates and graduate students are
+                    welcome.
+                  </p>
+                </div>
+                <div class="accordion">
+                  <h4>Do we work in teams?</h4>
+                </div>
+                <div class="panel">
+                  <p>
+                    We encourage people to work in teams of four. 24 hours isn't
+                    a lot of time to guide a project from start to finish, so
+                    having teammates is incredibly helpful. This is a great
+                    place to meet lots of wonderful people with different
+                    skillsets. You can come with a pre-formed group and idea, an
+                    idea of your own and no team, or a desire to help someone
+                    else's idea along. If you don't have a team nor an idea,
+                    we'll host an icebreaker event before the hackathon for
+                    everyone to meet and share ideas.
+                  </p>
+                </div>
+                <div class="accordion">
+                  <h4>How much experience is needed?</h4>
+                </div>
+                <div class="panel">
+                  <p>
+                    At T9Hacks, it doesn't matter if you've never even written a
+                    line of code, we still want you to come! We encourage women
+                    and non-binary students from all backgrounds to participate.
+                    It doesn't matter whether you are an art, journalism,
+                    computer science, or marketing major — there is a place for
+                    you here. We will be hosting workshops for beginners and
+                    intermediate programmers, with the goal of providing support
+                    and mentoring for our participants to learn.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column6">
+              <div id="what-is-hacking" class="accordion">
+                <h4>What is hacking?</h4>
+              </div>
+              <div class="panel">
+                <p>
+                  At T9hacks, "hacking" never means programming with malicious
+                  intent. We want you to "hack" (design, build, create,
+                  MacGyver) technology, art, and media together to create
+                  something awesome.
+                </p>
+              </div>
+              <div class="accordion">
+                <h4>How much does it cost?</h4>
+              </div>
+              <div class="panel">
+                <p>
+                  Participation is completely free! We just ask that everyone
+                  register before they arrive at the event.
+                </p>
+              </div>
+              <div class="accordion">
+                <h4>What will happen at T9Hacks?</h4>
+              </div>
+              <div class="panel">
+                <p>
+                  Participants will create brand-new projects. We want you to be
+                  creative, learn something new, and explore the possibilities.
+                  Get a start on a project you've had in the back of your mind.
+                  Create a solution to a problem you want to address. Develop
+                  your skills in an area you're comfortable with or explore
+                  something completely foreign. Try out a new technology or
+                  software. You're here to learn, create, and explore!
+                </p>
+              </div>
+
+              <div class="accordion">
+                <h4>How long is the event?</h4>
+              </div>
+              <div class="panel">
+                <p>
+                  T9Hacks is a 24-hour hackathon, meaning that the window of
+                  time for collaborating, planning, and creating projects is
+                  open for 24 hours straight. It sounds like a long time, but it
+                  goes quickly! We'll have opening and closing ceremonies before
+                  and after hacking. (Of course, we encourage breaks and rest
+                  throughout the event!)
+                </p>
+              </div>
+              <div class="accordion">
+                <h4>Can men come?</h4>
+              </div>
+              <div class="panel">
+                <p>
+                  T9Hacks was created to support women, non-binary, transgender
+                  and other gender minority students. We call ourselves a
+                  women's hackathon because it succinctly sums up our
+                  gender-driven mission and goals. T9Hacks is open to students
+                  of every gender, including trans-and-cis-male allies, but we
+                  especially encourage women, non-binary, gender-nonconforming,
+                  and transgender students to attend.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End #faq-->
+
+      <!--Begin #about
+		<section id="about">
+			<div class="container12">
+				<div class="row">
+					<h2 class="text-center">About</h2>
+						<p>
+							Our goal is to create fun and creative environments where marginalized students&mdash;particularly women and non-binary students&mdash;can learn about computing and solve compelling problems.  
+						</p>
+						
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		End #about -->
+
+      <!--Begin #video
+		<section id="video">
+			<div class="container12">
+				<div class="row">
+					<div class="text-center">
+					<iframe src="https://player.vimeo.com/video/372405785" frameborder="0" allow="autoplay; fullscreen" allowfullscreen id="video"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		End #video-->
+
+      <!--Begin #team-->
+      <section id="team" class="container12">
+        <h2 class="text-center">Team</h2>
+        <div class="row teamImages">
+          <div class="column4">
+            <img src="images/niha.png" alt="Team" class="teamsImages center" />
+            <p><strong>Co-Lead Organizer</strong> | Niharika Kunapuli</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/oceane.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Co-Lead Organizer</strong> | Océane Andreis</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/aileen.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Advisor</strong> | Aileen Pierce</p>
+          </div>
+        </div>
+        <!-- team images row 1-->
+        <div class="row teamImages">
+          <div class="column4">
+            <img src="images/dan.jpg" alt="Team" class="teamsImages center" />
+            <p><strong>Finances</strong> | Dan Liu</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/patricia.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Marketing</strong> | Patricia Chin</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/xuedan.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Logistics</strong> | Xuedan Fillmore</p>
+          </div>
+        </div>
+        <div class="row teamImages">
+          <div class="column4">
+            <img src="images/isha.jpg" alt="Team" class="teamsImages center" />
+            <p><strong>Logistics</strong> | Isha Kanu</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/ngozi.jpeg"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Logistics</strong> | Ngozi Nwankwo</p>
+          </div>
+          <div class="column4">
+            <img src="images/ruhan.png" alt="Team" class="teamsImages center" />
+            <p><strong>Event Experience</strong> | Ruhan Yang</p>
+          </div>
+        </div>
+        <!-- team images row 2 -->
+        <div class="row teamImages">
+          <div class="column4">
+            <img
+              src="images/katherine.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Event Experience</strong> | Katherine Tran</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/sangati.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Event Experience</strong> | Sangati Shah</p>
+          </div>
+          <div class="column4">
+            <img
+              src="images/logos/T9Hacks2022Logo.png"
+              alt="Team"
+              class="teamsImages center"
+            />
+            <p><strong>Event Experience</strong> | Ann Marie Mahon</p>
+          </div>
+        </div>
+        <!-- team images row 3 -->
+      </section>
+      <!--End #team -->
+
+      <!--Code of Conduct Section-->
+      <section id="code_conduct">
+        <div class="container12">
+          <div class="row">
+            <h2 class="text-center">Code of Conduct</h2>
+            <p>
+              At T9Hacks, we believe in creating a safe and welcoming
+              environment for everyone. Everyone involved at our events —
+              including the organizers, mentors, volunteers, and participants —
+              follows the
+              <a
+                href="https://www.colorado.edu/sccr/sites/default/files/attached-files/2021-2022_code_of_conduct_-_08.13.21.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CU Student Code of Conduct</a
+              >.
+            </p>
+          </div>
+          <div class="row">
+            <div class="column6">
+              <img
+                src="images/pics/T9Hacks_2019_7.jpg"
+                alt="Participants Picture"
+              />
+            </div>
+            <div class="column6">
+              <img
+                src="images/pics/T9Hacks_2019_8.jpg"
+                alt="Participants Picture"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Code of Conduct Section-->
+
+      <!--Begin Sponsorship-->
+      <section id="sponsor" class="container12">
+        <h2 class="center">Sponsors</h2>
+        <div class="column12 text-center">
+          <p>
+            <strong>
+              Interested in sponsoring T9Hacks 2022? Reach us at
+              <a
+                href="mailto:t9hacks@colorado.edu?Subject=Interested%20in%20Sponsoring"
+                >t9hacks@colorado.edu</a
+              >
+            </strong>
+          </p>
+        </div>
+        <!-- <div class="row">
+				<div class="column4">
+					<a href="https://www.invisionapp.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/invision.png" alt="InVision"></a>
+				</div>
+				<div class="column4">
+					<a href="https://www.tortugaagtech.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/tortuga.png" alt="TortugaAgTech"></a>
+				</div>
+				<div class="column4">
+					<a href="https://www.echoar.xyz/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/echoAR.png" alt="echoAR"></a>
+				</div>
+			</div> -->
+
+        <!-- <div class="row">
+				<div class="column4">
+					<a href="https://www.trimble.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/trimble.png" alt="Trimble"></a>
+				</div>
+
+				<div class="column4">
+					<a href="https://www.sparkfun.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/sparkfun.png" alt="sparkfun"></a>
+				</div>
+				<div class="column4">
+					<a href="https://toolcase.com/" target="_blank"><img class="centerImage" src="images/sp21_sponsors/toolcase.png" alt="ToolCASE"></a>
+				</div>
+			</div>	 -->
+
+        <div class="sponsorRow">
+          <div class="column12">
+            <a href="https://missionzero.io" target="_blank"
+              ><img
+                class="diamond centerImage"
+                src="images/sp22_sponsors/mission_zero.png"
+                alt="mission zero"
+            /></a>
+          </div>
+        </div>
+        <div class="sponsorRow">
+          <div class="column6">
+            <a href="https://cardinalpeak.com/" target="_blank"
+              ><img
+                class="platinum centerImage"
+                src="images/sp22_sponsors/cardinal_peak.png"
+                alt="cardinal peak"
+            /></a>
+          </div>
+          <div class="column6">
+            <a href="https://earni.fi/" target="_blank"
+              ><img
+                class="platinum centerImage"
+                src="images/sp22_sponsors/earnifi.svg"
+                alt="earni.fi"
+            /></a>
+          </div>
+        </div>
+
+        <div class="sponsorRow">
+          <div class="column6">
+            <a href="https://www.plex.tv/" target="_blank"
+              ><img
+                class="platinum centerImage"
+                src="images/sp22_sponsors/plex-logo (1).png"
+                alt="Plex Tv"
+            /></a>
+          </div>
+          <div class="column6">
+            <a href="https://www.verily.com" target="_blank"
+              ><img
+                class="gold centerImage"
+                src="images/sp22_sponsors/verily.png"
+                alt="verily"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Twitter just has a tall logo compared to the others hence why I made another class for it -->
+        <div class="sponsorRow">
+          <div class="column6">
+            <a href="https://www.tortugaagtech.com/" target="_blank"
+              ><img
+                class="gold centerImage"
+                src="images/sp21_sponsors/tortuga.png"
+                alt="TortugaAgTech"
+            /></a>
+          </div>
+          <div class="column6">
+            <a href="https://www.twitter.com" target="_blank"
+              ><img
+                class="silverSmall centerImage"
+                src="images/sp22_sponsors/twitter.png"
+                alt="twitter"
+            /></a>
+          </div>
+        </div>
+        <div class="sponsorRow">
+          <div class="column6">
+            <a href="https://virga.io/" target="_blank"
+              ><img
+                class="silver centerImage"
+                src="images/sp22_sponsors/virga.png"
+                alt="Virga logo"
+            /></a>
+          </div>
+          <div class="column6">
+            <a href="https://www.wundermanthompson.com/" target="_blank"
+              ><img
+                class="silver centerImage"
+                src="images/sp22_sponsors/wunderman_thompson.png"
+                alt="Wunderman Thompson"
+            /></a>
+          </div>
+        </div>
+        <div class="sponsorRow">
+          <div class="column6"><a href="https://www.colorado.edu/atlas" target="_blank"
+            ><img
+              class="silver centerImage"
+              src="images/sp21_sponsors/atlas-croped.png"
+              alt="atlas"
+          /></a>
+          </div>
+          <div class="column6"><a href="https://www.colorado.edu/program/eef/" target="_blank"
+          ><img
+                  class="silver centerImage"
+                  src="images/sp22_sponsors/EEF.jpg"
+                  alt="Engineering Excellence Fund"
+          /></a>
+          </div>
+        </div>
+        <!-- For single logo row -->
+        <div class="column12" style="margin: 5% 0;">
+          <a href="https://www.colorado.edu/engineering/" target="_blank"
+            ><img
+              class="silver centerImage"
+              src="images/sp21_sponsors/engineering-croped.png"
+              alt="cuengineering"
+          /></a>
+        </div>
+      </section>
+      <!--End Sponsorship-->
+    </main>
+
+    <!-- </div>		 -->
+
+    <footer>
+      <div class="containerWide">
+        <div class="row">
+          <div class="column4">
+            <div class="location">
+              <p>
+                <span class="text">
+                  <a href="https://www.colorado.edu/" target="_blank"
+                    >University of Colorado Boulder</a
+                  >
+                  <br />
+                  <a href="https://atlas.colorado.edu/" target="_blank"
+                    >ATLAS Institute</a
+                  >
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="column4">
+            <ul class="socialButtons">
+              <li>
+                <a href="https://www.facebook.com/t9hacks/" target="_blank"
+                  ><i class="fa fa-facebook"
+                    ><span class="visually-hidden">T9Hacks Facebook</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/t9hacks" target="_blank"
+                  ><i class="fa fa-twitter"
+                    ><span class="visually-hidden">T9Hacks Twitter</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/t9hacks" target="_blank"
+                  ><i class="fa fa-instagram"
+                    ><span class="visually-hidden">T9Hacks Instagram</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/t9hacks" target="_blank"
+                  ><i class="fa fa-github"
+                    ><span class="visually-hidden">T9Hacks Github</span></i
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="https://discord.gg/mdkRKKEupy" target="_blank">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    width="1.25em"
+                    height="1em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 600 400"
+                  >
+                    <path
+                      d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91a337.461 337.461 0 0 0-14.9 30.6a447.848 447.848 0 0 0-134.426 0a309.541 309.541 0 0 0-15.135-30.6a1.89 1.89 0 0 0-1.924-.91a483.689 483.689 0 0 0-119.688 37.107a1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375a487.666 487.666 0 0 0 146.825 74.189a1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588a321.173 321.173 0 0 1-45.868-21.853a1.885 1.885 0 0 1-.185-3.126a251.047 251.047 0 0 0 9.109-7.137a1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233a234.533 234.533 0 0 0 9.132 7.16a1.884 1.884 0 0 1-.162 3.126a301.407 301.407 0 0 1-45.89 21.83a1.875 1.875 0 0 0-1 2.611a391.055 391.055 0 0 0 30.014 48.815a1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541zM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239c0 32.654-23.41 59.241-52.843 59.241zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239c0 32.654-23.177 59.241-52.844 59.241z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <span class="visually-hidden">T9Hacks Discord</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="socialLinks">
+              <li class="fb">
+                <iframe
+                  src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.t9hacks.org%2F&layout=button_count&size=small&mobile_iframe=true&appId=1734809350067997&width=80&height=20"
+                  width="80"
+                  height="20"
+                  style="border: none; overflow: hidden"
+                  title="Share on Facebook"
+                ></iframe>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/intent/tweet?button_hashtag=T9Hacks"
+                  class="twitter-hashtag-button"
+                  data-text="Learn, explore, Create. T9Hacks, a 24-hour women&#39;s hackathon CU ATLAS Feb 10-11"
+                  data-related="t9hacks"
+                  data-show-count="false"
+                  >Tweet #T9Hacks</a
+                >
+                <script async src="//platform.twitter.com/widgets.js"></script>
+              </li>
+            </ul>
+          </div>
+          <div class="column4">
+            <div class="copyright">
+              <p>
+                <strong>
+                  T9Hacks &nbsp;<i class="fa fa-copyright"></i>&nbsp; 2022
+                  <br />
+                  Made by T9 Hackers
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
