@@ -886,6 +886,20 @@ dd {
   margin-left: 3%;
 }
 
+#info ul {
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+#info ul li {
+  list-style: disc;
+}
+
+#info ul ul li {
+  font-size: 18px;
+  list-style: circle;
+}
+
 /* ************************************************ */
 /*					Social Buttons					*/
 /* ************************************************ */
@@ -1052,7 +1066,7 @@ dd {
   height: 65%;
 }
 #atlasBuildingMap p {
-  text-align: right;
+  text-align: left;
 }
 
 /* ******************************************************** */
