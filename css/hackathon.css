@@ -1069,6 +1069,39 @@ dd {
   text-align: left;
 }
 
+#submissions_steps {
+  /* max-width: 600px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  /* overflow: hidden; */
+}
+#submissions_steps #step1 img {
+  display: flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  margin-top: 15px;
+  margin-left: 70px;
+  /* justify-content: space-evenly; */
+  /* text-align: center; */
+}
+
+#submissions_steps #step1 {
+  width: 330px;
+  float:left;
+  margin-left:150px;
+}
+
+#submissions_steps #step2{
+  float: right;
+  /* border: 1px solid green; */
+  overflow: hidden;
+  margin-right: 150px;
+  width: 330px;
+}
+
 /* ******************************************************** */
 /*					Detailed Schedule Page					*/
 /* ******************************************************** */
