@@ -1069,14 +1069,14 @@ dd {
   text-align: left;
 }
 
-#submissions_steps {
-  /* max-width: 600px; */
+#submissions_steps{
+  max-width: 850px;
+  margin-left: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
   text-align: center;
-  /* overflow: hidden; */
+
 }
 #submissions_steps #step1 img {
   display: flex;
@@ -1084,22 +1084,18 @@ dd {
   flex-wrap:nowrap;
   margin-top: 15px;
   margin-left: 70px;
-  /* justify-content: space-evenly; */
   /* text-align: center; */
 }
 
 #submissions_steps #step1 {
-  width: 330px;
+  max-width: 330px;
   float:left;
-  margin-left:150px;
+  /* margin-left:150px; */
 }
 
 #submissions_steps #step2{
   float: right;
-  /* border: 1px solid green; */
-  overflow: hidden;
-  margin-right: 150px;
-  width: 330px;
+  max-width: 330px;
 }
 
 /* ******************************************************** */
@@ -1193,6 +1189,15 @@ dd {
   #pageSideBar + article {
     margin-left: 200px;
   }
+
+  #submissios_steps{
+    margin-left: 0px;
+  }
+
+  
+  #submissions_steps #step2{
+    float: left;
+  }
 }
 @media (max-width: 767px) {
   #pageSideBar {
@@ -1201,6 +1206,14 @@ dd {
   #pageSideBar + article {
     margin-left: 0;
   }
+  #submissions_steps{
+    margin-left: 0px;
+  }
+  #submissions_steps #step2{
+    float: left;
+  }
+
+
 }
 
 @media (max-width: 500px) {
@@ -1218,6 +1231,14 @@ dd {
     width: 55%;
     height: 55%;
   }
+  #submissions_steps{
+    margin-left: 0px;
+  }
+  #submissions_steps #step2{
+    float: left;
+  }
+
+  
 }
 
 /*# sourceMappingURL=hackathon.css.map */
