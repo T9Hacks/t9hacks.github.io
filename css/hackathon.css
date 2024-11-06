@@ -47,6 +47,11 @@ li {
 }
 
 /* Typography */
+.warning {
+  color: #ef5060;
+  font-weight: bold;
+}
+
 h1 {
   font-family: "Rajdhani", "Raleway", Helvetica, sans-serif;
   font-size: 4.5em;
