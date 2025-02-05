@@ -269,6 +269,10 @@ body {
     box-shadow: 0 0 15px 20px var(--highlight-color);
 }
 
+.highlight {
+    font-weight: 600;
+}
+
 .about-decoration-container {
     display: flex;
     align-items: center;
