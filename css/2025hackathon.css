@@ -282,10 +282,10 @@ body {
 
 .about-decoration-container::before {
     position: absolute;
-    left: 35%;
+    left: 0;
     content: '';
     background-color: var(--highlight-color);
-    width: 55vw;
+    width: 100%;
     height: 55vw;
     max-width: 550px;
     max-height: 550px;
@@ -423,7 +423,7 @@ body {
 
 .track-decoration-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 250px;
 }
 
@@ -475,7 +475,7 @@ body {
     position: absolute;
     top: 0;
     right: 40%;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--header-color);
     z-index: -1;
@@ -508,7 +508,7 @@ body {
     position: absolute;
     top: 0;
     left: 40%;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--accent-color);
     z-index: -1;
@@ -539,7 +539,7 @@ body {
     position: absolute;
     top: 0;
     right: 40%;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: var(--background-shape-color);
     z-index: -1;
@@ -764,4 +764,15 @@ footer .copyright {
         width: 78%;
     }
 
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+main {
+    position: relative;
+    overflow: hidden;
 }
