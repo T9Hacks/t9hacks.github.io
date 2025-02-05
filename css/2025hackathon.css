@@ -57,6 +57,20 @@ body {
     width: var(--max-width);
 }
 
+.old-site-btn {
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.old-site-btn a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
 .blob-1 {
     position: absolute;
     top: max(-20vw, -200px);
