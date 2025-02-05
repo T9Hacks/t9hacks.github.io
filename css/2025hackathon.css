@@ -558,6 +558,17 @@ body {
     z-index: 2;
 }
 
+.workshop-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.schedule-description {
+    width: 58%;
+}
+
 .workshop-schedule {
     font-size: 1.5em;
 }
@@ -761,6 +772,10 @@ footer .copyright {
     }
 
     .workshop-schedule {
+        width: 78%;
+    }
+
+    .schedule-description {
         width: 78%;
     }
 
